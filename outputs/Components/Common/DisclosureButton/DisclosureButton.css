@@ -1,0 +1,90 @@
+.disclosure-button {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: var(--Contextual-Surface-Tonal-Default, var(--Surface-Tonal-Default, #E3E3E4));
+  border-style: solid;
+  border-width: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px));
+  border-color: var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #C1C7D1));
+  padding: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px)) var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+  width: fit-content;
+  color: var(--Contextual-Text-Default-caption, var(--Text-Default-caption, #282E38));
+}
+
+.disclosure-button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+.disclosure-button-icon svg {
+  width: 12px;
+  height: 12px;
+  display: block;
+  max-width: none;
+  color: currentColor;
+}
+
+.disclosure-button-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  white-space: nowrap;
+  word-break: break-word;
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-weight: 600;
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  margin: 0;
+  flex-grow: 1;
+}
+
+.disclosure-button-label p {
+  margin: 0;
+  color: inherit;
+}
+
+/* =========================================
+   BORDER RADIUS
+   ========================================= */
+.disclosure-button[data-border="sm"] {
+  border-radius: var(--Semantic-BorderRadius-100, var(--BorderRadius-100, 4px));
+}
+
+.disclosure-button[data-border="md"] {
+  border-radius: var(--Semantic-BorderRadius-200, var(--BorderRadius-200, 8px));
+}
+
+.disclosure-button[data-border="lg"] {
+  border-radius: var(--Semantic-BorderRadius-300, var(--BorderRadius-300, 12px));
+}
+
+/* =========================================
+   HOVER & PRESSED
+   ========================================= */
+.disclosure-button:hover:not([disabled]),
+.disclosure-button:active:not([disabled]) {
+  background-color: var(--Contextual-Surface-Tonal-Pressed, var(--Surface-Tonal-Pressed, #D1D1D6));
+  border-color: var(--Contextual-Border-Tertiary-Pressed, var(--Border-Tertiary-Pressed, #A2ACB9));
+}
+
+/* =========================================
+   DISABLED STATE
+   ========================================= */
+.disclosure-button[disabled] {
+  cursor: not-allowed;
+  user-select: none;
+  background-color: var(--Contextual-Surface-Disabled-DisabledDefault, var(--Surface-Disabled-DisabledDefault, #E3E3E4));
+  border-color: var(--Contextual-Border-Disabled-DisabledDefault, var(--Border-Disabled-DisabledDefault, #E3E3E4));
+  color: var(--Contextual-Text-Disabled-default, var(--Text-Disabled-default, #A2ACB9));
+}

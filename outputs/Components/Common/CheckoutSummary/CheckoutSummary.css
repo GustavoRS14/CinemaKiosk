@@ -1,0 +1,297 @@
+/* Container */
+.checkout-summary {
+  --checkout-summary-border-width: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px));
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  background: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #FFFFFF));
+  border-radius: var(--Semantic-BorderRadius-300, var(--BorderRadius-300, 12px));
+  border: var(--checkout-summary-border-width) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #C1C7D1));
+  box-sizing: border-box;
+}
+
+/* Headers (Tickets & Concessions) */
+.checkout-summary__title {
+  color: var(--Contextual-Text-Default-heading, var(--Text-Default-heading, #000000));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+  font-weight: 700;
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+  margin: 0;
+}
+
+/* Movie Title */
+.checkout-summary__movie-title {
+  color: var(--Contextual-Text-Default-heading, var(--Text-Default-heading, #000000));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+  font-weight: 600;
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+  margin: 0;
+}
+
+/* Movie Tags (Genre | Duration) */
+.checkout-summary__movie-tags {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 4px));
+  color: var(--Contextual-Text-Default-captionMuted, var(--Text-Default-captionMuted, #64748B));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  font-weight: 500;
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+}
+
+/* Left Column Text (Row Labels) */
+.checkout-summary__row-label {
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  font-weight: 500;
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+}
+
+/* Rows 4, 5 & 6: Tags (Idioma, Experiência, Poltronas) */
+.checkout-summary__row--tags {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+  align-self: stretch;
+}
+
+/* Total Ingressos Right Side Value */
+.checkout-summary__row-value--info,
+.checkout-summary__row-value--info .checkout-summary__row-value--bold {
+  color: var(--Contextual-Text-Information-default, var(--Text-Information-default, #1650AE));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  font-weight: 500;
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+}
+
+/* Valor Total Right Side Value */
+.checkout-summary__row-value--total {
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  font-weight: 600;
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+}
+
+/* Dotted Line Divider Wrapper */
+.checkout-summary__divider-wrapper {
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.checkout-summary--tickets .checkout-summary__divider-wrapper {
+  width: calc(100% + var(--checkout-summary-border-width) + var(--checkout-summary-border-width));
+  margin-inline: calc(0px - var(--checkout-summary-border-width));
+}
+
+/* Elipses (Simulating SVG Fill and Stroke via CSS) */
+.checkout-summary__divider-elipse {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  background: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #FFFFFF));
+  border: 1px solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #C1C7D1));
+  box-sizing: border-box;
+}
+
+.checkout-summary__divider-elipse--left {
+  left: -20px;
+}
+
+.checkout-summary__divider-elipse--right {
+  right: -20px;
+}
+
+.checkout-summary__divider-line {
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.checkout-summary__header {
+  padding: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px)) var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px)) 0;
+}
+
+.checkout-summary__poster-info {
+  display: flex;
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  padding: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+}
+
+.checkout-summary__poster-wrapper {
+  width: 56px;
+  flex-shrink: 0;
+}
+
+.checkout-summary__info-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 4px));
+}
+
+.checkout-summary__movie-title-row {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-sm, var(--Spacing-sm, 8px));
+}
+
+.checkout-summary__details {
+  padding: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+}
+
+.checkout-summary__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Row 1: Date & Time */
+.checkout-summary__row--start {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+}
+
+.checkout-summary__row--col {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Responsive-Spacing-sm, var(--Spacing-sm, 8px));
+}
+
+.checkout-summary__row-value {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 4px));
+}
+
+.checkout-summary__row-value--bold {
+  font-weight: 700;
+}
+
+.checkout-summary__tags-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 4px));
+}
+
+.checkout-summary__ticket-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-sm, var(--Spacing-sm, 8px));
+  width: 100%;
+}
+
+.checkout-summary__ticket-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Concessions */
+.checkout-summary__product-list {
+  display: flex;
+  flex-direction: column;
+  padding: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px)) 0;
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+}
+
+.checkout-summary__product-wrapper {
+  padding: 0 var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+}
+
+.checkout-summary__product-divider {
+  margin: 0 var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+}
+
+/* CRITICAL FIX: Updated gap to 24px to separate the new delivery block from totals */
+.checkout-summary__metadata {
+  padding: 0 var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px)) var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+}
+
+/* CRITICAL FIX: New Totals Wrapper to maintain internal 16px gap */
+.checkout-summary__totals-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  width: 100%;
+}
+
+/* CRITICAL FIX: New Delivery Block layout and typography */
+.checkout-summary__delivery-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+  width: 100%;
+}
+
+.checkout-summary__delivery-info {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+}
+
+.checkout-summary__delivery-text {
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  font-weight: 600;
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  margin: 0;
+}
+
+/* Date & Time Row Typography (Body/Medium) */
+.checkout-summary__datetime .checkout-summary__row-value {
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  font-weight: 500;
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+}
+
+/* Ticket Price Typography (Body/Semibold) */
+.checkout-summary__ticket-price {
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  font-weight: 600;
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+}
+
+/* Rows 2 & 3: End Time & Sala */
+.checkout-summary__row--compact {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+  align-self: stretch;
+}
+
+/* New Body/Medium Typography Class for End Time and Sala Number */
+.checkout-summary__value--medium {
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  font-weight: 500;
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+}
+
+.checkout-summary__poster-wrapper .movie-poster {
+  border-radius: var(--Semantic-BorderRadius-100, var(--BorderRadius-100, 4px));
+}

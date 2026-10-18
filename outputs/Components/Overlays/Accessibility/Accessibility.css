@@ -1,0 +1,105 @@
+.accessibility-dialog {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: var(--Contextual-Surface-Secondary-Default, #fff);
+  border: var(--Semantic-BorderWidth-25, 1px) solid var(--Contextual-Border-Tertiary-Default, #c1c7d1);
+  border-radius: var(--Semantic-BorderRadius-400, 16px);
+  backdrop-filter: blur(8px);
+}
+
+.accessibility-dialog__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-xl, 32px);
+  padding: 0 var(--Responsive-Spacing-lg, 24px) var(--Responsive-Spacing-lg, 24px);
+}
+
+.accessibility-dialog__top-action {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 56px;
+  padding-left: var(--Responsive-Spacing-lg, 24px);
+}
+
+.accessibility-dialog__option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--Responsive-Spacing-lg, 24px);
+  width: 100%;
+}
+
+.accessibility-dialog__option-copy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-2xs, 4px);
+  min-width: 0;
+}
+
+.accessibility-dialog__option-title,
+.accessibility-dialog__option-description {
+  margin: 0;
+  font-family: var(--Semantic-Font-Primary, 'Poppins', sans-serif);
+}
+
+.accessibility-dialog__option-title {
+  color: var(--Contextual-Text-Default-body, #000);
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, 20px);
+  font-weight: var(--Typography-Semantic-Primária-H6-Regular-fontWeight, 400);
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, 24px);
+}
+
+.accessibility-dialog__option-description {
+  color: var(--Contextual-Text-Default-captionMuted, #64748b);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, 16px);
+  font-weight: var(--Typography-Semantic-Primária-Body-Medium-fontWeight, 500);
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, 20px);
+}
+
+.accessibility-dialog__option-control {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.accessibility-dialog__counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--Responsive-Spacing-sm, 12px);
+}
+
+.accessibility-dialog__counter output {
+  min-width: 32px;
+  color: var(--Contextual-Text-Default-body, #000);
+  font-family: var(--Semantic-Font-Primary, 'Poppins', sans-serif);
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, 24px);
+  font-weight: var(--Typography-Semantic-Primária-H5-Semibold-fontWeight, 600);
+  line-height: var(--Responsive-Font-Headings-H5-LineHeight, 28px);
+  text-align: center;
+}
+
+.accessibility-dialog__footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: var(--Responsive-Spacing-lg, 24px);
+  background: var(--Contextual-Surface-Tertiary-Default, #f1f1f2);
+  border-top: var(--Semantic-BorderWidth-25, 1px) solid var(--Contextual-Border-Tertiary-Default, #c1c7d1);
+}
+
+.accessibility-dialog__footer .totem-button {
+  min-height: 80px;
+}
+
+@media (max-width: 560px) {
+  .accessibility-dialog__option {
+    align-items: flex-start;
+  }
+
+  .accessibility-dialog__option-description {
+    white-space: normal;
+  }
+}

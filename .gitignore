@@ -1,0 +1,30 @@
+# Installed dependencies (restore with npm ci)
+/node_modules/
+
+# Generated application and Storybook builds
+/dist/
+/storybook-static/
+/release/
+/release-validation/
+
+# Tool caches and temporary outputs
+/work/cache/
+/.cache/
+/.vite/
+*.log
+*.tmp
+
+# Local environment and editor files
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Test and coverage output
+/coverage/
+/test-results/
+/playwright-report/
+

@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.json",
+  "files": [
+    "../outputs/FilterChip.tsx",
+    "../outputs/FilterChip.stories.tsx",
+    "../outputs/Footer.tsx",
+    "../outputs/Footer.stories.tsx",
+    "../outputs/Notification.tsx",
+    "../outputs/Notification.stories.tsx",
+    "../outputs/StoryTokenCanvas.tsx",
+    "../outputs/vite-env.d.ts"
+  ],
+  "include": []
+}

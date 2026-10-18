@@ -1,0 +1,77 @@
+.card-option {
+  --card-bg: var(--Contextual-Surface-Static-Default, #ffffff);
+  --card-border: var(--Contextual-Border-Tertiary-Default, #c1c7d1);
+  --card-text: var(--Contextual-Text-Static-Black-default, #000000);
+}
+
+.card-option[data-state="Pressed"],
+.card-option[data-state="Default"]:hover,
+.card-option[data-state="Default"]:active {
+  --card-bg: var(--Contextual-Surface-Static-DefaultPressed, #e3e3e4);
+  --card-border: var(--Contextual-Border-Tertiary-Pressed, #a2acb9);
+}
+
+/* Dark Theme Overrides */
+
+
+.card-option-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--Responsive-Spacing-md, 16px);
+  padding: var(--Responsive-Spacing-xl, 32px);
+  width: 306.67px;
+  height: auto;
+  min-height: 249px;
+  border-radius: var(--Semantic-BorderRadius-400, 16px);
+  border-width: var(--Semantic-BorderWidth-25, 1px);
+  border-style: solid;
+  border-color: var(--card-border);
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-option-container:not([data-state="Pressed"]) {
+  cursor: pointer;
+}
+
+.card-option-image-wrapper {
+  position: relative;
+  flex-shrink: 0;
+  width: 128px;
+  height: 128px;
+}
+
+.card-option-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+}
+
+.card-option-text {
+word-break: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-weight: 600;
+  font-size: var(--Responsive-Font-Headings-H4-TextSize, var(--Font-Headings-H4-TextSize, 32px));
+  line-height: var(--Responsive-Font-Headings-H4-LineHeight, var(--Font-Headings-H4-LineHeight, 40px));
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.card-option-text p {
+  margin: 0;
+  padding: 0;
+  white-space: pre-line;
+}

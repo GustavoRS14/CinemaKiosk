@@ -1,0 +1,198 @@
+.onboarding-update-page {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  box-sizing: border-box;
+  border-radius: var(--Semantic-BorderRadius-400, var(--BorderRadius-400, 16px));
+  background: var(--Contextual-Surface-BackgroundPage-Default, var(--Surface-BackgroundPage-Default, #f8f8f8));
+  box-shadow: 0 0 0 100vmax var(--Contextual-Surface-Inverse-Secondary, var(--Surface-Inverse-Secondary, #000000));
+}
+
+.onboarding-update-page,
+.onboarding-update-page * {
+  box-sizing: border-box;
+}
+
+.onboarding-update-page__content {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px));
+}
+
+.onboarding-update-page--vertical .onboarding-update-page__content {
+  width: calc(100% - (2 * var(--Responsive-Spacing-4xl, var(--Spacing-4xl, 96px))));
+}
+
+.onboarding-update-page--horizontal .onboarding-update-page__content {
+  width: calc(
+    100% -
+      (2 * (var(--Responsive-Margin, var(--Margin, 64px)) + var(--Responsive-Spacing-4xl, var(--Spacing-4xl, 96px))))
+  );
+}
+
+.onboarding-update-page__copy {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  text-align: center;
+}
+
+.onboarding-update-page__copy h1,
+.onboarding-update-page__copy p,
+.onboarding-update-page__showcase-copy h2,
+.onboarding-update-page__showcase-copy p {
+  margin: 0;
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+}
+
+.onboarding-update-page__copy h1 {
+  color: var(--Contextual-Text-Default-heading, var(--Text-Default-heading, #000));
+  font-size: var(--Responsive-Font-Headings-H4-TextSize, var(--Font-Headings-H4-TextSize, 32px));
+  font-weight: var(--Typography-Semantic-Primária-H4-Bold-fontWeight, 700);
+  line-height: var(--Responsive-Font-Headings-H4-ParagraphSpacing, var(--Font-Headings-H4-ParagraphSpacing, 40px));
+}
+
+.onboarding-update-page__copy > p {
+  color: var(--Contextual-Text-Default-caption, var(--Text-Default-caption, #282e38));
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+  font-weight: var(--Typography-Semantic-Primária-H6-Regular-fontWeight, 400);
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+}
+
+.onboarding-update-page__showcase {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  flex: 0 0 500px;
+  overflow: hidden;
+  border: var(--Semantic-BorderWidth-25, 1px) solid
+    var(--ContextualBorder-Tertiary-Default, #C1C7D1);
+  border-radius: var(--Semantic-BorderRadius-300, var(--BorderRadius-300, 12px));
+  background: var(--Contextual-Surface-Secondary-Default, #FFF);
+}
+
+.onboarding-update-page__showcase-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.onboarding-update-page__showcase-background [fill="#64748B"] {
+  fill: var(--Contextual-Icon-Default-captionMuted, #64748B);
+}
+
+.onboarding-update-page__showcase-background [fill="white"],
+.onboarding-update-page__showcase-background [fill="#FFF"],
+.onboarding-update-page__showcase-background [fill="#FFFFFF"] {
+  fill: var(--Contextual-Icon-OnColor-body, #FFF);
+}
+
+.onboarding-update-page__showcase-copy {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  left: 1px;
+  z-index: 1;
+  display: flex;
+  width: calc(50% - 1px);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  padding: var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px));
+}
+
+.onboarding-update-page__vendor-logo {
+  display: block;
+  width: 116px;
+  height: 40px;
+  flex: 0 0 auto;
+  color: var(--Contextual-Icon-Default-heading, var(--Icon-Default-heading, #000));
+}
+
+.onboarding-update-page__showcase-copy h2 {
+  width: 100%;
+  color: var(--Contextual-Text-Default-heading, var(--Text-Default-heading, #000));
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, var(--Font-Headings-H5-TextSize, 24px));
+  font-weight: var(--Typography-Semantic-Primária-H5-Semibold-fontWeight, 600);
+  line-height: var(--Responsive-Font-Headings-H5-ParagraphSpacing, var(--Font-Headings-H5-ParagraphSpacing, 28px));
+}
+
+.onboarding-update-page__showcase-copy p {
+  width: 100%;
+  color: var(--Contextual-Text-Default-captionMuted, var(--Text-Default-caption-muted, #64748b));
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  font-weight: var(--Typography-Semantic-Primária-Body-Regular-fontWeight, 400);
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+}
+
+.onboarding-update-page__mockup {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 50%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.onboarding-update-page__mockup img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.onboarding-update-page__progress {
+  width: 576px;
+  max-width: 100%;
+  flex: 0 0 auto;
+  align-self: center;
+}
+
+.onboarding-update-page__progress .totem-stepped-progress-indicator__inner {
+  width: 100%;
+}
+
+@media (max-width: 760px) {
+  .onboarding-update-page {
+    align-items: flex-start;
+  }
+
+  .onboarding-update-page__content,
+  .onboarding-update-page--vertical .onboarding-update-page__content,
+  .onboarding-update-page--horizontal .onboarding-update-page__content {
+    width: calc(100% - (2 * var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px))));
+    margin-block: var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px));
+  }
+
+  .onboarding-update-page__showcase {
+    height: auto;
+    min-height: 620px;
+    flex-basis: auto;
+  }
+
+  .onboarding-update-page__showcase-copy,
+  .onboarding-update-page__mockup {
+    position: relative;
+    inset: auto;
+    width: 100%;
+  }
+
+  .onboarding-update-page__showcase-copy {
+    min-height: 300px;
+  }
+
+  .onboarding-update-page__mockup {
+    height: 320px;
+  }
+}

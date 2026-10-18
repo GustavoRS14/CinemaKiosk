@@ -1,0 +1,45 @@
+.totem-zoom-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  position: relative;
+  width: fit-content;
+}
+
+.totem-zoom-control__slider {
+  position: relative;
+  width: 8px;
+  height: var(--ZoomControl-SliderHeight, 258px);
+  background-color: var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+  border-radius: var(--Semantic-BorderRadius-Round, var(--BorderRadius-Round, 512px));
+  flex-shrink: 0;
+}
+
+.totem-zoom-control__indicator {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  background-color: var(--Contextual-Surface-Primary-Default, var(--Surface-Primary-Default, #980038));
+  border: var(--Semantic-BorderWidth-50, var(--BorderWidth-50, 2px)) solid var(--Contextual-Border-Primary-Default, #980038);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.totem-zoom-control__indicator--interactive {
+  pointer-events: auto;
+  cursor: grab;
+  touch-action: none;
+}
+
+.totem-zoom-control__indicator--interactive:active {
+  cursor: grabbing;
+}
+
+.totem-zoom-control__indicator--interactive:focus-visible {
+  outline: var(--Semantic-BorderWidth-50, var(--BorderWidth-50, 2px)) solid var(--Contextual-Border-Focus-Default, var(--Border-Focus-Default, #005fcc));
+  outline-offset: var(--Responsive-Spacing-3xs, var(--Spacing-3xs, 2px));
+}

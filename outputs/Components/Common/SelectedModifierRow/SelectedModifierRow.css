@@ -1,0 +1,33 @@
+.totem-selected-modifier-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px));
+  position: relative;
+}
+
+.totem-selected-modifier-row__tag-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.totem-selected-modifier-row__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0 0;
+  min-width: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-word;
+  margin: 0;
+
+  font-family: var(--Semantic-Font-Primary, 'Poppins');
+  font-weight: var(--Typography-Semantic-Primária-H6-Medium-fontWeight, 500);
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+  color: var(--Contextual-Text-Default-caption, var(--Text-Default-caption, #282e38));
+}

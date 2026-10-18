@@ -1,0 +1,207 @@
+.action-dialog {
+display: flex;
+flex-direction: column;
+width: 100%;
+max-width: 100%;
+height: 100%;
+box-sizing: border-box;
+background-color: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff));
+border: var(--Semantic-BorderWidth-25, 1px) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #C1C7D1));
+border-radius: var(--Semantic-BorderRadius-400, 16px);
+backdrop-filter: blur(8px);
+overflow: hidden;
+}
+
+.action-dialog-header {
+flex-shrink: 0;
+width: 100%;
+}
+
+.action-dialog-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px));
+gap: var(--Responsive-Spacing-xl, var(--Spacing-xl, 32px));
+width: 100%;
+flex: 1;
+box-sizing: border-box;
+}
+
+.action-dialog-illustration {
+width: 224px;
+height: 224px;
+flex-shrink: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+
+.action-dialog-illustration img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+
+.action-dialog-illustration svg {
+width: 100%;
+height: 100%;
+}
+
+.action-dialog-illustration svg [fill="#980038" i] {
+fill: var(--Contextual-Icon-Primary-default, var(--Icon-Primary-default, #980038));
+}
+
+.action-dialog-illustration svg [stroke="#980038" i] {
+stroke: var(--Contextual-Icon-Primary-default, var(--Icon-Primary-default, #980038));
+}
+
+.action-dialog-illustration svg [fill="#FFFFFF" i],
+.action-dialog-illustration svg [fill="white" i] {
+fill: var(--Contextual-Icon-Primary-onColor, var(--Icon-Primary-onColor, #FFFFFF));
+}
+
+.action-dialog-illustration svg [stroke="#FFFFFF" i],
+.action-dialog-illustration svg [stroke="white" i] {
+stroke: var(--Contextual-Icon-Primary-onColor, var(--Icon-Primary-onColor, #FFFFFF));
+}
+
+.action-dialog-illustration svg [fill="#282E38" i] {
+fill: var(--Contextual-Icon-Default-caption, var(--Icon-Default-caption, #282E38));
+}
+
+.action-dialog-illustration svg [stroke="#282E38" i] {
+stroke: var(--Contextual-Icon-Default-caption, var(--Icon-Default-caption, #282E38));
+}
+
+.action-dialog-illustration svg [fill="#1650AE" i] {
+fill: var(--Contextual-Icon-Information-default, var(--Icon-Information-default, #1650AE));
+}
+
+.action-dialog-illustration svg [stroke="#1650AE" i] {
+stroke: var(--Contextual-Icon-Information-default, var(--Icon-Information-default, #1650AE));
+}
+
+.action-dialog-illustration svg [fill="#A2ACB9" i] {
+fill: var(--Contextual-Icon-OnColor-caption, var(--Icon-OnColor-caption, #A2ACB9));
+}
+
+.action-dialog-illustration svg [stroke="#A2ACB9" i] {
+stroke: var(--Contextual-Icon-OnColor-caption, var(--Icon-OnColor-caption, #A2ACB9));
+}
+
+.action-dialog-illustration svg [id*="StaticColor" i][fill],
+.action-dialog-illustration svg [id*="StaticColor" i] [fill],
+.action-dialog-illustration svg [data-name*="StaticColor" i][fill],
+.action-dialog-illustration svg [data-name*="StaticColor" i] [fill] {
+fill: var(--Contextual-Icon-Static-Primary-default, var(--Icon-Static-Primary-default, #980038));
+}
+
+.action-dialog-illustration svg [id*="StaticColor" i][stroke],
+.action-dialog-illustration svg [id*="StaticColor" i] [stroke],
+.action-dialog-illustration svg [data-name*="StaticColor" i][stroke],
+.action-dialog-illustration svg [data-name*="StaticColor" i] [stroke] {
+stroke: var(--Contextual-Icon-Static-Primary-default, var(--Icon-Static-Primary-default, #980038));
+}
+
+.action-dialog-illustration svg [id*="StaticCaption" i][fill],
+.action-dialog-illustration svg [id*="StaticCaption" i] [fill],
+.action-dialog-illustration svg [data-name*="StaticCaption" i][fill],
+.action-dialog-illustration svg [data-name*="StaticCaption" i] [fill] {
+fill: var(--Contextual-Icon-Static-Caption-default, var(--Icon-Static-Caption-default, #282E38));
+}
+
+.action-dialog-illustration svg [id*="StaticCaption" i][stroke],
+.action-dialog-illustration svg [id*="StaticCaption" i] [stroke],
+.action-dialog-illustration svg [data-name*="StaticCaption" i][stroke],
+.action-dialog-illustration svg [data-name*="StaticCaption" i] [stroke] {
+stroke: var(--Contextual-Icon-Static-Caption-default, var(--Icon-Static-Caption-default, #282E38));
+}
+
+.action-dialog-text-actions {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+width: 100%;
+}
+
+.action-dialog-text {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px));
+text-align: center;
+width: 100%;
+word-break: break-word;
+}
+
+.action-dialog-title {
+color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+font-family: var(--Typography-Semantic-Primária-H5-Semibold-fontFamily, var(--Font-Primary, "Poppins"));
+font-weight: var(--Typography-Semantic-Primária-H5-Semibold-fontWeight, 600);
+font-size: var(--Typography-Semantic-Primária-H5-Semibold-fontSize, var(--Font-Headings-H5-TextSize, 24px));
+line-height: var(--Typography-Semantic-Primária-H5-Semibold-lineHeight, var(--Font-Headings-H5-ParagraphSpacing, 28px));
+margin: 0;
+}
+
+.action-dialog-description {
+color: var(--Contextual-Text-Default-caption, var(--Text-Default-caption, #282E38));
+font-family: var(--Typography-Semantic-Primária-Body-Regular-fontFamily, var(--Font-Primary, "Poppins"));
+font-weight: var(--Typography-Semantic-Primária-Body-Regular-fontWeight, 400);
+font-size: var(--Typography-Semantic-Primária-Body-Regular-fontSize, var(--Font-Headings-Body-TextSize, 16px));
+line-height: var(--Typography-Semantic-Primária-Body-Regular-lineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+margin: 0;
+}
+
+.action-dialog-description p,
+.action-dialog-description ul {
+margin: 0;
+}
+
+.movie-session-notice {
+display: flex;
+flex-direction: column;
+gap: var(--Responsive-Spacing-md, 16px);
+text-align: left;
+}
+
+.action-dialog-actions {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+width: 100%;
+}
+
+.action-dialog-action-group {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+width: 100%;
+}
+
+.action-dialog-action-group > * {
+flex: 1 0 0;
+min-width: 0;
+}
+
+.action-dialog-action-group--single > * {
+flex: 0 1 auto;
+}
+
+.action-dialog-cancel {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 80px;
+}
+
+.action-dialog-cancel > .totem-button {
+width: 100%;
+}

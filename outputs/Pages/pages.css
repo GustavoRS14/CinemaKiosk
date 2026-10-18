@@ -1,0 +1,23 @@
+/* Keep every page scrollable while hiding the browser's visual scrollbars. */
+html,
+body,
+#storybook-root,
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#storybook-root::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+@media (max-width: 1366px) {
+  [data-orientation='horizontal'] {
+    --Responsive-ButtonInputHeight: 64px !important;
+  }
+}

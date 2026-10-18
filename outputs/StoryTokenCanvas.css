@@ -1,0 +1,49 @@
+html,
+body,
+#root {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input,
+textarea,
+[contenteditable]:not([contenteditable='false']) {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+.story-token-canvas__lowered-region {
+  display: flex;
+  width: 100%;
+  height: 50dvh;
+  align-items: center;
+  justify-content: center;
+  background: var(--Contextual-Surface-Inverse-Secondary, var(--Surface-Inverse-Secondary, #000000));
+  color: var(--Contextual-Icon-Inverse-default, var(--Icon-Inverse-default, #ffffff));
+}
+
+.story-token-canvas__lowered-icon {
+  width: 240px;
+  height: 240px;
+  flex: 0 0 240px;
+}
+
+.story-token-canvas__lowered-icon path {
+  vector-effect: non-scaling-stroke;
+}
+
+.story-token-canvas__lowered-content {
+  position: relative;
+  width: 100%;
+  height: 50dvh;
+  min-height: 0;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+
+.story-token-canvas__lowered-content > * {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  max-height: 100% !important;
+}

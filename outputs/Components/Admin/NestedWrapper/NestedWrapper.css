@@ -1,0 +1,69 @@
+.nested-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px));
+  padding-right: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  width: fit-content;
+  min-width: 253px;
+  position: relative;
+}
+
+.nested-wrapper__title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  word-break: break-word;
+}
+
+.nested-wrapper__title {
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-weight: 500;
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  color: var(--Contextual-Text-Default-caption, var(--Text-Default-caption, #282E38));
+  margin: 0;
+}
+
+.nested-wrapper__list-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  border-left: var(--Semantic-BorderWidth-50, var(--BorderWidth-50, 2px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #C1C7D1));
+}
+
+.nested-wrapper__list-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-left: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px));
+}
+
+.nested-wrapper__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0 0;
+  margin: 0;
+  padding-left: 24px;
+  word-break: break-word;
+}
+
+.nested-wrapper__list-item {
+  list-style-type: disc;
+  color: var(--Contextual-Text-Default-captionMuted, var(--Text-Default-captionMuted, #64748B));
+}
+
+.nested-wrapper__list-item::marker {
+  color: var(--Contextual-Text-Default-captionMuted, var(--Text-Default-captionMuted, #64748B));
+}
+
+.nested-wrapper__list-text {
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-weight: 500;
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  color: var(--Contextual-Text-Default-captionMuted, var(--Text-Default-captionMuted, #64748B));
+}

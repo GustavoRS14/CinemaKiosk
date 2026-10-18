@@ -1,0 +1,145 @@
+.printing-failure-dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--Responsive-Spacing-xl, 32px);
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: var(--Responsive-Spacing-2xl, 48px);
+  border: var(--Semantic-BorderWidth-25, 1px) solid var(--Contextual-Border-Tertiary-Default, #c1c7d1);
+  border-radius: var(--Semantic-BorderRadius-400, 16px);
+  background: var(--Contextual-Surface-Secondary-Default, #fff);
+  backdrop-filter: blur(8px);
+}
+
+.printing-failure-dialog__illustration {
+  width: 224px;
+  height: 224px;
+  flex: 0 0 224px;
+}
+
+.printing-failure-dialog__illustration [fill="#282E38" i] {
+  fill: var(--Icon-Static-Caption-default, #282E38);
+}
+
+.printing-failure-dialog__illustration [fill="white" i],
+.printing-failure-dialog__illustration [fill="#FFF" i],
+.printing-failure-dialog__illustration [fill="#FFFFFF" i] {
+  fill: var(--Contextual-Icon-Primary-onColor, var(--Icon-Primary-onColor, #FFFFFF));
+}
+
+.printing-failure-dialog__body,
+.printing-failure-dialog__copy,
+.printing-failure-dialog__qr-content,
+.printing-failure-dialog__delivery,
+.printing-failure-dialog__delivery-message {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.printing-failure-dialog__body,
+.printing-failure-dialog__qr-content {
+  gap: var(--Responsive-Spacing-lg, 24px);
+}
+
+.printing-failure-dialog__copy {
+  gap: var(--Responsive-Spacing-sm, 12px);
+  text-align: center;
+}
+
+.printing-failure-dialog__copy > h2,
+.printing-failure-dialog__copy > p,
+.printing-failure-dialog__qr-content > h2,
+.printing-failure-dialog__delivery-message > p {
+  width: 100%;
+  margin: 0;
+  font-family: var(--Semantic-Font-Primary, 'Poppins', sans-serif);
+  word-break: break-word;
+}
+
+.printing-failure-dialog__copy > h2,
+.printing-failure-dialog__qr-content > h2 {
+  color: var(--Contextual-Text-Default-body, #000);
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, 24px);
+  font-weight: var(--Typography-Semantic-Primária-H5-Semibold-fontWeight, 600);
+  line-height: var(--Responsive-Font-Headings-H5-ParagraphSpacing, 28px);
+  text-align: center;
+}
+
+.printing-failure-dialog__copy > p,
+.printing-failure-dialog__delivery-message > p {
+  color: var(--Contextual-Text-Default-caption, #282e38);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, 16px);
+  font-weight: var(--Typography-Semantic-Primária-Body-Regular-fontWeight, 400);
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, 20px);
+  text-align: center;
+}
+
+.printing-failure-dialog__copy > p strong,
+.printing-failure-dialog__delivery-message > p strong {
+  font-weight: var(--Typography-Semantic-Primária-Body-Semibold-fontWeight, 600);
+}
+
+.printing-failure-dialog__spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--Responsive-Spacing-md, 16px);
+}
+
+.printing-failure-dialog__qr-code,
+.printing-failure-dialog__qr-svg,
+.printing-failure-dialog__qr-fallback {
+  display: block;
+  width: 189px;
+  height: 189px;
+}
+
+.printing-failure-dialog__qr-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.printing-failure-dialog__qr-fallback {
+  object-fit: contain;
+}
+
+.printing-failure-dialog__delivery {
+  gap: var(--Responsive-Spacing-2xl, 48px);
+}
+
+.printing-failure-dialog__delivery-message {
+  gap: var(--Responsive-Spacing-lg, 24px);
+}
+
+.printing-failure-dialog__delivery-actions {
+  display: flex;
+  width: 100%;
+  gap: var(--Responsive-Spacing-md, 16px);
+}
+
+.printing-failure-dialog__delivery-actions .totem-button {
+  width: 100%;
+  min-height: 80px;
+}
+
+.printing-failure-dialog__countdown {
+  color: var(--Contextual-Text-Primary-default, #980038);
+}
+
+.printing-failure-dialog--generating {
+  min-height: 626px;
+}
+
+.printing-failure-dialog--qr-ready {
+  min-height: 634px;
+  gap: 0;
+}
+
+.printing-failure-dialog--online-order {
+  min-height: 486px;
+}

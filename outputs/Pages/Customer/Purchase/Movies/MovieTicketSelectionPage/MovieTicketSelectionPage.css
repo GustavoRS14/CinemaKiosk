@@ -1,0 +1,202 @@
+.movie-ticket-selection-page {
+  --movie-ticket-selection-header-height: 80px;
+  --movie-ticket-selection-footer-height: 112px;
+  --purchase-session-footer-height: var(--movie-ticket-selection-footer-height);
+  box-sizing: border-box;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  overflow-x: clip;
+  overflow-y: auto;
+  background: var(--Contextual-Surface-BackgroundPage-Default, var(--Surface-BackgroundPage-Default, #f8f8f9));
+  box-shadow: 0 0 0 100vmax var(--Contextual-Surface-Inverse-Secondary, var(--Surface-Inverse-Secondary, #000000));
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  isolation: isolate;
+}
+.movie-ticket-selection-page::before,
+.movie-ticket-selection-page::after {
+  --page-frame-radius: var(--Semantic-BorderRadius-400, var(--BorderRadius-400, 16px));
+  --page-frame-color: var(--Contextual-Surface-Inverse-Secondary, var(--Surface-Inverse-Secondary, #000000));
+  content: '';
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  height: var(--page-frame-radius);
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: var(--page-frame-radius) var(--page-frame-radius);
+}
+
+.movie-ticket-selection-page::before {
+  top: 0;
+  background-image:
+    radial-gradient(circle at 100% 100%, transparent calc(var(--page-frame-radius) - 1px), var(--page-frame-color) var(--page-frame-radius)),
+    radial-gradient(circle at 0 100%, transparent calc(var(--page-frame-radius) - 1px), var(--page-frame-color) var(--page-frame-radius));
+  background-position: left top, right top;
+}
+
+.movie-ticket-selection-page::after {
+  bottom: 0;
+  background-image:
+    radial-gradient(circle at 100% 0, transparent calc(var(--page-frame-radius) - 1px), var(--page-frame-color) var(--page-frame-radius)),
+    radial-gradient(circle at 0 0, transparent calc(var(--page-frame-radius) - 1px), var(--page-frame-color) var(--page-frame-radius));
+  background-position: left bottom, right bottom;
+}
+
+
+.movie-ticket-selection-page *,
+.movie-ticket-selection-page *::before,
+.movie-ticket-selection-page *::after {
+  box-sizing: border-box;
+}
+
+.movie-ticket-selection-page > .header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--Border-Radius-400, 16px) var(--Border-Radius-400, 16px) 0 0;
+}
+
+.movie-ticket-selection-page__main {
+  display: flex;
+  flex: 1 0 auto;
+  width: 100%;
+  padding: calc(var(--movie-ticket-selection-header-height) + var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px)))
+    var(--Responsive-Margin, var(--Margin, 64px))
+    calc(var(--movie-ticket-selection-footer-height) + var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px)));
+}
+
+.movie-ticket-selection-page--sales-closing .movie-ticket-selection-page__main {
+  padding-bottom: calc(
+    var(--movie-ticket-selection-footer-height) +
+    var(--Responsive-Spacing-xl, var(--Spacing-xl, 32px)) +
+    var(--purchase-session-closing-alert-height, 112px) +
+    var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px))
+  );
+}
+
+.movie-ticket-selection-page__layout {
+  display: grid;
+  align-content: start;
+  align-items: start;
+  width: 100%;
+  gap: var(--Responsive-Spacing-xl, var(--Spacing-xl, 32px));
+}
+
+.movie-ticket-selection-page__summary,
+.movie-ticket-selection-page__tickets {
+  min-width: 0;
+}
+
+.movie-ticket-selection-page__tickets {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  border: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+  border-radius: var(--Semantic-BorderRadius-300, var(--BorderRadius-300, 12px));
+  background: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff));
+}
+
+.movie-ticket-selection-page__tickets-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: var(--Responsive-Spacing-xl, var(--Spacing-xl, 32px));
+}
+
+.movie-ticket-selection-page__tickets h1 {
+  margin: 0;
+  color: var(--Contextual-Text-Default-heading, var(--Text-Default-heading, #000000));
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, var(--Font-Headings-H5-TextSize, 24px));
+  font-weight: var(--Typography-Semantic-Primária-H5-Bold-fontWeight, 700);
+  line-height: var(--Responsive-Font-Headings-H5-ParagraphSpacing, var(--Font-Headings-H5-ParagraphSpacing, 28px));
+}
+
+.movie-ticket-selection-page__ticket-options,
+.movie-ticket-selection-page__ticket-groups {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.movie-ticket-selection-page__ticket-options {
+  gap: var(--Responsive-Spacing-lg, 24px);
+}
+
+.movie-ticket-selection-page__ticket-groups {
+  gap: var(--Responsive-Spacing-xl, var(--Spacing-xl, 32px));
+}
+
+.movie-ticket-selection-page__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--Responsive-Spacing-xs, 8px);
+}
+
+.movie-ticket-selection-page .ticket-group {
+  width: 100%;
+}
+
+.movie-ticket-selection-page .ticket-group-options,
+.movie-ticket-selection-page .ticket-option {
+  width: 100%;
+  max-width: none;
+}
+
+.movie-ticket-selection-page > .footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  min-height: var(--movie-ticket-selection-footer-height);
+  border-radius: 0 0 var(--Border-Radius-400, 16px) var(--Border-Radius-400, 16px);
+}
+
+.movie-ticket-selection-page--vertical .movie-ticket-selection-page__layout {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.movie-ticket-selection-page--horizontal .movie-ticket-selection-page__layout {
+  grid-template-columns: 372px minmax(0, 1fr);
+}
+
+.movie-ticket-selection-page--horizontal .movie-ticket-selection-page__summary.pre-checkout-summary {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.movie-ticket-selection-page--horizontal .movie-ticket-selection-page__summary .pre-checkout-summary__content {
+  width: 100%;
+  padding-top: 0;
+}
+
+@media (max-width: 1127px) {
+  .movie-ticket-selection-page--horizontal .movie-ticket-selection-page__layout {
+    grid-template-columns: 272px minmax(0, 1fr);
+  }
+
+  .movie-ticket-selection-page--horizontal .movie-ticket-selection-page__summary.pre-checkout-summary {
+    width: 272px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .movie-ticket-selection-page *,
+  .movie-ticket-selection-page *::before,
+  .movie-ticket-selection-page *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+

@@ -1,0 +1,189 @@
+.navbar-button {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+  min-width: 1px;
+  width: 100%;
+  padding: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  position: relative;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover and Active background for Default variant (both unselected and selected) */
+.navbar-button[data-variant="Default"]:hover,
+.navbar-button[data-variant="Default"]:active,
+.navbar-button[data-variant="Default"][aria-selected="true"]:hover,
+.navbar-button[data-variant="Default"][aria-selected="true"]:active {
+  background: var(--Contextual-Surface-Secondary-DefaultPressed, var(--Surface-Secondary-DefaultPressed, #E3E3E4));
+}
+
+.navbar-button-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px));
+  border-radius: var(--Semantic-BorderRadius-Round, var(--BorderRadius-Round, 512px));
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  color: var(--Contextual-Icon-Default-caption, var(--Icon-Default-caption, #282e38));
+}
+
+/* Force dimensions but allow SVG to use its native fill/stroke logic (inheriting color) */
+.navbar-button-icon-wrapper svg {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-button-label {
+  margin: 0;
+  word-break: break-word;
+  white-space: nowrap;
+  flex-shrink: 0;
+  color: var(--Contextual-Text-Default-caption, var(--Text-Default-caption, #282E38));
+  text-align: center;
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-Text-Size, 20px));
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-Line-Height, 24px));
+}
+
+/* =========================================
+   SELECTED STATE CSS
+   ========================================= */
+
+.navbar-button[aria-selected="true"] .navbar-button-icon-wrapper {
+  color: var(--Contextual-Icon-Primary-default, var(--Icon-Primary-default, #980038));
+}
+
+.navbar-button[aria-selected="true"] .navbar-button-label {
+  color: var(--Contextual-Text-Primary-default, var(--Text-Primary-default, #980038));
+  text-align: center;
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-Text-Size, 20px));
+  font-style: normal;
+  font-weight: 600;
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-Line-Height, 24px));
+}
+
+/* The Border Indicator (pseudo-element) */
+.navbar-button::after {
+  content: '';
+  position: absolute;
+  background-color: var(--Contextual-Border-Primary-Default, var(--Border-Primary-Default, #980038));
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.navbar-button[aria-selected="true"]::after {
+  opacity: 1;
+}
+
+/* Hover/Pressed colors for Default Variant when Selected (Semantically Separated) */
+.navbar-button[data-variant="Default"][aria-selected="true"]:hover .navbar-button-label,
+.navbar-button[data-variant="Default"][aria-selected="true"]:active .navbar-button-label {
+  color: var(--Contextual-Text-Primary-defaultPressed, var(--Text-Primary-defaultPressed, #7A002D));
+}
+
+.navbar-button[data-variant="Default"][aria-selected="true"]:hover .navbar-button-icon-wrapper,
+.navbar-button[data-variant="Default"][aria-selected="true"]:active .navbar-button-icon-wrapper {
+  color: var(--Contextual-Icon-Primary-defaultPressed, var(--Icon-Primary-defaultPressed, #7A002D));
+}
+
+.navbar-button[data-variant="Default"][aria-selected="true"]:hover::after,
+.navbar-button[data-variant="Default"][aria-selected="true"]:active::after {
+  background-color: var(--Contextual-Border-Primary-DefaultPressed, var(--Border-Primary-DefaultPressed, #7A002D));
+}
+
+/* =========================================
+   ORIENTATION STYLES
+   ========================================= */
+
+/* Horizontal Orientation Indicator: Right edge centered */
+.navbar-button[data-orientation="horizontal"]::after {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 40px;
+  border-radius: var(--Semantic-BorderRadius-100, var(--Border-Radius-100, 4px)) 0 0 var(--Semantic-BorderRadius-100, var(--Border-Radius-100, 4px));
+  /* background-color is already inherited from the base ::after pseudo-element */
+}
+
+/* Vertical Orientation Indicator: Top edge centered */
+.navbar-button[data-orientation="vertical"]::after {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 6px;
+  border-radius: 0 0 var(--Semantic-BorderRadius-100, var(--Border-Radius-100, 4px)) var(--Semantic-BorderRadius-100, var(--Border-Radius-100, 4px));
+}
+
+/* =========================================
+   ACCESSIBILITY VARIANT
+   ========================================= */
+.navbar-button[data-variant="Accessibility"] {
+  background: var(--Contextual-Surface-Accessibility-Default, var(--Surface-Accessibility-Default, #1650AE));
+  border-radius: var(--Semantic-BorderRadius-None, var(--Border-Radius-None, 0));
+}
+
+.navbar-button[data-variant="Accessibility"] .navbar-button-icon-wrapper {
+  color: var(--Contextual-Text-OnColor-body, var(--Text-OnColor-body, #FFF));
+}
+
+.navbar-button[data-variant="Accessibility"] .navbar-button-label {
+  color: var(--Contextual-Text-OnColor-body, var(--Text-OnColor-body, #FFF));
+  font-weight: 400;
+  /* Regular */
+}
+
+/* Hover and Pressed effects for Accessibility variant */
+.navbar-button[data-variant="Accessibility"]:hover,
+.navbar-button[data-variant="Accessibility"]:active {
+  background: var(--Contextual-Surface-Accessibility-Default, var(--Surface-Accessibility-Default, #1650AE));
+}
+
+.navbar-button[data-variant="Accessibility"]:hover .navbar-button-icon-wrapper,
+.navbar-button[data-variant="Accessibility"]:active .navbar-button-icon-wrapper {
+  color: var(--Contextual-Icon-On-color-caption, var(--Icon-On-color-caption, #A2ACB9));
+}
+
+.navbar-button[data-variant="Accessibility"]:hover .navbar-button-label,
+.navbar-button[data-variant="Accessibility"]:active .navbar-button-label {
+  color: var(--Contextual-Text-Primary-on-color-pressed, var(--Text-Primary-on-color-pressed, #C1C7D1));
+}
+
+.navbar-button[data-variant="Accessibility"]::after {
+  display: none;
+}
+
+/* =========================================
+   SVG COLOR INHERITANCE FIX
+   ========================================= */
+/* 
+   Forces raw injected SVGs (from Figma exports) to drop their hardcoded colors 
+   and inherit the CSS variable color from the wrapper via currentColor. 
+*/
+
+/* Force any stroke that isn't explicitly 'none' to inherit color */
+.navbar-button-icon-wrapper svg [stroke]:not([stroke="none"]) {
+  stroke: currentColor !important;
+}
+
+/* Force any fill that isn't 'none' or intentionally 'white' to inherit color */
+.navbar-button-icon-wrapper svg [fill]:not([fill="none"]):not([fill="white"]):not([fill="#fff"]):not([fill="#ffffff"]) {
+  fill: currentColor !important;
+}
+
+/* Catch paths that rely on default black fill when no attribute is present */
+.navbar-button-icon-wrapper svg path:not([stroke]):not([fill]) {
+  fill: currentColor !important;
+}

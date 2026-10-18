@@ -1,0 +1,48 @@
+.page-loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  cursor: wait;
+  outline: none;
+  touch-action: none;
+}
+
+.page-loading-screen--below-modal {
+  z-index: 1100;
+}
+
+.page-loading-active > *:not(.page-loading-screen) {
+  visibility: hidden;
+}
+
+.page-loading-active .header,
+.page-loading-active .navbar,
+.page-loading-active .overlay-surface,
+.page-loading-active .modal-accessibility-trigger {
+  visibility: visible;
+}
+
+.page-loading-active[data-purchase-page] .footer,
+.movie-ticket-selection-page.page-loading-active .pre-checkout-summary,
+.movies-another-day-page.page-loading-active #movies-another-day-page-title,
+.movies-another-day-page.page-loading-active .movies-filters,
+.movies-pre-sale-page.page-loading-active #movies-pre-sale-page-title,
+.movies-pre-sale-page.page-loading-active .movies-filters {
+  visibility: visible;
+}
+
+.page-loading-screen::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--Contextual-Surface-Overlay-default, #000000);
+  opacity: var(--overlay-backdrop-opacity, 0.56);
+}
+
+.page-loading-screen > .loading-animation {
+  position: relative;
+  z-index: 1;
+}

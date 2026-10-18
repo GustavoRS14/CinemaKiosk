@@ -1,0 +1,58 @@
+.totem-stepped-progress-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch; /* Fallback for Fill Container */
+  position: relative;
+}
+
+.totem-stepped-progress-indicator__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  position: relative;
+  flex-shrink: 0;
+  width: 576px;
+}
+
+.totem-stepped-progress-indicator__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  word-break: break-word;
+  margin: 0;
+
+  font-family: var(--Semantic-Font-Primary, 'Poppins');
+  font-weight: var(--Typography-Semantic-Primária-H5-Medium-fontWeight, 500);
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, var(--Font-Headings-H5-TextSize, 24px));
+  line-height: var(--Responsive-Font-Headings-H5-LineHeight, var(--Font-Headings-H5-LineHeight, 28px));
+  color: var(--Contextual-Text-Default-heading, var(--Text-Default-heading, #000000));
+}
+
+.totem-stepped-progress-indicator__bars {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.totem-stepped-progress-indicator__subtitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  word-break: break-word;
+  margin: 0;
+
+  font-family: var(--Semantic-Font-Primary, 'Poppins');
+  font-weight: var(--Typography-Semantic-Primária-Body-Regular-fontWeight, 400);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  color: var(--Contextual-Text-Default-caption, var(--Text-Default-caption, #282e38));
+}

@@ -1,0 +1,110 @@
+.date-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+  padding: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px)) var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  border-radius: var(--Semantic-BorderRadius-200, var(--BorderRadius-200, 8px));
+  border-width: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px));
+  border-style: solid;
+  min-width: 71px;
+  width: 71px;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  word-break: break-word;
+  background-color: var(--date-bg, var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff)));
+  border-color: var(--date-border, var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1)));
+}
+
+.date-component:hover,
+.date-component:active {
+  opacity: 0.8;
+}
+
+.date-component-day {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.date-component-day p {
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-weight: var(--Typography-Semantic-Primária-Body-Medium-fontWeight, 500);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  color: var(--date-text-day, var(--Contextual-Text-Primary-default, var(--Contextual-Text-Primary-Default, var(--Text-Primary-Default, #980038))));
+  margin: 0;
+  padding: 0;
+}
+
+.date-component-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.date-component-number p {
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-weight: var(--Typography-Semantic-Primária-H5-ExtraBold-fontWeight, 800);
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, var(--Font-Headings-H5-TextSize, 24px));
+  line-height: var(--Responsive-Font-Headings-H5-ParagraphSpacing, var(--Font-Headings-H5-ParagraphSpacing, 28px));
+  color: var(--date-text-number, var(--Contextual-Text-Default-heading, var(--Contextual-Text-Default-Heading, var(--Text-Default-Heading, #000000))));
+  margin: 0;
+  padding: 0;
+}
+
+.date-component-month {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.date-component-month p {
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-weight: var(--Typography-Semantic-Primária-Body-Regular-fontWeight, 400);
+  font-size: var(--Responsive-Font-Headings-BodySm-TextSize, var(--Font-Headings-BodySm-TextSize, 14px));
+  line-height: var(--Responsive-Font-Headings-BodySm-LineHeight, var(--Font-Headings-BodySm-LineHeight, 16px));
+  color: var(--date-text-month, var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000)));
+  margin: 0;
+  padding: 0;
+}
+
+/* Hover & Pressed / Unselected */
+.date-component[data-selected="false"]:hover,
+.date-component[data-selected="false"]:active {
+  --date-bg: var(--Contextual-Surface-Secondary-DefaultPressed, var(--Surface-Secondary-DefaultPressed, #e3e3e4));
+  --date-border: var(--Contextual-Border-Tertiary-Pressed, var(--Border-Tertiary-Pressed, #a2acb9));
+}
+
+/* Selected */
+.date-component[data-selected="true"] {
+  --date-bg: var(--Contextual-Surface-Primary-Default, var(--Surface-Primary-Default, #980038));
+  --date-border: var(--Contextual-Border-Primary-Default, var(--Border-Primary-Default, #980038));
+  --date-text-day: var(--Button-Text-Primary-onColor, var(--Contextual-Text-OnColor-body, #ffffff));
+  --date-text-number: var(--Button-Text-Primary-onColor, var(--Contextual-Text-OnColor-heading, #ffffff));
+  --date-text-month: var(--Button-Text-Primary-onColor, var(--Contextual-Text-OnColor-body, #ffffff));
+}
+
+/* Hover & Pressed / Selected */
+.date-component[data-selected="true"]:hover,
+.date-component[data-selected="true"]:active {
+  opacity: 1; /* Forcefully override global opacity to match Figma solid token */
+  background-color: var(--Contextual-Surface-Primary-DefaultPressed, var(--Surface-Primary-DefaultPressed, #7a002d));
+  border-color: var(--Contextual-Border-Primary-DefaultPressed, var(--Border-Primary-DefaultPressed, #7a002d));
+  color: var(--Contextual-Text-Primary-OnColorPressed, var(--Text-Primary-OnColorPressed, #c1c7d1));
+  --date-bg: var(--Contextual-Surface-Primary-DefaultPressed, var(--Surface-Primary-DefaultPressed, #7a002d));
+  --date-border: var(--Contextual-Border-Primary-DefaultPressed, var(--Border-Primary-DefaultPressed, #7a002d));
+  --date-text-day: var(--Button-Text-Primary-onColorPressed, var(--Contextual-Text-Primary-onColorPressed, #ffffff));
+  --date-text-number: var(--Button-Text-Primary-onColorPressed, var(--Contextual-Text-Primary-onColorPressed, #ffffff));
+  --date-text-month: var(--Button-Text-Primary-onColorPressed, var(--Contextual-Text-Primary-onColorPressed, #ffffff));
+}

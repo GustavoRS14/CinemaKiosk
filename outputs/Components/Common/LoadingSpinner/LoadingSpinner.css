@@ -1,0 +1,77 @@
+.totem-loading-spinner {
+  display: inline-block;
+  border-radius: 50%;
+  animation: totem-spin 1s linear infinite;
+  
+  /* Punch out the center to create the stroke effect. Adjust the 4px to match Figma stroke width */
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - var(--spinner-stroke-width, 4px)), #000 0);
+  mask: radial-gradient(farthest-side, transparent calc(100% - var(--spinner-stroke-width, 4px)), #000 0);
+}
+
+/* Base Accessibility class */
+.totem-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@keyframes totem-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ==========================================================================
+   Sizes
+   ========================================================================== */
+
+.totem-loading-spinner--size-sm {
+  width: var(--Responsive-Size-Spinner-Small, var(--Size-Spinner-Small, 16px));
+  height: var(--Responsive-Size-Spinner-Small, var(--Size-Spinner-Small, 16px));
+  --spinner-stroke-width: 2px;
+}
+
+.totem-loading-spinner--size-md {
+  width: var(--Responsive-Size-Spinner-Medium, var(--Size-Spinner-Medium, 32px));
+  height: var(--Responsive-Size-Spinner-Medium, var(--Size-Spinner-Medium, 32px));
+  --spinner-stroke-width: 4px;
+}
+
+.totem-loading-spinner--size-lg {
+  width: var(--Responsive-Size-Spinner-Large, var(--Size-Spinner-Large, 48px));
+  height: var(--Responsive-Size-Spinner-Large, var(--Size-Spinner-Large, 48px));
+  --spinner-stroke-width: 6px;
+}
+
+/* ==========================================================================
+   Intents
+   ========================================================================== */
+
+.totem-loading-spinner--intent-primary {
+  background: conic-gradient(
+    from 90deg,
+    var(--Contextual-Border-Secondary-Default, var(--Border-Secondary-Default, transparent)) 0%,
+    var(--Contextual-Border-Primary-Default, var(--Border-Primary-Default, #980038)) 100%
+  );
+}
+
+.totem-loading-spinner--intent-neutral {
+  background: conic-gradient(
+    from 90deg,
+    var(--Contextual-Border-Secondary-Default, var(--Border-Secondary-Default, transparent)) 0%,
+    var(--Contextual-Border-Neutral-Default, var(--Border-Neutral-Default, #555555)) 100%
+  );
+}
+
+.totem-loading-spinner--intent-inverse {
+  background: conic-gradient(
+    from 90deg,
+    var(--Contextual-Border-Inverse-Secondary, var(--Border-Inverse-Secondary, transparent)) 0%,
+    var(--Contextual-Border-Inverse-Primary, var(--Border-Inverse-Primary, #FFFFFF)) 100%
+  );
+}

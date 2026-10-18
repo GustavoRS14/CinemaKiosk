@@ -1,0 +1,78 @@
+.user-badge {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  width: max-content;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+.user-badge:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.user-badge-master {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+  padding: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px)) var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+  flex-shrink: 0;
+  position: relative;
+}
+
+.user-badge-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: var(--Contextual-Icon-OnColor-Body, var(--Icon-OnColor-Body, #ffffff));
+}
+
+.user-badge-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+}
+
+.user-badge-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+  flex-shrink: 0;
+  color: var(--Contextual-Text-OnColor-Heading, var(--Text-OnColor-Heading, #ffffff));
+}
+
+.user-badge-label {
+  font-family: var(--Semantic-Font-Primary, 'Poppins');
+  font-weight: 400;
+  font-size: var(--Responsive-Font-Headings-Body-sm-TextSize, var(--Font-Headings-Body-sm-TextSize, 14px));
+  line-height: var(--Responsive-Font-Headings-Body-sm-LineHeight, var(--Font-Headings-Body-sm-LineHeight, 16px));
+  margin: 0;
+  padding: 0;
+}
+
+.user-badge-value {
+  font-family: var(--Semantic-Font-Primary, 'Poppins');
+  font-weight: 500;
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  margin: 0;
+}
+
+.user-badge[data-context="Checkout"] .user-badge-text-container {
+  color: var(--Contextual-Text-Default-captionMuted, var(--Text-Default-caption-muted, #64748B));
+}
+
+.user-badge[data-context="Checkout"] .user-badge-icon {
+  color: var(--Contextual-Icon-Default-captionMuted, var(--Icon-Default-caption-muted, #64748B));
+}
+
+[data-high-contrast='true'] .user-badge .user-badge-text-container {
+  color: var(--Accessibility-Text-OnColor-heading);
+}

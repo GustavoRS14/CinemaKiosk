@@ -1,0 +1,147 @@
+.checkable-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  padding: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  border-radius: var(--Semantic-BorderRadius-100, var(--BorderRadius-100, 4px));
+  border-width: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px));
+  border-style: solid;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: var(--card-bg, var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff)));
+  border-color: var(--card-border, var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1)));
+}
+
+.checkable-card-main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px));
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.checkable-card-title-check {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.checkable-card-title {
+  flex: 1 0 0;
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-weight: var(--Typography-Semantic-Primária-H6-SemiBold-fontWeight, 600);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  color: var(--Contextual-Text-Default-heading, var(--Contextual-Text-Default-Heading, var(--Text-Default-Heading, #000000)));
+  margin: 0;
+  padding: 0;
+  word-break: break-word;
+}
+
+.checkable-card-description {
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-weight: var(--Typography-Semantic-Primária-Body-Regular-fontWeight, 400);
+  font-size: var(--Responsive-Font-Headings-Captions-TextSize, var(--Font-Headings-Captions-TextSize, 12px));
+  line-height: var(--Responsive-Font-Headings-Captions-LineHeight, var(--Font-Headings-Captions-LineHeight, 16px));
+  color: var(--Contextual-Text-Default-caption, var(--Text-Default-caption, #282e38));
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  word-break: break-word;
+}
+
+.checkable-card-divider {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.checkable-card-bottom-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-shrink: 0;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+}
+
+.checkable-card-bottom-text {
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-weight: var(--Typography-Semantic-Primária-Body-Medium-fontWeight, 500);
+  font-size: var(--Responsive-Font-Headings-BodySm-TextSize, var(--Font-Headings-BodySm-TextSize, 14px));
+  line-height: var(--Responsive-Font-Headings-BodySm-LineHeight, var(--Font-Headings-BodySm-LineHeight, 16px));
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+  margin: 0;
+  padding: 0;
+  word-break: break-word;
+}
+
+.checkable-card:hover:not([aria-disabled="true"]):not([aria-readonly="true"]),
+.checkable-card:active:not([aria-disabled="true"]):not([aria-readonly="true"]) {
+  opacity: 0.8;
+}
+
+/* Hover & Pressed / Unselected */
+.checkable-card[data-state="Default"][data-selected="false"]:hover,
+.checkable-card[data-state="Default"][data-selected="false"]:active:not([aria-disabled="true"]) {
+  --card-bg: var(--Contextual-Surface-Secondary-DefaultPressed, var(--Surface-Secondary-Default-pressed, #E3E3E4));
+  --card-border: var(--Contextual-Border-Tertiary-Pressed, var(--Border-Tertiary-Pressed, #a2acb9));
+}
+
+/* Selected */
+.checkable-card[data-state="Default"][data-selected="true"] {
+  --card-border: var(--Contextual-Border-Primary-Default, var(--Border-Primary-Default, #980038));
+}
+
+.checkable-card[data-selected="true"] .checkable-card-title,
+.checkable-card[data-selected="true"] .checkable-card-bottom-text {
+  color: var(--Contextual-Text-Primary-default, var(--Text-Primary-default, #980038));
+}
+
+/* Hover & Pressed / Selected */
+.checkable-card[data-state="Default"][data-selected="true"]:hover,
+.checkable-card[data-state="Default"][data-selected="true"]:active:not([aria-disabled="true"]) {
+  --card-bg: var(--Contextual-Surface-Secondary-DefaultPressed, var(--Surface-Secondary-Default-pressed, #E3E3E4));
+  --card-border: var(--Contextual-Border-Primary-DefaultPressed, var(--Border-Primary-DefaultPressed, #7a002d));
+}
+
+.checkable-card[data-state="Default"][data-selected="true"]:hover .checkable-card-title,
+.checkable-card[data-state="Default"][data-selected="true"]:active .checkable-card-title,
+.checkable-card[data-state="Default"][data-selected="true"]:hover .checkable-card-bottom-text,
+.checkable-card[data-state="Default"][data-selected="true"]:active .checkable-card-bottom-text {
+  color: var(--Contextual-Text-Primary-defaultPressed, var(--Text-Primary-defaultPressed, #7A002D));
+}
+
+/* Disabled */
+.checkable-card[data-state="Disabled"] {
+  --card-bg: var(--Contextual-Surface-Disabled-DisabledDefault, var(--Surface-Disabled-DisabledDefault, #c1c7d1));
+  --card-border: var(--Contextual-Border-Disabled-DisabledSecondary, var(--Border-Disabled-DisabledSecondary, #505d6f));
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.checkable-card[data-state="Disabled"] .checkable-card-title,
+.checkable-card[data-state="Disabled"] .checkable-card-description,
+.checkable-card[data-state="Disabled"] .checkable-card-bottom-text {
+  color: var(--Contextual-Text-Disabled-default, var(--Text-Disabled-default, #505d6f));
+}
+
+/* Read Only */
+.checkable-card[data-state="Read Only"] {
+  --card-bg: var(--Contextual-Surface-ReadOnly-Default, var(--Surface-ReadOnly-Default, #f1f1f2));
+  --card-border: var(--Contextual-Border-ReadOnly-Default, var(--Border-ReadOnly-Default, #c6c6ca));
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.checkable-card[data-state="Read Only"] .checkable-card-title,
+.checkable-card[data-state="Read Only"] .checkable-card-description,
+.checkable-card[data-state="Read Only"] .checkable-card-bottom-text {
+  color: var(--Contextual-Text-ReadOnly-default, var(--Text-ReadOnly-default, #505d6f));
+}

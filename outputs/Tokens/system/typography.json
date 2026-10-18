@@ -1,0 +1,2669 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "Typography": {
+    "Semantic": {
+      "Primária": {
+        "H1": {
+          "Light": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 300,
+              "fontSize": "{Responsive.Font.Headings.H1.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H1.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H1.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H1/Light",
+                "fontStyleName": "Light",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H1/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Light"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H1/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H1/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Regular": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 400,
+              "fontSize": "{Responsive.Font.Headings.H1.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H1.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H1.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H1/Regular",
+                "fontStyleName": "Regular",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H1/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Regular"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H1/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H1/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Medium": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 500,
+              "fontSize": "{Responsive.Font.Headings.H1.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H1.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H1.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H1/Medium",
+                "fontStyleName": "Medium",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H1/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Medium"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H1/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H1/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Semibold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 600,
+              "fontSize": "{Responsive.Font.Headings.H1.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H1.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H1.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H1/Semibold",
+                "fontStyleName": "SemiBold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H1/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/SemiBold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H1/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H1/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Bold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 700,
+              "fontSize": "{Responsive.Font.Headings.H1.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H1.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H1.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H1/Bold",
+                "fontStyleName": "Bold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H1/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Bold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H1/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H1/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Extrabold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 800,
+              "fontSize": "{Responsive.Font.Headings.H1.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H1.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H1.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H1/Extrabold",
+                "fontStyleName": "ExtraBold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H1/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/ExtraBold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H1/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H1/Line Height"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "H2": {
+          "Light": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 300,
+              "fontSize": "{Responsive.Font.Headings.H2.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H2.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H2.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H2/Light",
+                "fontStyleName": "Light",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H2/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Light"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H2/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H2/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          },
+          "Regular": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 400,
+              "fontSize": "{Responsive.Font.Headings.H2.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H2.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H2.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H2/Regular",
+                "fontStyleName": "Regular",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H2/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Regular"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H2/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H2/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          },
+          "Medium": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 500,
+              "fontSize": "{Responsive.Font.Headings.H2.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H2.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H2.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H2/Medium",
+                "fontStyleName": "Medium",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H2/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Medium"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H2/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H2/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          },
+          "Semibold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 600,
+              "fontSize": "{Responsive.Font.Headings.H2.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H2.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H2.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H2/Semibold",
+                "fontStyleName": "SemiBold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H2/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/SemiBold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H2/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H2/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          },
+          "Bold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 700,
+              "fontSize": "{Responsive.Font.Headings.H2.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H2.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H2.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H2/Bold",
+                "fontStyleName": "Bold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H2/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Bold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H2/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H2/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          },
+          "ExtraBold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 800,
+              "fontSize": "{Responsive.Font.Headings.H2.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H2.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H2.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H2/ExtraBold",
+                "fontStyleName": "ExtraBold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H2/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/ExtraBold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H2/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H2/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "H3": {
+          "Light": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 300,
+              "fontSize": "{Responsive.Font.Headings.H3.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H3.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H3.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H3/Light",
+                "fontStyleName": "Light",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H3/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Light"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H3/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H3/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          },
+          "Regular": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 400,
+              "fontSize": "{Responsive.Font.Headings.H3.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H3.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H3.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H3/Regular",
+                "fontStyleName": "Regular",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H3/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Regular"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H3/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H3/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          },
+          "Medium": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 500,
+              "fontSize": "{Responsive.Font.Headings.H3.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H3.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H3.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H3/Medium",
+                "fontStyleName": "Medium",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H3/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Medium"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H3/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H3/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          },
+          "Semibold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 600,
+              "fontSize": "{Responsive.Font.Headings.H3.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H3.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H3.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H3/Semibold",
+                "fontStyleName": "SemiBold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H3/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/SemiBold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H3/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H3/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          },
+          "Bold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 700,
+              "fontSize": "{Responsive.Font.Headings.H3.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H3.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H3.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H3/Bold",
+                "fontStyleName": "Bold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H3/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Bold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H3/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H3/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          },
+          "ExtraBold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 800,
+              "fontSize": "{Responsive.Font.Headings.H3.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H3.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H3.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H3/ExtraBold",
+                "fontStyleName": "ExtraBold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H3/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/ExtraBold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H3/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H3/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "H4": {
+          "Light": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 300,
+              "fontSize": "{Responsive.Font.Headings.H4.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H4.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H4.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H4/Light",
+                "fontStyleName": "Light",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H4/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Light"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H4/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H4/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          },
+          "Regular": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 400,
+              "fontSize": "{Responsive.Font.Headings.H4.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H4.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H4.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H4/Regular",
+                "fontStyleName": "Regular",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H4/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Regular"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H4/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H4/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          },
+          "Medium": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 500,
+              "fontSize": "{Responsive.Font.Headings.H4.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H4.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H4.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H4/Medium",
+                "fontStyleName": "Medium",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H4/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Medium"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H4/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H4/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          },
+          "Semibold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 600,
+              "fontSize": "{Responsive.Font.Headings.H4.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H4.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H4.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H4/Semibold",
+                "fontStyleName": "SemiBold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H4/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/SemiBold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H4/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H4/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          },
+          "Bold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 700,
+              "fontSize": "{Responsive.Font.Headings.H4.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H4.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H4.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H4/Bold",
+                "fontStyleName": "Bold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H4/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Bold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H4/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H4/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          },
+          "Extrabold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 800,
+              "fontSize": "{Responsive.Font.Headings.H4.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H4.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H4.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H4/Extrabold",
+                "fontStyleName": "ExtraBold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H4/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/ExtraBold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H4/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H4/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "H5": {
+          "Light": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 300,
+              "fontSize": "{Responsive.Font.Headings.H5.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H5.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H5.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H5/Light",
+                "fontStyleName": "Light",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H5/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Light"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H5/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H5/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          },
+          "Regular": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 400,
+              "fontSize": "{Responsive.Font.Headings.H5.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H5.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H5.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H5/Regular",
+                "fontStyleName": "Regular",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H5/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Regular"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H5/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H5/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          },
+          "Medium": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 500,
+              "fontSize": "{Responsive.Font.Headings.H5.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H5.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H5.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H5/Medium",
+                "fontStyleName": "Medium",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H5/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Medium"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H5/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H5/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          },
+          "Semibold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 600,
+              "fontSize": "{Responsive.Font.Headings.H5.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H5.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H5.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H5/Semibold",
+                "fontStyleName": "SemiBold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H5/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/SemiBold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H5/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H5/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          },
+          "Bold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 700,
+              "fontSize": "{Responsive.Font.Headings.H5.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H5.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H5.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H5/Bold",
+                "fontStyleName": "Bold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H5/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Bold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H5/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H5/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          },
+          "ExtraBold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 800,
+              "fontSize": "{Responsive.Font.Headings.H5.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H5.Paragraph Spacing}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H5.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H5/ExtraBold",
+                "fontStyleName": "ExtraBold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H5/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/ExtraBold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H5/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H5/Paragraph Spacing"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "H6": {
+          "Light": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 300,
+              "fontSize": "{Responsive.Font.Headings.H6.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H6.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H6.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H6/Light",
+                "fontStyleName": "Light",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H6/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Light"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H6/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H6/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Regular": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 400,
+              "fontSize": "{Responsive.Font.Headings.H6.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H6.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H6.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H6/Regular",
+                "fontStyleName": "Regular",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H6/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Regular"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H6/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H6/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Medium": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 500,
+              "fontSize": "{Responsive.Font.Headings.H6.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H6.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H6.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H6/Medium",
+                "fontStyleName": "Medium",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H6/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Medium"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H6/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H6/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Semibold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 600,
+              "fontSize": "{Responsive.Font.Headings.H6.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H6.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H6.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H6/Semibold",
+                "fontStyleName": "SemiBold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H6/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/SemiBold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H6/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H6/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Bold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 700,
+              "fontSize": "{Responsive.Font.Headings.H6.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H6.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H6.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H6/Bold",
+                "fontStyleName": "Bold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H6/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Bold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H6/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H6/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "ExtraBold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 800,
+              "fontSize": "{Responsive.Font.Headings.H6.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.H6.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.H6.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/H6/ExtraBold",
+                "fontStyleName": "ExtraBold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H6/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/ExtraBold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H6/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/H6/Line Height"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Body": {
+          "Light": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 300,
+              "fontSize": "{Responsive.Font.Headings.Body.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Body.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Body.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Body/Light",
+                "fontStyleName": "Light",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Light"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Regular": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 400,
+              "fontSize": "{Responsive.Font.Headings.Body.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Body.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Body.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Body/Regular",
+                "fontStyleName": "Regular",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Regular"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Medium": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 500,
+              "fontSize": "{Responsive.Font.Headings.Body.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Body.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Body.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Body/Medium",
+                "fontStyleName": "Medium",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Medium"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Semibold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 600,
+              "fontSize": "{Responsive.Font.Headings.Body.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Body.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Body.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Body/Semibold",
+                "fontStyleName": "SemiBold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/SemiBold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Bold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 700,
+              "fontSize": "{Responsive.Font.Headings.Body.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Body.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Body.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Body/Bold",
+                "fontStyleName": "Bold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Bold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Extrabold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 800,
+              "fontSize": "{Responsive.Font.Headings.Body.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Body.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Body.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Body/Extrabold",
+                "fontStyleName": "ExtraBold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/ExtraBold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body/Line Height"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Captions": {
+          "Light": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 300,
+              "fontSize": "{Responsive.Font.Headings.Captions.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Captions.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Captions.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Captions/Light",
+                "fontStyleName": "Light",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Captions/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Light"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Captions/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Captions/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Regular": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 400,
+              "fontSize": "{Responsive.Font.Headings.Captions.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Captions.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Captions.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Captions/Regular",
+                "fontStyleName": "Regular",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Captions/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Regular"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Captions/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Captions/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Medium": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 500,
+              "fontSize": "{Responsive.Font.Headings.Captions.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Captions.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Captions.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Captions/Medium",
+                "fontStyleName": "Medium",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Captions/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Medium"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Captions/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Captions/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Semibold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 600,
+              "fontSize": "{Responsive.Font.Headings.Captions.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Captions.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Captions.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Captions/Semibold",
+                "fontStyleName": "SemiBold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Captions/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/SemiBold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Captions/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Captions/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Bold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 700,
+              "fontSize": "{Responsive.Font.Headings.Captions.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Captions.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Captions.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Captions/Bold",
+                "fontStyleName": "Bold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Captions/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Bold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Captions/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Captions/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Extrabold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 800,
+              "fontSize": "{Responsive.Font.Headings.Captions.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Captions.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Captions.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Captions/Extrabold",
+                "fontStyleName": "ExtraBold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Captions/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/ExtraBold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Captions/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Captions/Line Height"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "BodyLg": {
+          "Light": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 300,
+              "fontSize": "{Responsive.Font.Headings.Body-lg.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Body-lg.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Body-lg.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Body-lg/Light",
+                "fontStyleName": "Light",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-lg/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Light"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-lg/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-lg/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Regular": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 400,
+              "fontSize": "{Responsive.Font.Headings.Body-lg.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Body-lg.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Body-lg.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Body-lg/Regular",
+                "fontStyleName": "Regular",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-lg/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Regular"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-lg/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-lg/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Medium": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 500,
+              "fontSize": "{Responsive.Font.Headings.Body-lg.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Body-lg.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Body-lg.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Body-lg/Medium",
+                "fontStyleName": "Medium",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-lg/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Medium"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-lg/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-lg/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Semibold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 600,
+              "fontSize": "{Responsive.Font.Headings.Body-lg.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Body-lg.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Body-lg.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Body-lg/Semibold",
+                "fontStyleName": "SemiBold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-lg/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/SemiBold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-lg/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-lg/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Bold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 700,
+              "fontSize": "{Responsive.Font.Headings.Body-lg.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Body-lg.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Body-lg.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Body-lg/Bold",
+                "fontStyleName": "Bold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-lg/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Bold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-lg/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-lg/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "ExtraBold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 800,
+              "fontSize": "{Responsive.Font.Headings.Body-lg.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Body-lg.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Body-lg.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Body-lg/ExtraBold",
+                "fontStyleName": "ExtraBold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-lg/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/ExtraBold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-lg/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-lg/Line Height"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "BodySm": {
+          "Light": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 300,
+              "fontSize": "{Responsive.Font.Headings.Body-sm.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Body-sm.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Body-sm.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Body-sm/Light",
+                "fontStyleName": "Light",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-sm/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Light"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-sm/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-sm/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Regular": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 400,
+              "fontSize": "{Responsive.Font.Headings.Body-sm.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Body-sm.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Body-sm.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Body-sm/Regular",
+                "fontStyleName": "Regular",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-sm/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Regular"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-sm/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-sm/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Medium": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 500,
+              "fontSize": "{Responsive.Font.Headings.Body-sm.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Body-sm.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Body-sm.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Body-sm/Medium",
+                "fontStyleName": "Medium",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-sm/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Medium"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-sm/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-sm/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Semibold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 600,
+              "fontSize": "{Responsive.Font.Headings.Body-sm.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Body-sm.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Body-sm.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Body-sm/Semibold",
+                "fontStyleName": "SemiBold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-sm/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/SemiBold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-sm/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-sm/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Bold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 700,
+              "fontSize": "{Responsive.Font.Headings.Body-sm.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Body-sm.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Body-sm.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Body-sm/Bold",
+                "fontStyleName": "Bold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-sm/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/Bold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-sm/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-sm/Line Height"
+                  }
+                }
+              }
+            }
+          },
+          "Extrabold": {
+            "$type": "typography",
+            "$value": {
+              "fontFamily": "{Semantic.Font.Primary}",
+              "fontWeight": 800,
+              "fontSize": "{Responsive.Font.Headings.Body-sm.Text Size}",
+              "lineHeight": "{Responsive.Font.Headings.Body-sm.Line Height}",
+              "letterSpacing": {
+                "unit": "PERCENT",
+                "value": 0
+              },
+              "paragraphSpacing": "{Responsive.Font.Headings.Body-sm.Paragraph Spacing}",
+              "textCase": "ORIGINAL",
+              "textDecoration": "NONE"
+            },
+            "$extensions": {
+              "figma": {
+                "textStyleName": "Primária/Body-sm/Extrabold",
+                "fontStyleName": "ExtraBold",
+                "bindings": {
+                  "fontSize": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-sm/Text Size"
+                  },
+                  "fontStyle": {
+                    "collection": "Primitive",
+                    "name": "Fonts/Poppins/Weight/ExtraBold"
+                  },
+                  "fontFamily": {
+                    "collection": "Semantic",
+                    "name": "Font/Primary"
+                  },
+                  "paragraphSpacing": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-sm/Paragraph Spacing"
+                  },
+                  "lineHeight": {
+                    "collection": "Responsive",
+                    "name": "Font/Headings/Body-sm/Line Height"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

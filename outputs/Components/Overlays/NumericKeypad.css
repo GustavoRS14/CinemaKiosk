@@ -1,0 +1,15 @@
+.numeric-keypad {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  width: 100%;
+}
+
+.numeric-keypad .key-keyboard-wrapper {
+  width: 100%;
+}
+
+.numeric-keypad .key-keyboard[data-intent='Destructive'] {
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, var(--Font-Headings-H5-TextSize, 24px));
+  line-height: var(--Responsive-Font-Headings-H5-ParagraphSpacing, var(--Font-Headings-H5-ParagraphSpacing, 28px));
+}

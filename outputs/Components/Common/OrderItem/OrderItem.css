@@ -1,0 +1,54 @@
+.order-item {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  gap: var(--Responsive-Spacing-md, 16px);
+  inline-size: 100%;
+}
+
+.order-item__image {
+  block-size: 85px;
+  border-radius: var(--Semantic-BorderRadius-250, var(--BorderRadius-250, 10px));
+  flex: 0 0 auto;
+  inline-size: 85px;
+  object-fit: cover;
+}
+
+.order-item__quantity,
+.order-item__product-name {
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #282E38));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  font-weight: var(--Typography-Semantic-Primária-Body-Regular-fontWeight, 400);
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+}
+
+.order-item__quantity {
+  flex: 0 0 auto;
+}
+
+.order-item__product {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-2xs, 4px);
+  min-inline-size: var(--Primitive-Scale-0, 0px);
+}
+
+.order-item__product-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.order-item__product-price {
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #282E38));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  font-weight: var(--Typography-Semantic-Primária-H6-Bold-fontWeight, 700);
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+}
+
+.order-item__action {
+  flex: 0 0 auto;
+}

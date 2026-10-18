@@ -1,0 +1,156 @@
+[data-high-contrast='true']
+  :where(h1, h2, h3, h4, h5, h6, p, span, label, small, strong, em, output, legend, caption, dt, dd, li, td, th, input, textarea, select, option):not([aria-hidden='true']):not(.totem-toggle-thumb):not(:has(svg)):not(:has(img)):not(:has(picture)),
+[data-high-contrast='true'] :where(button, a):not(:has(*)) {
+  background-color: var(--Contextual-Contrast-Default);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+[data-high-contrast='true']
+  :where(
+    [class*='title'],
+    [class*='Title'],
+    [class*='description'],
+    [class*='Description'],
+    [class*='label'],
+    [class*='Label'],
+    [class*='text'],
+    [class*='Text']
+  ):not(:has(*)):not(input):not(textarea) {
+  background-color: var(--Contextual-Contrast-Default);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+html[data-high-contrast='true'] [data-theme],
+[data-high-contrast='true'][data-theme] {
+  --Contextual-Contrast-Default: var(--Accessibility-Contrast-Default) !important;
+  --Contextual-Text-Default-heading: var(--Accessibility-Text-Default-heading) !important;
+  --Contextual-Text-Default-body: var(--Accessibility-Text-Default-body) !important;
+  --Contextual-Text-Default-caption: var(--Accessibility-Text-Default-caption) !important;
+  --Contextual-Text-Default-placeholder: var(--Accessibility-Text-Default-placeholder) !important;
+  --Contextual-Text-Default-captionMuted: var(--Accessibility-Text-Default-captionMuted) !important;
+  --Contextual-Text-Primary-default: var(--Accessibility-Text-Primary-default) !important;
+  --Contextual-Text-Primary-defaultPressed: var(--Accessibility-Text-Primary-defaultPressed) !important;
+  --Contextual-Text-Primary-onColor: var(--Accessibility-Text-Primary-onColor) !important;
+  --Contextual-Text-Primary-onColorPressed: var(--Accessibility-Text-Primary-onColorPressed) !important;
+  --Contextual-Text-Error-default: var(--Accessibility-Text-Error-default) !important;
+  --Contextual-Text-Error-defaultPressed: var(--Accessibility-Text-Error-defaultPressed) !important;
+  --Contextual-Text-Error-onColor: var(--Accessibility-Text-Error-onColor) !important;
+  --Contextual-Text-Error-onColorPressed: var(--Accessibility-Text-Error-onColorPressed) !important;
+  --Contextual-Text-Tag-Brand: var(--Accessibility-Text-Tag-Brand) !important;
+  --Contextual-Text-Tag-Information: var(--Accessibility-Text-Tag-Information) !important;
+  --Contextual-Text-Tag-Success: var(--Accessibility-Text-Tag-Success) !important;
+  --Contextual-Text-Tag-Warning: var(--Accessibility-Text-Tag-Warning) !important;
+  --Contextual-Text-Tag-Errror: var(--Accessibility-Text-Tag-Errror) !important;
+  --Contextual-Text-Tag-Neutral: var(--Accessibility-Text-Tag-Neutral) !important;
+  --Contextual-Text-Information-default: var(--Accessibility-Text-Information-default) !important;
+  --Contextual-Text-Information-defaultPressed: var(--Accessibility-Text-Information-defaultPressed) !important;
+  --Contextual-Text-Information-onColor: var(--Accessibility-Text-Information-onColor) !important;
+  --Contextual-Text-Information-onColorPressed: var(--Accessibility-Text-Information-onColorPressed) !important;
+  --Contextual-Text-Warning-default: var(--Accessibility-Text-Warning-default) !important;
+  --Contextual-Text-Warning-defaultPressed: var(--Accessibility-Text-Warning-defaultPressed) !important;
+  --Contextual-Text-Warning-onColor: var(--Accessibility-Text-Warning-onColor) !important;
+  --Contextual-Text-Warning-onColorPressed: var(--Accessibility-Text-Warning-onColorPressed) !important;
+  --Contextual-Text-Success-default: var(--Accessibility-Text-Success-default) !important;
+  --Contextual-Text-Success-defaultPressed: var(--Accessibility-Text-Success-defaultPressed) !important;
+  --Contextual-Text-Success-onColor: var(--Accessibility-Text-Success-onColor) !important;
+  --Contextual-Text-Success-onColorPressed: var(--Accessibility-Text-Success-onColorPressed) !important;
+  --Contextual-Text-Neutral-default: var(--Accessibility-Text-Neutral-default) !important;
+  --Contextual-Text-Neutral-pressed: var(--Accessibility-Text-Neutral-pressed) !important;
+  --Contextual-Text-Disabled-default: var(--Accessibility-Text-Disabled-default) !important;
+  --Contextual-Text-Disabled-onColor: var(--Accessibility-Text-Disabled-onColor) !important;
+  --Contextual-Text-Static-Primary-default: var(--Accessibility-Text-Static-Primary-default) !important;
+  --Contextual-Text-Static-Primary-defaultPressed: var(--Accessibility-Text-Static-Primary-defaultPressed) !important;
+  --Contextual-Text-Static-Black-default: var(--Accessibility-Text-Static-Black-default) !important;
+  --Contextual-Text-Inverse-default: var(--Accessibility-Text-Inverse-default) !important;
+  --Contextual-Text-OnColor-heading: var(--Accessibility-Text-OnColor-heading) !important;
+  --Contextual-Text-OnColor-body: var(--Accessibility-Text-OnColor-body) !important;
+  --Contextual-Text-OnColor-caption: var(--Accessibility-Text-OnColor-caption) !important;
+  --Contextual-Text-OnColor-placeholder: var(--Accessibility-Text-OnColor-placeholder) !important;
+  --Contextual-Text-ReadOnly-default: var(--Accessibility-Text-ReadOnly-default) !important;
+  --Contextual-Text-ReadOnly-onColor: var(--Accessibility-Text-ReadOnly-onColor) !important;
+}
+
+[data-high-contrast='true']
+  :where(button, a, label, [role='button'], .input-control):has(:where(span, p, input, textarea)),
+[data-high-contrast='true']
+  :where(div, header, footer, section, li):has(> :where(h1, h2, h3, h4, h5, h6, p, span, label, input, textarea, [class*='label'], [class*='Label'])):has(> :where(svg, [aria-hidden='true'], [class*='icon'], [class*='Icon'])) {
+  --Contextual-Icon-Default-heading: var(--Accessibility-Icon-Default-heading);
+  --Contextual-Icon-Default-body: var(--Accessibility-Icon-Default-body);
+  --Contextual-Icon-Default-caption: var(--Accessibility-Icon-Default-caption);
+  --Contextual-Icon-Default-placeholder: var(--Accessibility-Icon-Default-placeholder);
+  --Contextual-Icon-Default-captionMuted: var(--Accessibility-Icon-Default-captionMuted);
+  --Contextual-Icon-Primary-default: var(--Accessibility-Icon-Primary-default);
+  --Contextual-Icon-Primary-defaultPressed: var(--Accessibility-Icon-Primary-defaultPressed);
+  --Contextual-Icon-Primary-onColor: var(--Accessibility-Icon-Primary-onColor);
+  --Contextual-Icon-Primary-onColorPressed: var(--Accessibility-Icon-Primary-onColorPressed);
+  --Contextual-Icon-Error-default: var(--Accessibility-Icon-Error-default);
+  --Contextual-Icon-Error-defaultPressed: var(--Accessibility-Icon-Error-defaultPressed);
+  --Contextual-Icon-Error-onColor: var(--Accessibility-Icon-Error-onColor);
+  --Contextual-Icon-Error-onColorPressed: var(--Accessibility-Icon-Error-onColorPressed);
+  --Contextual-Icon-Information-default: var(--Accessibility-Icon-Information-default);
+  --Contextual-Icon-Information-defaultPressed: var(--Accessibility-Icon-Information-defaultPressed);
+  --Contextual-Icon-Information-onColor: var(--Accessibility-Icon-Information-onColor);
+  --Contextual-Icon-Information-onColorPressed: var(--Accessibility-Icon-Information-onColorPressed);
+  --Contextual-Icon-Warning-default: var(--Accessibility-Icon-Warning-default);
+  --Contextual-Icon-Warning-defaultPressed: var(--Accessibility-Icon-Warning-defaultPressed);
+  --Contextual-Icon-Warning-onColor: var(--Accessibility-Icon-Warning-onColor);
+  --Contextual-Icon-Warning-onColorPressed: var(--Accessibility-Icon-Warning-onColorPressed);
+  --Contextual-Icon-Success-default: var(--Accessibility-Icon-Success-default);
+  --Contextual-Icon-Success-defaultPressed: var(--Accessibility-Icon-Success-defaultPressed);
+  --Contextual-Icon-Success-onColor: var(--Accessibility-Icon-Success-onColor);
+  --Contextual-Icon-Success-onColorPressed: var(--Accessibility-Icon-Success-onColorPressed);
+  --Contextual-Icon-Neutral-default: var(--Accessibility-Icon-Neutral-default);
+  --Contextual-Icon-Neutral-pressed: var(--Accessibility-Icon-Neutral-pressed);
+  --Contextual-Icon-Disabled-default: var(--Accessibility-Icon-Disabled-default);
+  --Contextual-Icon-Disabled-onColor: var(--Accessibility-Icon-Disabled-onColor);
+  --Contextual-Icon-Inverse-default: var(--Accessibility-Icon-Inverse-default);
+  --Contextual-Icon-OnColor-heading: var(--Accessibility-Icon-OnColor-heading);
+  --Contextual-Icon-OnColor-body: var(--Accessibility-Icon-OnColor-body);
+  --Contextual-Icon-OnColor-caption: var(--Accessibility-Icon-OnColor-caption);
+  --Contextual-Icon-OnColor-placeholder: var(--Accessibility-Icon-OnColor-placeholder);
+  --Contextual-Icon-ReadOnly-default: var(--Accessibility-Icon-ReadOnly-default);
+  --Contextual-Icon-ReadOnly-onColor: var(--Accessibility-Icon-ReadOnly-onColor);
+}
+
+[data-high-contrast='true']
+  :where(div, header, footer, section, li, button, a, label, [role='button']):has(> :where(h1, h2, h3, h4, h5, h6, p, span, label, input, textarea, [class*='label'], [class*='Label'])):has(> :where(svg, [aria-hidden='true'], [class*='icon'], [class*='Icon']))
+  > :where(svg, [aria-hidden='true'], [class*='icon'], [class*='Icon']) {
+  background-color: var(--Contextual-Contrast-Default);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+[data-high-contrast='true'] .payment-option {
+  --Contextual-Icon-Primary-default: var(--Accessibility-Icon-Primary-default);
+  --Contextual-Icon-Primary-DefaultPressed: var(--Accessibility-Icon-Primary-defaultPressed);
+}
+
+[data-high-contrast='true'] .payment-option-icon-wrapper > :where(svg, img) {
+  background-color: var(--Contextual-Contrast-Default);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+[data-high-contrast='true']
+  :where(div, header, footer, section, aside):has(> :where([class*='title'], [class*='Title']))
+  > .totem-close-button {
+  --Contextual-Icon-Default-body: var(--Accessibility-Icon-Default-body);
+  --Contextual-Icon-Error-defaultPressed: var(--Accessibility-Icon-Error-defaultPressed);
+  color: var(--Accessibility-Icon-Default-body) !important;
+}
+
+[data-high-contrast='true']
+  :where(div, header, footer, section, aside):has(> :where([class*='title'], [class*='Title']))
+  > .totem-close-button
+  > .totem-close-button__icon {
+  background-color: var(--Contextual-Contrast-Default);
+}
+
+[data-high-contrast='true']
+  :where(div, header, footer, section, aside):has(> :where([class*='title'], [class*='Title']))
+  > .totem-close-button
+  svg {
+  color: inherit !important;
+}

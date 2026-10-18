@@ -1,0 +1,25 @@
+.legend {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px));
+}
+
+.legend-description {
+  color: var(--Contextual-Text-Default-caption, var(--Text-Default-caption, #282E38));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-style: normal;
+}
+
+/* Variant: Body-sm */
+.legend-description[data-text-size="Body-sm"] {
+  font-size: var(--Responsive-Font-Headings-BodySm-TextSize, var(--Font-Headings-Body-sm-Text-Size, 14px));
+  font-weight: 400;
+  line-height: var(--Responsive-Font-Headings-BodySm-LineHeight, var(--Font-Headings-Body-sm-Line-Height, 16px));
+}
+
+/* Variant: Body */
+.legend-description[data-text-size="Body"] {
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-Text-Size, 16px));
+  font-weight: 500;
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-Line-Height, 20px));
+}

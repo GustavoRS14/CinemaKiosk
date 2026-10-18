@@ -1,0 +1,52 @@
+.metadata-bar {
+  align-items: center;
+  background: var(--Contextual-Surface-Inverse-Secondary, #000000);
+  box-sizing: border-box;
+  color: var(--Contextual-Text-Inverse-default, #FFFFFF);
+  display: flex;
+  font-family: var(--Semantic-Font-Primary, sans-serif);
+  justify-content: space-between;
+  padding: var(--Responsive-Spacing-md, 16px) var(--Responsive-Margin, 64px);
+  width: 100%;
+}
+
+.metadata-bar__left {
+  display: flex;
+  flex-direction: column;
+  /* CRITICAL: Forces text to be ABOVE the logo */
+  align-items: flex-start;
+  /* Aligns both text and logo to the left */
+  justify-content: center;
+  gap: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+}
+
+.metadata-bar__powered-by {
+  font-size: var(--Responsive-Font-Headings-Caption-Text-Size, 12px);
+  font-weight: var(--Typography-Semantic-Primária-Caption-Medium-fontWeight, 500);
+  line-height: var(--Responsive-Font-Headings-Captions-LineHeight, var(--Font-Headings-Captions-LineHeight, 16px));
+  opacity: 1.0;
+}
+
+.metadata-bar__vendor-logo {
+  color: var(--Contextual-Icon-OnColor-heading, inherit);
+  height: 24px;
+  width: auto;
+}
+
+.metadata-bar__right {
+  align-items: center;
+  display: flex;
+}
+
+.metadata-bar__version {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: var(--Responsive-Font-Headings-Caption-Text-Size, 12px);
+  font-weight: var(--Typography-Semantic-Primária-Caption-Medium-fontWeight, 500);
+  line-height: var(--Responsive-Font-Headings-Captions-LineHeight, var(--Font-Headings-Captions-LineHeight, 16px));
+  opacity: 1.0;
+}

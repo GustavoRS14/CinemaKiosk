@@ -1,0 +1,165 @@
+.brand-logo-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Size Variants */
+.brand-logo-wrapper[data-size="xs"] { height: 28px; }
+.brand-logo-wrapper[data-size="sm"] { height: 36px; }
+.brand-logo-wrapper[data-size="md"] { height: 48px; }
+.brand-logo-wrapper[data-size="lg"] { height: 70px; }
+
+/* Lock aspect ratio: height takes 100% of the wrapper's defined height, width adapts proportionally */
+.brand-logo-wrapper svg {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+/* =========================================
+   SEMANTIC WHITE-LABEL COLORING
+   Applies contextual BrandAsset tokens to semantic SVG parts.
+   Includes newly defined BrandText and BrandTertiary logic.
+   ========================================= */
+
+/* --- VARIANT: DEFAULT COLOR --- */
+
+/* 1. Primary Vectors (.brand-primary) -> main token */
+.brand-logo-wrapper[data-color-variant="DefaultColor"] svg [id*="brand-primary"],
+.brand-logo-wrapper[data-color-variant="DefaultColor"] svg [class*="brand-primary"] {
+  fill: var(--Contextual-BrandAsset-DefaultColor-main, var(--BrandAsset-DefaultColor-main, #980038)) !important;
+}
+
+/* A monochrome primary logo over the primary Header surface follows the same
+   WCAG-tested White/Black decision used by the primary Button. */
+.brand-logo-wrapper[data-color-variant][data-primary-surface-contrast="true"] svg [id*="brand-primary"],
+.brand-logo-wrapper[data-color-variant][data-primary-surface-contrast="true"] svg [class*="brand-primary"] {
+  fill: var(--Button-Icon-Primary-onColor, var(--Contextual-Icon-Primary-onColor, #ffffff)) !important;
+}
+
+/* 2. Accent Vectors (.brand-accent) -> accentLightBg token */
+.brand-logo-wrapper[data-color-variant="DefaultColor"] svg [id*="brand-accent"],
+.brand-logo-wrapper[data-color-variant="DefaultColor"] svg [class*="brand-accent"] {
+  fill: var(--Contextual-BrandAsset-DefaultColor-accentLightBg, var(--BrandAsset-DefaultColor-accentLightBg, #666666)) !important;
+}
+
+/* 3. Text Vectors (.brand-text) -> BrandText token
+   Light: Semantic.Primary.Default | Dark: Semantic.Secondary.200 */
+.brand-logo-wrapper[data-color-variant="DefaultColor"] svg [id*="brand-text"],
+.brand-logo-wrapper[data-color-variant="DefaultColor"] svg [class*="brand-text"] {
+  fill: var(--Contextual-BrandAsset-DefaultColor-BrandText, var(--BrandAsset-DefaultColor-BrandText, #980038)) !important;
+}
+
+/* 4. Tertiary Vectors (.brand-tertiary) -> BrandTertiary token
+   Light/Dark: Semantic.Foundations.White */
+.brand-logo-wrapper[data-color-variant="DefaultColor"] svg [id*="brand-tertiary"],
+.brand-logo-wrapper[data-color-variant="DefaultColor"] svg [class*="brand-tertiary"] {
+  fill: var(--Contextual-BrandAsset-DefaultColor-BrandTertiary, var(--BrandAsset-DefaultColor-BrandTertiary, #ffffff)) !important;
+}
+
+/* Fallback: Vectors without specific class/id get the main token */
+.brand-logo-wrapper[data-color-variant="DefaultColor"] svg path:not([id*="brand-"]):not([class*="brand-"]),
+.brand-logo-wrapper[data-color-variant="DefaultColor"] svg polygon:not([id*="brand-"]):not([class*="brand-"]),
+.brand-logo-wrapper[data-color-variant="DefaultColor"] svg rect:not([id*="brand-"]):not([class*="brand-"]) {
+  fill: var(--Contextual-BrandAsset-DefaultColor-main, var(--BrandAsset-DefaultColor-main, #980038)) !important;
+}
+
+
+/* --- VARIANT: WHITE COLOR --- */
+
+/* 1. Primary Vectors -> main token (WhiteColor) */
+.brand-logo-wrapper[data-color-variant="WhiteColor"] svg [id*="brand-primary"],
+.brand-logo-wrapper[data-color-variant="WhiteColor"] svg [class*="brand-primary"] {
+  fill: var(--Contextual-BrandAsset-WhiteColor-main, var(--BrandAsset-WhiteColor-main, #ffffff)) !important;
+}
+
+/* Customer Default: when the only two roles both consume Foundations.White,
+   keep them synchronized with the Button's tested White/Black foreground. */
+.header[data-context="Customer"][data-type="Default"]
+  .brand-logo-wrapper[data-color-variant="WhiteColor"][data-brand-roles="primary-text"]
+  svg [id*="brand-primary"],
+.header[data-context="Customer"][data-type="Default"]
+  .brand-logo-wrapper[data-color-variant="WhiteColor"][data-brand-roles="primary-text"]
+  svg [class*="brand-primary"] {
+  fill: var(--BrandLogo-Default-SharedWhiteColor, var(--Contextual-BrandAsset-WhiteColor-main, #ffffff)) !important;
+}
+
+.header[data-context="Customer"][data-type="Default"]
+  .brand-logo-wrapper[data-color-variant="WhiteColor"][data-brand-roles="primary-text"]
+  svg [id*="brand-text"],
+.header[data-context="Customer"][data-type="Default"]
+  .brand-logo-wrapper[data-color-variant="WhiteColor"][data-brand-roles="primary-text"]
+  svg [class*="brand-text"] {
+  fill: var(--BrandLogo-Default-SharedWhiteColor, var(--Contextual-BrandAsset-WhiteColor-BrandText, #ffffff)) !important;
+}
+
+/* Customer Purchase + one tenant palette: BrandText is neutral and explicitly
+   follows the active theme. */
+[data-theme="light"] .header[data-context="Customer"][data-type="Purchase"]
+  .brand-logo-wrapper[data-brand-roles="primary-text"][data-single-palette="true"]
+  svg [id*="brand-text"],
+[data-theme="light"] .header[data-context="Customer"][data-type="Purchase"]
+  .brand-logo-wrapper[data-brand-roles="primary-text"][data-single-palette="true"]
+  svg [class*="brand-text"] {
+  fill: var(--Semantic-Foundations-Black, #000000) !important;
+}
+
+[data-theme="dark"] .header[data-context="Customer"][data-type="Purchase"]
+  .brand-logo-wrapper[data-brand-roles="primary-text"][data-single-palette="true"]
+  svg [id*="brand-text"],
+[data-theme="dark"] .header[data-context="Customer"][data-type="Purchase"]
+  .brand-logo-wrapper[data-brand-roles="primary-text"][data-single-palette="true"]
+  svg [class*="brand-text"] {
+  fill: var(--Semantic-Foundations-White, #ffffff) !important;
+}
+
+/* Customer Purchase + non-recommended theme: Primary.Default switches to the
+   neutral foundation for that theme. */
+[data-theme="light"][data-recommended-theme="dark"]
+  .header[data-context="Customer"][data-type="Purchase"]
+  .brand-logo-wrapper[data-color-variant="DefaultColor"][data-brand-roles="primary-text"]
+  svg [id*="brand-primary"],
+[data-theme="light"][data-recommended-theme="dark"]
+  .header[data-context="Customer"][data-type="Purchase"]
+  .brand-logo-wrapper[data-color-variant="DefaultColor"][data-brand-roles="primary-text"]
+  svg [class*="brand-primary"] {
+  fill: var(--Semantic-Foundations-Black, #000000) !important;
+}
+
+[data-theme="dark"][data-recommended-theme="light"]
+  .header[data-context="Customer"][data-type="Purchase"]
+  .brand-logo-wrapper[data-color-variant="DefaultColor"][data-brand-roles="primary-text"]
+  svg [id*="brand-primary"],
+[data-theme="dark"][data-recommended-theme="light"]
+  .header[data-context="Customer"][data-type="Purchase"]
+  .brand-logo-wrapper[data-color-variant="DefaultColor"][data-brand-roles="primary-text"]
+  svg [class*="brand-primary"] {
+  fill: var(--Semantic-Foundations-White, #ffffff) !important;
+}
+
+/* 2. Accent Vectors -> accentLightBg token (WhiteColor) */
+.brand-logo-wrapper[data-color-variant="WhiteColor"] svg [id*="brand-accent"],
+.brand-logo-wrapper[data-color-variant="WhiteColor"] svg [class*="brand-accent"] {
+  fill: var(--Contextual-BrandAsset-WhiteColor-accentLightBg, var(--BrandAsset-WhiteColor-accentLightBg, #ffffff)) !important;
+}
+
+/* 3. Text Vectors -> BrandText token (WhiteColor) */
+.brand-logo-wrapper[data-color-variant="WhiteColor"] svg [id*="brand-text"],
+.brand-logo-wrapper[data-color-variant="WhiteColor"] svg [class*="brand-text"] {
+  fill: var(--Contextual-BrandAsset-WhiteColor-BrandText, var(--BrandAsset-WhiteColor-BrandText, #ffffff)) !important;
+}
+
+/* 4. Tertiary Vectors -> BrandTertiary token (WhiteColor) */
+.brand-logo-wrapper[data-color-variant="WhiteColor"] svg [id*="brand-tertiary"],
+.brand-logo-wrapper[data-color-variant="WhiteColor"] svg [class*="brand-tertiary"] {
+  fill: var(--Contextual-BrandAsset-WhiteColor-BrandTertiary, var(--BrandAsset-WhiteColor-BrandTertiary, #ffffff)) !important;
+}
+
+/* Fallback: Vectors without specific class/id get the white main token */
+.brand-logo-wrapper[data-color-variant="WhiteColor"] svg path:not([id*="brand-"]):not([class*="brand-"]),
+.brand-logo-wrapper[data-color-variant="WhiteColor"] svg polygon:not([id*="brand-"]):not([class*="brand-"]),
+.brand-logo-wrapper[data-color-variant="WhiteColor"] svg rect:not([id*="brand-"]):not([class*="brand-"]) {
+  fill: var(--Contextual-BrandAsset-WhiteColor-main, var(--BrandAsset-WhiteColor-main, #ffffff)) !important;
+}

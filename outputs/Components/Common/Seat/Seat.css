@@ -1,0 +1,280 @@
+.seat-component {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out, opacity 0.2s ease;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   STANDARD VARIANT STYLES
+   ========================================================= */
+.seat-component__icon {
+  width: 48px;
+  height: 48px;
+  display: block;
+  transition: fill 0.2s ease, width 0.2s, height 0.2s;
+}
+
+.seat-component__close-icon {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 20px;
+  height: 20px;
+  display: block;
+  pointer-events: none;
+  transition: top 0.2s, left 0.2s, width 0.2s, height 0.2s;
+}
+
+/* CRITICAL FIX: Explicit Bounding Box 28x20 at X:10 Y:14 with Flex Centering */
+.seat-component__text {
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  width: 28px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--Semantic-Font-Primary, 'Poppins');
+  font-weight: var(--Typography-Semantic-Primária-Body-Semibold-fontWeight, 600);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  pointer-events: none;
+}
+
+.seat-component[data-state="Available"] .seat-component__text {
+  color: var(--Contextual-Text-Inverse-default, var(--Text-Inverse-default, #FFFFFF));
+}
+
+.seat-component[data-state="Selected"] .seat-component__text {
+  color: var(--Button-Text-Primary-onColor, var(--Contextual-Text-OnColor-body, var(--Text-OnColor-body, #FFFFFF)));
+}
+
+.seat-component[data-type="Standard"][data-state="Available"] .seat-component__icon,
+.seat-component[data-type="Standard"][data-state="Available"] .seat-component__icon path {
+  fill: var(--Contextual-Icon-Seats-AvailableDefault, var(--Icon-Seats-AvailableDefault, #444449)) !important;
+}
+
+.seat-component[data-type="Standard"][data-state="Available"]:hover:not(:disabled) .seat-component__icon,
+.seat-component[data-type="Standard"][data-state="Available"]:hover:not(:disabled) .seat-component__icon path {
+  fill: var(--Contextual-Icon-Seats-AvailablePressed, var(--Icon-Seats-AvailablePressed, #2D2D31)) !important;
+}
+
+.seat-component[data-type="Standard"][data-state="Selected"] .seat-component__icon,
+.seat-component[data-type="Standard"][data-state="Selected"] .seat-component__icon path {
+  fill: var(--Contextual-Icon-Seats-SelectedDefault, var(--Icon-Seats-SelectedDefault, #980038)) !important;
+}
+
+.seat-component[data-type="Standard"][data-state="Selected"]:hover:not(:disabled) .seat-component__icon,
+.seat-component[data-type="Standard"][data-state="Selected"]:hover:not(:disabled) .seat-component__icon path {
+  fill: var(--Contextual-Icon-Seats-SelectedPressed, var(--Icon-Seats-SelectedPressed, #7A002D)) !important;
+}
+
+.seat-component[data-state="Occupied"] {
+  cursor: not-allowed;
+}
+
+.seat-component[data-type="Standard"][data-state="Occupied"] .seat-component__icon,
+.seat-component[data-type="Standard"][data-state="Occupied"] .seat-component__icon path {
+  fill: var(--Contextual-Icon-Seats-Disabled, var(--Icon-Seats-Disabled, #334155)) !important;
+}
+
+.seat-component[data-type="Standard"][data-state="Occupied"] .seat-component__close-icon,
+.seat-component[data-type="Standard"][data-state="Occupied"] .seat-component__close-icon path {
+  fill: var(--Contextual-Icon-OnColor-body, var(--Icon-On-color-body, #FFFFFF)) !important;
+}
+
+/* =========================================================
+   SHARED VARIANT STYLES (Obese, VIP, Companion, Selected Wheelchair)
+   ========================================================= */
+.seat-component:not([data-type="Standard"]) {
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.seat-component__variant-inner {
+  border-radius: var(--Semantic-BorderRadius-Round, 512px);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease;
+  position: relative;
+}
+
+.seat-component__variant-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.seat-component:not([data-type="Standard"])[data-state="Available"] .seat-component__variant-inner {
+  background-color: var(--Contextual-Icon-Seats-AvailableDefault, var(--Icon-Seats-Available-default, #444449));
+}
+
+.seat-component:not([data-type="Standard"])[data-state="Available"]:hover:not(:disabled) .seat-component__variant-inner {
+  background-color: var(--Contextual-Icon-Seats-AvailablePressed, var(--Icon-Seats-Available-pressed, #2D2D31));
+}
+
+.seat-component:not([data-type="Standard"])[data-state="Selected"] .seat-component__variant-inner {
+  background-color: var(--Contextual-Icon-Seats-SelectedDefault, var(--Icon-Seats-Selected-default, #980038));
+}
+
+.seat-component:not([data-type="Standard"])[data-state="Selected"]:hover:not(:disabled) .seat-component__variant-inner {
+  background-color: var(--Contextual-Icon-Seats-SelectedPressed, var(--Icon-Seats-Selected-pressed, #7A002D));
+}
+
+.seat-component:not([data-type="Standard"])[data-state="Occupied"] .seat-component__variant-inner {
+  background-color: var(--Contextual-Icon-Seats-Disabled, var(--Icon-Seats-Disabled, #C1C7D1));
+}
+
+.seat-component:not([data-type="Standard"]) .seat-component__variant-icon,
+.seat-component:not([data-type="Standard"]) .seat-component__variant-icon path {
+  fill: var(--Contextual-Icon-Inverse-default, var(--Icon-Inverse-default, #FFFFFF)) !important;
+}
+
+.seat-component[data-type="VIP"][data-state="Occupied"] .seat-component__variant-icon,
+.seat-component[data-type="VIP"][data-state="Occupied"] .seat-component__variant-icon path,
+.seat-component[data-type="Obese"][data-state="Occupied"] .seat-component__variant-icon,
+.seat-component[data-type="Obese"][data-state="Occupied"] .seat-component__variant-icon path {
+  fill: var(--Contextual-Icon-OnColor-body, var(--Icon-On-color-body, #FFF)) !important;
+}
+
+/* CRITICAL FIX: Updated Companion text to 16px Body/Semibold */
+.seat-component__companion-text {
+  color: var(--Contextual-Text-Inverse-default, var(--Text-Inverse-default, #FFFFFF));
+  font-family: var(--Semantic-Font-Primary, 'Poppins');
+  font-weight: var(--Typography-Semantic-Primária-Body-Semibold-fontWeight, 600);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  pointer-events: none;
+}
+
+.seat-component[data-type="Companion"][data-state="Occupied"] .seat-component__companion-text {
+  color: var(--Contextual-Text-OnColor-body, var(--Text-On-color-body, #FFF));
+}
+
+/* CRITICAL FIX: Reset explicit width/height for non-standard variants so they center naturally */
+.seat-component:not([data-type="Standard"]) .seat-component__text {
+  position: static;
+  transform: none;
+  width: auto;
+  height: auto;
+}
+
+.seat-component:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+/* =========================================================
+   WHEELCHAIR DIRECT ICON (Available & Occupied)
+   ========================================================= */
+.seat-component__wheelchair-icon {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  transition: fill 0.2s ease, width 0.2s, height 0.2s, top 0.2s, left 0.2s;
+}
+
+.seat-component[data-type="Wheelchair"][data-state="Available"] .seat-component__wheelchair-icon path[fill="#000"],
+.seat-component[data-type="Wheelchair"][data-state="Available"] .seat-component__wheelchair-icon path[fill="#000000"],
+.seat-component[data-type="Wheelchair"][data-state="Available"] .seat-component__wheelchair-icon path[fill="black"] {
+  fill: var(--Contextual-Icon-Seats-AccessibleDefault, var(--Icon-Seats-AccessibleDefault, #1650AE)) !important;
+}
+
+.seat-component[data-type="Wheelchair"][data-state="Available"] .seat-component__wheelchair-icon path[fill="#FFF"],
+.seat-component[data-type="Wheelchair"][data-state="Available"] .seat-component__wheelchair-icon path[fill="#FFFFFF"],
+.seat-component[data-type="Wheelchair"][data-state="Available"] .seat-component__wheelchair-icon path[fill="#fff"],
+.seat-component[data-type="Wheelchair"][data-state="Available"] .seat-component__wheelchair-icon path[fill="#ffffff"],
+.seat-component[data-type="Wheelchair"][data-state="Available"] .seat-component__wheelchair-icon path[fill="white"] {
+  fill: var(--Contextual-Icon-OnColor-body, var(--Icon-On-color-body, #FFFFFF)) !important;
+}
+
+.seat-component[data-type="Wheelchair"][data-state="Available"]:hover:not(:disabled) .seat-component__wheelchair-icon path[fill="#000"],
+.seat-component[data-type="Wheelchair"][data-state="Available"]:hover:not(:disabled) .seat-component__wheelchair-icon path[fill="#000000"],
+.seat-component[data-type="Wheelchair"][data-state="Available"]:hover:not(:disabled) .seat-component__wheelchair-icon path[fill="black"] {
+  fill: var(--Contextual-Icon-Seats-AccessiblePressed, var(--Icon-Seats-AccessiblePressed, #0F3D87)) !important;
+}
+
+.seat-component[data-type="Wheelchair"][data-state="Available"]:hover:not(:disabled) .seat-component__wheelchair-icon path[fill="#FFF"],
+.seat-component[data-type="Wheelchair"][data-state="Available"]:hover:not(:disabled) .seat-component__wheelchair-icon path[fill="#FFFFFF"],
+.seat-component[data-type="Wheelchair"][data-state="Available"]:hover:not(:disabled) .seat-component__wheelchair-icon path[fill="#fff"],
+.seat-component[data-type="Wheelchair"][data-state="Available"]:hover:not(:disabled) .seat-component__wheelchair-icon path[fill="#ffffff"],
+.seat-component[data-type="Wheelchair"][data-state="Available"]:hover:not(:disabled) .seat-component__wheelchair-icon path[fill="white"] {
+  fill: var(--Contextual-Icon-OnColor-body, var(--Icon-On-color-body, #FFFFFF)) !important;
+}
+
+.seat-component[data-type="Wheelchair"][data-state="Occupied"] .seat-component__wheelchair-icon path[fill="#000"],
+.seat-component[data-type="Wheelchair"][data-state="Occupied"] .seat-component__wheelchair-icon path[fill="#000000"],
+.seat-component[data-type="Wheelchair"][data-state="Occupied"] .seat-component__wheelchair-icon path[fill="black"] {
+  fill: var(--Contextual-Icon-Seats-Disabled, var(--Icon-Seats-Disabled, #C1C7D1)) !important;
+}
+
+.seat-component[data-type="Wheelchair"][data-state="Occupied"] .seat-component__wheelchair-icon path[fill="#FFF"],
+.seat-component[data-type="Wheelchair"][data-state="Occupied"] .seat-component__wheelchair-icon path[fill="#FFFFFF"],
+.seat-component[data-type="Wheelchair"][data-state="Occupied"] .seat-component__wheelchair-icon path[fill="#fff"],
+.seat-component[data-type="Wheelchair"][data-state="Occupied"] .seat-component__wheelchair-icon path[fill="#ffffff"],
+.seat-component[data-type="Wheelchair"][data-state="Occupied"] .seat-component__wheelchair-icon path[fill="white"] {
+  fill: var(--Contextual-Icon-OnColor-body, var(--Icon-On-color-body, #FFFFFF)) !important;
+}
+
+/* =========================================================
+   LEGEND CONTEXT
+   ========================================================= */
+.seat-component[data-context="Legend"] {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  cursor: default;
+}
+
+.seat-component[data-context="Legend"] .seat-component__icon {
+  width: 32px;
+  height: 32px;
+}
+
+.seat-component[data-context="Legend"] .seat-component__close-icon {
+  width: 18px;
+  height: 18px;
+  top: 7px;
+  left: 7px;
+}
+
+.seat-component[data-context="Legend"][data-type="Obese"] .seat-component__variant-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.seat-component[data-context="Legend"][data-type="VIP"] .seat-component__variant-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.seat-component[data-context="Legend"][data-type="Companion"] .seat-component__companion-text {
+  font-size: var(--Responsive-Font-Headings-Captions-TextSize, var(--Font-Headings-Captions-TextSize, 12px));
+  line-height: var(--Responsive-Font-Headings-Captions-LineHeight, var(--Font-Headings-Captions-LineHeight, 16px));
+  font-weight: var(--Typography-Semantic-Primária-Captions-Semibold-fontWeight, 600);
+}
+
+.seat-component[data-context="Legend"][data-type="Wheelchair"] .seat-component__wheelchair-icon {
+  width: 32px;
+  height: 32px;
+  top: 0;
+  left: 0;
+}

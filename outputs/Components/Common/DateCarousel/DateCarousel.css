@@ -1,0 +1,72 @@
+.date-carousel {
+  --date-carousel-item-width: 80px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+}
+
+.date-carousel__viewport {
+  min-width: 0;
+  flex: 1 1 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: grab;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  touch-action: pan-y;
+}
+
+.date-carousel__viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.date-carousel__viewport:active {
+  cursor: grabbing;
+  scroll-behavior: auto;
+  scroll-snap-type: none;
+}
+
+.date-carousel__track {
+  display: flex;
+  align-items: flex-start;
+  width: max-content;
+  min-width: 100%;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+}
+
+.date-carousel__item {
+  flex: 0 0 var(--date-carousel-item-width);
+  width: var(--date-carousel-item-width);
+  scroll-snap-align: start;
+}
+
+.date-carousel__item > .date-component {
+  width: var(--date-carousel-item-width);
+  min-width: var(--date-carousel-item-width);
+  height: 96px;
+  min-height: 96px;
+  padding-inline: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px));
+  word-break: normal;
+  user-select: none;
+}
+
+.date-carousel__item .date-component-day p,
+.date-carousel__item .date-component-number p,
+.date-carousel__item .date-component-month p {
+  white-space: nowrap;
+  word-break: normal;
+}
+
+.date-carousel > .pagination-button {
+  flex: 0 0 48px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .date-carousel__viewport {
+    scroll-behavior: auto;
+  }
+}
+

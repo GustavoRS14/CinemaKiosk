@@ -1,0 +1,53 @@
+.popcorn-loading {
+  display: inline-flex;
+  flex: 0 0 auto;
+  width: var(--popcorn-loading-size);
+  height: var(--popcorn-loading-size);
+  line-height: 0;
+}
+
+.popcorn-loading > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.popcorn-loading [fill='#980038' i] {
+  fill: var(--Contextual-Icon-Primary-default, var(--Icon-Primary-default, #980038));
+}
+
+.popcorn-loading [fill='#FFFFFF' i],
+.popcorn-loading [fill='white' i] {
+  fill: var(--Contextual-Icon-Primary-onColor, var(--Icon-Primary-onColor, #FFFFFF));
+}
+
+.popcorn-loading .popcorn-loading__cheek {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: popcorn-loading-chew 760ms ease-in-out infinite;
+}
+
+@keyframes popcorn-loading-chew {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  22% {
+    transform: translate(1px, 2px) scale(1.08, 0.88);
+  }
+
+  48% {
+    transform: translate(-1px, -1px) scale(0.94, 1.08);
+  }
+
+  72% {
+    transform: translate(1px, 1px) scale(1.04, 0.94);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .popcorn-loading .popcorn-loading__cheek {
+    animation: none;
+  }
+}

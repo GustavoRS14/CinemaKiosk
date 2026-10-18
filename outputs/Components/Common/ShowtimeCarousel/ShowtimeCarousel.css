@@ -1,0 +1,68 @@
+.totem-showtime-carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: var(--Responsive-spacing-md, var(--spacing-md, 16px));
+}
+
+.totem-showtime-carousel__track {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: var(--Responsive-spacing-sm, var(--spacing-sm, 8px));
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
+
+  /* Touch & Drag support */
+  cursor: grab;
+  touch-action: pan-y;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  /* CRITICAL: Native Magnetic Snapping */
+  scroll-snap-type: x mandatory;
+}
+
+.totem-showtime-carousel[data-drag-enabled="false"] .totem-showtime-carousel__track {
+  cursor: default;
+  touch-action: auto;
+}
+
+.totem-showtime-carousel__track::-webkit-scrollbar {
+  display: none;
+}
+
+/* CRITICAL: Overrides during drag to prevent fighting the snap engine */
+.totem-showtime-carousel__track.is-dragging {
+  cursor: grabbing;
+  scroll-behavior: auto !important;
+  scroll-snap-type: none;
+  /* Disables magnetic pull while finger is dragging */
+}
+
+/* CRITICAL: Forces each card to align its left edge with the container */
+.totem-showtime-carousel__track>* {
+  flex: 0 0 auto !important;
+  scroll-snap-align: start;
+}
+
+.totem-showtime-carousel__arrow {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1080px) {
+  .totem-showtime-carousel--vertical .totem-showtime-carousel__track {
+    flex: 0 0 calc(450px + var(--Responsive-spacing-sm, var(--spacing-sm, 8px)) + var(--Responsive-spacing-sm, var(--spacing-sm, 8px)));
+    width: calc(450px + var(--Responsive-spacing-sm, var(--spacing-sm, 8px)) + var(--Responsive-spacing-sm, var(--spacing-sm, 8px)));
+    max-width: calc(450px + var(--Responsive-spacing-sm, var(--spacing-sm, 8px)) + var(--Responsive-spacing-sm, var(--spacing-sm, 8px)));
+  }
+}

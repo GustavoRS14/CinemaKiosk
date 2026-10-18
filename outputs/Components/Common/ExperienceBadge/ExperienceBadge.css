@@ -1,0 +1,39 @@
+.experience-badge-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* We strictly avoid defining width/height here to let the SVG dictate its native size */
+}
+
+/* Guardrail to prevent global CSS from breaking the inline SVGs */
+.experience-badge-wrapper svg {
+  width: auto !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+  flex-shrink: 0;
+  display: block;
+}
+
+/* Apply token color to all variants EXCEPT the 3D variant */
+.experience-badge-wrapper:not([data-experience="3D"]) svg path,
+.experience-badge-wrapper:not([data-experience="3D"]) svg rect,
+.experience-badge-wrapper:not([data-experience="3D"]) svg polygon {
+  fill: var(--Contextual-Icon-Default-body, #000);
+}
+
+/* =========================================
+   VARIANT: 3D (Simulating Figma Selection Colors)
+   ========================================= */
+
+/* 1. Map original black fills to the default icon token */
+.experience-badge-wrapper[data-experience="3D"] svg [fill="black"],
+.experience-badge-wrapper[data-experience="3D"] svg [fill="#000000"],
+.experience-badge-wrapper[data-experience="3D"] svg [fill="#000"] {
+  fill: var(--Contextual-Icon-Default-body, #000) !important;
+}
+
+/* 2. Map the original blue fill (anything not black, white, or transparent) to the 3D token */
+.experience-badge-wrapper[data-experience="3D"] svg [fill]:not([fill="black"]):not([fill="#000000"]):not([fill="#000"]):not([fill="none"]):not([fill="white"]):not([fill="#fff"]):not([fill="#ffffff"]) {
+  fill: var(--Contextual-Icon-Experience-3D, #1B64DA) !important;
+}

@@ -1,0 +1,142 @@
+.selection-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 104px;
+    cursor: pointer;
+    position: relative;
+}
+
+.selection-tile[aria-disabled="true"],
+.selection-tile[aria-readonly="true"] {
+    cursor: not-allowed;
+    user-select: none;
+}
+
+.selection-tile-border-control {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+}
+
+.selection-tile-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px));
+    padding: var(--Responsive-Spacing-lg, var(--Spacing-lg, 25px));
+    background: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff));
+    border: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+    width: 100%;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.selection-tile[data-radius="xs"] .selection-tile-inner {
+    border-radius: var(--Semantic-BorderRadius-200, 8px);
+}
+
+.selection-tile[data-radius="sm"] .selection-tile-inner {
+    border-radius: var(--Semantic-BorderRadius-250, 10px);
+}
+
+.selection-tile[data-radius="md"] .selection-tile-inner {
+    border-radius: var(--Semantic-BorderRadius-300, 12px);
+}
+
+.selection-tile[data-radius="lg"] .selection-tile-inner {
+    border-radius: var(--Semantic-BorderRadius-400, 16px);
+}
+
+.selection-tile[data-selected="true"] .selection-tile-inner {
+    border-color: var(--Contextual-Border-Primary-Default, var(--Border-Primary-Default, #980038));
+    background: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #FFFFFF));
+}
+
+.slot-wrapper {
+    width: 48px;
+    height: 32px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slot-wrapper>* {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.text-wrapper p {
+    color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+    font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+    font-weight: var(--Typography-Semantic-Primária-H6-Medium-fontWeight, 500);
+    font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+    line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+    margin: 0;
+}
+
+/* =========================================
+CONDITIONAL SLOT BLENDING
+========================================= */
+.selection-tile[data-selected="false"] .slot-wrapper,
+.selection-tile[data-state="Disabled"] .slot-wrapper,
+.selection-tile[data-state="ReadOnly"] .slot-wrapper {
+    mix-blend-mode: luminosity;
+}
+
+/* =========================================
+INTERACTIVE STATES (Hover / Active)
+========================================= */
+/* Unselected Hover/Active */
+.selection-tile[data-selected="false"]:not([aria-disabled="true"]):not([aria-readonly="true"]):hover .selection-tile-inner,
+.selection-tile[data-selected="false"]:not([aria-disabled="true"]):not([aria-readonly="true"]):active .selection-tile-inner {
+    border-color: var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #C1C7D1));
+    background: var(--Contextual-Surface-Secondary-DefaultPressed, var(--Surface-Secondary-DefaultPressed, #E3E3E4));
+}
+
+/* Selected Hover/Active */
+.selection-tile[data-selected="true"]:not([aria-disabled="true"]):not([aria-readonly="true"]):hover .selection-tile-inner,
+.selection-tile[data-selected="true"]:not([aria-disabled="true"]):not([aria-readonly="true"]):active .selection-tile-inner {
+    border-color: var(--Contextual-Border-Primary-DefaultPressed, var(--Border-Primary-DefaultPressed, #7A002D));
+    background: var(--Contextual-Surface-Secondary-DefaultPressed, var(--Surface-Secondary-DefaultPressed, #E3E3E4));
+}
+
+/* =========================================
+BLOCKING STATES (Overrides interactions)
+========================================= */
+.selection-tile[data-state="ReadOnly"] .selection-tile-inner {
+    border-color: var(--Contextual-Border-ReadOnly-Default, var(--Border-ReadOnly-Default, #A2ACB9)) !important;
+    background: var(--Contextual-Surface-ReadOnly-Default, var(--Surface-ReadOnly-Default, #E0E3E8)) !important;
+}
+
+.selection-tile[data-state="ReadOnly"] .text-wrapper p {
+    color: var(--Contextual-Text-ReadOnly-default, var(--Text-Read-Only-default, #505D6F));
+}
+
+.selection-tile[data-state="Disabled"] .selection-tile-inner {
+    border-color: var(--Contextual-Border-Disabled-DisabledDefault, var(--Border-Disabled-DisabledDefault, #C1C7D1)) !important;
+    background: var(--Contextual-Surface-Disabled-DisabledDefault, var(--Surface-Disabled-DisabledDefault, #C1C7D1)) !important;
+}
+
+.selection-tile[data-state="Disabled"] .text-wrapper p {
+    color: var(--Contextual-Text-Disabled-default, var(--Text-Disabled-default, #505D6F));
+}
+
+/* =========================================
+CRITICAL FIX: Prevent internal Radio Button from stealing clicks
+========================================= */
+.selection-tile-radio {
+    pointer-events: none;
+}

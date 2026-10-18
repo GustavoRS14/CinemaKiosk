@@ -1,0 +1,159 @@
+.success-dialog {
+  position: relative;
+  min-height: 326px;
+  overflow: hidden;
+  border: var(--Semantic-BorderWidth-25, 1px) solid var(--Contextual-Border-Tertiary-Default, #c1c7d1);
+  border-radius: var(--Semantic-BorderRadius-400, 16px);
+  background: var(--Contextual-Surface-Secondary-Default, #fff);
+}
+
+.success-dialog__background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 756px;
+  height: 704px;
+  max-width: none;
+  transform: translate(-50%, -50%);
+}
+
+.success-dialog__background [fill="#64748B" i] {
+  fill: var(--Contextual-Icon-Default-captionMuted, #64748B);
+}
+
+.success-dialog__background [fill="white" i],
+.success-dialog__background [fill="#FFF" i],
+.success-dialog__background [fill="#FFFFFF" i] {
+  fill: var(--Icon-OnColor-body, #FFF);
+}
+
+.success-dialog__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 324px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--Responsive-Spacing-lg, 24px);
+  box-sizing: border-box;
+  padding: var(--Responsive-Spacing-2xl, 48px);
+}
+
+.success-dialog__icon {
+  width: 112px;
+  height: 112px;
+  flex: 0 0 112px;
+}
+
+.success-dialog__icon [fill="black" i],
+.success-dialog__icon [fill="#000" i],
+.success-dialog__icon [fill="#000000" i] {
+  fill: var(--Contextual-Icon-Success-default, #16803D);
+}
+
+.success-dialog__icon [fill="white" i],
+.success-dialog__icon [fill="#FFF" i],
+.success-dialog__icon [fill="#FFFFFF" i] {
+  fill: var(--Contextual-Icon-OnColor-body, #FFF);
+}
+
+.success-dialog__copy {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--Responsive-Spacing-md, 16px);
+  text-align: center;
+}
+
+.success-dialog__copy > h2,
+.success-dialog__copy > p {
+  width: 100%;
+  margin: 0;
+  font-family: var(--Semantic-Font-Primary, 'Poppins', sans-serif);
+  word-break: break-word;
+}
+
+.success-dialog--order-sent,
+.success-dialog--order-sent-retry {
+  background: var(--Contextual-Surface-Secondary-Default, #fff);
+}
+
+.success-dialog--order-sent {
+  min-height: 374px;
+}
+
+.success-dialog--order-sent-retry {
+  min-height: 478px;
+}
+
+.success-dialog--order-sent .success-dialog__content,
+.success-dialog--order-sent-retry .success-dialog__content {
+  min-height: inherit;
+}
+
+.success-dialog--order-sent .success-dialog__copy,
+.success-dialog--order-sent-retry .success-dialog__copy {
+  gap: var(--Responsive-Spacing-lg, 24px);
+}
+
+.success-dialog__copy strong {
+  font-weight: var(--Typography-Semantic-Primária-Body-Bold-fontWeight, 700);
+}
+
+.success-dialog__phone {
+  color: var(--Contextual-Text-Information-default, #1650ae);
+  font-weight: var(--Typography-Semantic-Primária-Body-Semibold-fontWeight, 600);
+}
+
+.success-dialog__text-actions,
+.success-dialog__button-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.success-dialog__text-actions {
+  gap: var(--Responsive-Spacing-xl, 32px);
+}
+
+.success-dialog__button-actions {
+  gap: var(--Responsive-Spacing-md, 16px);
+}
+
+.success-dialog__button-actions .totem-button {
+  width: 100%;
+  min-height: 80px;
+}
+
+.success-dialog__resend-countdown {
+  width: 100%;
+  margin: 0;
+  color: var(--Contextual-Text-Default-captionMuted, #64748B);
+  font-family: var(--Semantic-Font-Primary, 'Poppins', sans-serif);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, 16px);
+  font-weight: var(--Typography-Semantic-Primária-Body-Medium-fontWeight, 500);
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, 20px);
+  text-align: center;
+}
+
+.success-dialog__resend-countdown strong {
+  color: var(--Contextual-Text-Default-caption, #282E38);
+  font-weight: inherit;
+}
+
+.success-dialog__copy > h2 {
+  color: var(--Contextual-Text-Default-body, #000);
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, 24px);
+  font-weight: var(--Typography-Semantic-Primária-H5-Semibold-fontWeight, 600);
+  line-height: var(--Responsive-Font-Headings-H5-ParagraphSpacing, 28px);
+}
+
+.success-dialog__copy > p {
+  color: var(--Contextual-Text-Default-caption, #282e38);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, 16px);
+  font-weight: var(--Typography-Semantic-Primária-Body-Regular-fontWeight, 400);
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, 20px);
+}

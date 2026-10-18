@@ -1,0 +1,54 @@
+.skeleton-component {
+  display: block;
+  /* Base color mapped exactly to Contextual JSON */
+  background-color: var(--Contextual-Surface-Skeleton-Base, var(--Surface-Skeleton-Base, #E2E8F0));
+  overflow: hidden;
+  position: relative;
+  /* Default behaviors if no width/height are provided */
+  width: 100%;
+}
+
+/*
+The Shimmer Effect
+Using a pseudo-element for performance (compositor-only animation)
+*/
+.skeleton-component::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    var(--Contextual-Surface-Skeleton-Shimmer-Option1, var(--Surface-Skeleton-Shimmer-Option1, rgba(255, 255, 255, 0))) 0%,
+    var(--Contextual-Surface-Skeleton-Shimmer-Option2, var(--Surface-Skeleton-Shimmer-Option2, #F1F5F9)) 50%,
+    var(--Contextual-Surface-Skeleton-Shimmer-Option1, var(--Surface-Skeleton-Shimmer-Option1, rgba(255, 255, 255, 0))) 100%
+  );
+  animation: skeleton-shimmer 1.5s infinite ease-in-out;
+}
+
+@keyframes skeleton-shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* =========================================================
+   VARIANTS
+   ========================================================= */
+.skeleton-component--rectangular {
+  border-radius: var(--Semantic-BorderRadius-100, 4px);
+}
+
+.skeleton-component--circular {
+  border-radius: var(--Semantic-BorderRadius-Round, 512px);
+}
+
+.skeleton-component--text {
+  border-radius: var(--Semantic-BorderRadius-50, 2px);
+  /* Default text height if not provided */
+  height: var(--Responsive-Font-Headings-Body-LineHeight, 20px);
+  margin-bottom: var(--Responsive-Spacing-3xs, 2px);
+}

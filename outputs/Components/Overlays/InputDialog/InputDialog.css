@@ -1,0 +1,96 @@
+.input-dialog {
+  display: flex;
+  overflow: hidden;
+  background: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #FFF));
+  border: var(--Semantic-BorderWidth-25, 1px) solid var(--Contextual-Border-Tertiary-Default, #C1C7D1);
+  border-radius: var(--Semantic-BorderRadius-400, 16px);
+  backdrop-filter: blur(8px);
+}
+
+.input-dialog__information {
+  display: flex;
+  flex: 0 0 293px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  padding: var(--Responsive-Spacing-2xl, 48px) var(--Responsive-Spacing-xl, 32px);
+  background: var(--Contextual-Surface-Tertiary-Default, var(--Surface-Tertiary-Default, #F1F1F2));
+  box-sizing: border-box;
+}
+
+.input-dialog__copy,
+.input-dialog__method-actions,
+.input-dialog__actions,
+.input-dialog__keyboard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-dialog__copy,
+.input-dialog__method-actions {
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+}
+
+.input-dialog__actions {
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+}
+
+.input-dialog__actions .totem-button {
+  width: 100%;
+}
+
+.input-dialog__copy h2,
+.input-dialog__copy p,
+.input-dialog__method {
+  margin: 0;
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, Poppins, sans-serif));
+}
+
+.input-dialog__copy h2 {
+  color: var(--Contextual-Text-Default-body, #000);
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, 24px);
+  font-weight: 600;
+  line-height: var(--Responsive-Font-Headings-H5-ParagraphSpacing, 28px);
+}
+
+.input-dialog__copy p,
+.input-dialog__method {
+  color: var(--Contextual-Text-Default-caption, #282E38);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, 16px);
+  font-weight: 400;
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, 20px);
+}
+
+.input-dialog__method strong {
+  font-weight: 700;
+}
+
+.input-dialog__keyboard {
+  flex: 1 1 auto;
+  min-width: 0;
+  gap: var(--Responsive-Spacing-xl, var(--Spacing-xl, 32px));
+  padding: var(--Responsive-Spacing-2xl, 48px) var(--Responsive-Spacing-xl, 32px);
+  border-left: var(--Semantic-BorderWidth-25, 1px) solid var(--Contextual-Border-Tertiary-Default, #C1C7D1);
+  box-sizing: border-box;
+}
+
+.input-dialog.overlay-dialog--size-xs,
+.input-dialog.overlay-dialog--size-sm,
+.input-dialog.overlay-dialog--size-md {
+  flex-direction: column;
+}
+
+.input-dialog.overlay-dialog--size-xs .input-dialog__information,
+.input-dialog.overlay-dialog--size-sm .input-dialog__information,
+.input-dialog.overlay-dialog--size-md .input-dialog__information {
+  flex-basis: auto;
+  width: 100%;
+}
+
+.input-dialog.overlay-dialog--size-xs .input-dialog__keyboard,
+.input-dialog.overlay-dialog--size-sm .input-dialog__keyboard,
+.input-dialog.overlay-dialog--size-md .input-dialog__keyboard {
+  border-top: var(--Semantic-BorderWidth-25, 1px) solid var(--Contextual-Border-Tertiary-Default, #C1C7D1);
+  border-left: 0;
+}

@@ -1,0 +1,86 @@
+.showtime-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--Responsive-Spacing-2xs, 4px);
+  height: var(--Responsive-ButtonInputHeight, 80px);
+  width: 150px;
+  padding: var(--Responsive-Spacing-md, 16px) var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  border-radius: var(--Semantic-BorderRadius-200, var(--Border-Radius-200, 8px));
+  border: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+  background-color: var(--Contextual-Surface-Tertiary-Default, var(--Surface-Tertiary-Default, #f1f1f2));
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.showtime-button[data-locale="en-US"],
+.showtime-button[data-locale="es-419"] {
+  width: 164px;
+}
+
+.showtime-button-time {
+  flex-shrink: 0;
+  margin: 0;
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, var(--Font-Headings-H5-Text-Size, 24px));
+  font-weight: 700;
+  line-height: var(--Responsive-Font-Headings-H5-ParagraphSpacing, var(--Font-Headings-H5-Paragraph-Spacing, 28px));
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+  text-align: center;
+  word-break: break-word;
+}
+
+.showtime-button:hover:not(:disabled):not([aria-readonly="true"]),
+.showtime-button:active:not(:disabled):not([aria-readonly="true"]) {
+  border: var(--Semantic-BorderWidth-25, var(--Border-Width-25, 1px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #C1C7D1));
+  background: var(--Contextual-Surface-Tertiary-Pressed, var(--Surface-Tertiary-Pressed, #E3E3E4));
+}
+
+.showtime-button-subtitle {
+  flex-shrink: 0;
+  margin: 0;
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-Text-Size, 16px));
+  font-weight: 400;
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  color: var(--Contextual-Text-Default-caption, var(--Text-Default-caption, #282E38));
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Selected state */
+.showtime-button[data-selected="true"] {
+  border: var(--Semantic-BorderWidth-25, var(--Border-Width-25, 1px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #C1C7D1));
+  background-color: var(--Contextual-Surface-Primary-Default, var(--Surface-Primary-Default, #980038));
+}
+
+.showtime-button[data-selected="true"]:hover:not(:disabled):not([aria-readonly="true"]),
+.showtime-button[data-selected="true"]:active:not(:disabled):not([aria-readonly="true"]) {
+  border: var(--Semantic-BorderWidth-25, var(--Border-Width-25, 1px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #C1C7D1));
+  background-color: var(--Contextual-Surface-Primary-Default-pressed, var(--Surface-Primary-Default-pressed, #7A002D));
+}
+
+.showtime-button[data-selected="true"] .showtime-button-time {
+  color: var(--Contextual-Text-On-color-body, var(--Text-On-color-body, #FFFFFF));
+}
+
+/* Badge positioning */
+.showtime-button-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Blocking states */
+.showtime-button:disabled,
+.showtime-button[aria-readonly="true"] {
+  cursor: not-allowed;
+  user-select: none;
+  opacity: 0.5;
+  /* Common visual cue */
+}

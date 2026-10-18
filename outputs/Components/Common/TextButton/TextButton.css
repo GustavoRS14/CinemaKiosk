@@ -1,0 +1,185 @@
+.text-button {
+  display: flex;
+  padding: var(--Responsive-Spacing-3xs, var(--Spacing-3xs, 2px)) var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+  align-items: center;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+  height: fit-content;
+  width: fit-content;
+
+  /* Basic resets */
+  position: relative;
+  background: transparent;
+  border: none;
+  margin: 0 !important;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.text-button:hover:not([disabled]),
+.text-button:active:not([disabled]) {
+  background-color: var(--Contextual-Surface-Secondary-DefaultPressed, var(--Surface-Secondary-DefaultPressed, #E3E3E4));
+  border-radius: var(--Semantic-BorderRadius-200, var(--BorderRadius-200, 8px));
+}
+
+.text-button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.text-button-icon svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+  max-width: none;
+  color: var(--button-icon);
+}
+
+.text-button-label {
+  justify-content: center;
+  white-space: nowrap;
+  word-break: break-word;
+  color: var(--button-text);
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, "Poppins", sans-serif));
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: var(--button-line-height);
+  margin: 0;
+}
+
+.text-button-label p {
+  margin: 0;
+}
+
+/* =========================================
+   SIZES
+   ========================================= */
+.text-button[data-size="sm"] {
+  --button-font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  --button-line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 24px));
+}
+
+.text-button[data-size="md"] {
+  --button-font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+  --button-line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 28px));
+}
+
+.text-button[data-size="lg"] {
+  --button-font-size: var(--Responsive-Font-Headings-H5-TextSize, var(--Font-Headings-H5-TextSize, 24px));
+  --button-line-height: var(--Responsive-Font-Headings-H5-LineHeight, var(--Font-Headings-H5-LineHeight, 32px));
+}
+
+/* =========================================
+   WEIGHTS
+   ========================================= */
+.text-button[data-weight="Medium"] {
+  --button-font-weight: var(--Typography-Semantic-Primária-Body-Medium-fontWeight, 500);
+}
+
+.text-button[data-weight="SemiBold"] {
+  --button-font-weight: var(--Typography-Semantic-Primária-H6-SemiBold-fontWeight, 600);
+}
+
+.text-button[data-weight="Bold"] {
+  --button-font-weight: var(--Typography-Semantic-Primária-H6-Bold-fontWeight, 700);
+}
+
+/* =========================================
+   INTENTS
+   ========================================= */
+/* Neutral */
+.text-button[data-intent="Neutral"] {
+  --button-text: var(--Contextual-Text-Default-body, var(--Text-Default-body, #282E38));
+  --button-icon: var(--Contextual-Icon-Default-body, var(--Icon-Default-body, #282E38));
+}
+
+.text-button[data-intent="Neutral"]:hover:not([disabled]),
+.text-button[data-intent="Neutral"]:active:not([disabled]) {
+  --button-text: var(--Contextual-Text-Default-body, var(--Text-Default-body, #282E38));
+  --button-icon: var(--Contextual-Icon-Default-body, var(--Icon-Default-body, #282E38));
+}
+
+/* Primary */
+.text-button[data-intent="Primary"] {
+  --button-text: var(--Contextual-Text-Primary-default, var(--Text-Primary-default, #980038));
+  --button-icon: var(--Contextual-Icon-Primary-default, var(--Icon-Primary-default, #980038));
+}
+
+.text-button[data-intent="Primary"]:hover:not([disabled]),
+.text-button[data-intent="Primary"]:active:not([disabled]) {
+  --button-text: var(--Contextual-Text-Primary-defaultPressed, var(--Text-Primary-defaultPressed, #7A002D));
+  --button-icon: var(--Contextual-Icon-Primary-defaultPressed, var(--Icon-Primary-defaultPressed, #7A002D));
+}
+
+/* Muted */
+.text-button[data-intent="Muted"] {
+  --button-text: var(--Contextual-Text-Default-caption, var(--Text-Default-caption, #505D6F));
+  --button-icon: var(--Contextual-Icon-Default-caption, var(--Icon-Default-caption, #505D6F));
+}
+
+.text-button[data-intent="Muted"]:hover:not([disabled]),
+.text-button[data-intent="Muted"]:active:not([disabled]) {
+  --button-text: var(--Contextual-Text-Default-caption, var(--Text-Default-caption, #3C4653));
+  --button-icon: var(--Contextual-Icon-Default-caption, var(--Icon-Default-caption, #3C4653));
+}
+
+/* Danger */
+.text-button[data-intent="Danger"] {
+  --button-text: var(--Contextual-Text-Error-default, var(--Text-Error-default, #B01E1E));
+  --button-icon: var(--Contextual-Icon-Error-default, var(--Icon-Error-default, #B01E1E));
+}
+
+.text-button[data-intent="Danger"]:hover:not([disabled]),
+.text-button[data-intent="Danger"]:active:not([disabled]) {
+  --button-text: var(--Contextual-Text-Error-defaultPressed, var(--Text-Error-defaultPressed, #841717));
+  --button-icon: var(--Contextual-Icon-Error-defaultPressed, var(--Icon-Error-defaultPressed, #841717));
+}
+
+/* Success */
+.text-button[data-intent="Success"] {
+  --button-text: var(--Contextual-Text-Success-default, var(--Text-Success-default, #126631));
+  --button-icon: var(--Contextual-Icon-Success-default, var(--Icon-Success-default, #16803D));
+}
+
+.text-button[data-intent="Success"]:hover:not([disabled]),
+.text-button[data-intent="Success"]:active:not([disabled]) {
+  --button-text: var(--Contextual-Text-Success-defaultPressed, var(--Text-Success-defaultPressed, #126631));
+  --button-icon: var(--Contextual-Icon-Success-defaultPressed, var(--Icon-Success-defaultPressed, #126631));
+}
+
+/* Warning */
+.text-button[data-intent="Warning"] {
+  --button-text: var(--Contextual-Text-Warning-default, var(--Text-Warning-default, #824704));
+  --button-icon: var(--Contextual-Icon-Warning-default, var(--Icon-Warning-default, #824704));
+}
+
+.text-button[data-intent="Warning"]:hover:not([disabled]),
+.text-button[data-intent="Warning"]:active:not([disabled]) {
+  --button-text: var(--Contextual-Text-Warning-defaultPressed, var(--Text-Warning-defaultPressed, #AE5F05));
+  --button-icon: var(--Contextual-Icon-Warning-defaultPressed, var(--Icon-Warning-defaultPressed, #573002));
+}
+
+/* Information */
+.text-button[data-intent="Information"] {
+  --button-text: var(--Contextual-Text-Information-default, var(--Text-Information-default, #1650AE));
+  --button-icon: var(--Contextual-Icon-Information-default, var(--Icon-Information-default, #1650AE));
+}
+
+.text-button[data-intent="Information"]:hover:not([disabled]),
+.text-button[data-intent="Information"]:active:not([disabled]) {
+  --button-text: var(--Contextual-Text-Information-defaultPressed, var(--Text-Information-defaultPressed, #103C83));
+  --button-icon: var(--Contextual-Icon-Information-defaultPressed, var(--Icon-Information-defaultPressed, #103C83));
+}
+
+/* =========================================
+   DISABLED STATE
+   ========================================= */
+.text-button[disabled] {
+  cursor: not-allowed;
+  user-select: none;
+  --button-text: var(--Contextual-Text-Disabled-default, var(--Text-Disabled-default, #A2ACB9));
+  --button-icon: var(--Contextual-Icon-Disabled-default, var(--Icon-Disabled-default, #A2ACB9));
+}

@@ -1,0 +1,232 @@
+.movie-concessions-products-page {
+  --movie-concessions-products-header-height: 80px;
+  --movie-concessions-products-footer-height: 112px;
+  --purchase-session-footer-height: var(--movie-concessions-products-footer-height);
+  box-sizing: border-box;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  overflow-x: clip;
+  overflow-y: auto;
+  background: var(--Contextual-Surface-BackgroundPage-Default, var(--Surface-BackgroundPage-Default, #f8f8f9));
+  box-shadow: 0 0 0 100vmax var(--Contextual-Surface-Inverse-Secondary, var(--Surface-Inverse-Secondary, #000000));
+  color: var(--Contextual-Text-Default-Body, var(--Text-Default-Body, #000000));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  isolation: isolate;
+}
+.movie-concessions-products-page::before,
+.movie-concessions-products-page::after {
+  --page-frame-radius: var(--Semantic-BorderRadius-400, var(--BorderRadius-400, 16px));
+  --page-frame-color: var(--Contextual-Surface-Inverse-Secondary, var(--Surface-Inverse-Secondary, #000000));
+  content: '';
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  height: var(--page-frame-radius);
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: var(--page-frame-radius) var(--page-frame-radius);
+}
+
+.movie-concessions-products-page::before {
+  top: 0;
+  background-image:
+    radial-gradient(circle at 100% 100%, transparent calc(var(--page-frame-radius) - 1px), var(--page-frame-color) var(--page-frame-radius)),
+    radial-gradient(circle at 0 100%, transparent calc(var(--page-frame-radius) - 1px), var(--page-frame-color) var(--page-frame-radius));
+  background-position: left top, right top;
+}
+
+.movie-concessions-products-page::after {
+  bottom: 0;
+  background-image:
+    radial-gradient(circle at 100% 0, transparent calc(var(--page-frame-radius) - 1px), var(--page-frame-color) var(--page-frame-radius)),
+    radial-gradient(circle at 0 0, transparent calc(var(--page-frame-radius) - 1px), var(--page-frame-color) var(--page-frame-radius));
+  background-position: left bottom, right bottom;
+}
+
+
+.movie-concessions-products-page *,
+.movie-concessions-products-page *::before,
+.movie-concessions-products-page *::after {
+  box-sizing: border-box;
+}
+
+.movie-concessions-products-page>.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 30;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--Border-Radius-400, 16px) var(--Border-Radius-400, 16px) 0 0;
+}
+
+.movie-concessions-products-page__main {
+  display: flex;
+  flex: 1 0 auto;
+  width: 100%;
+  padding: calc(var(--movie-concessions-products-header-height) + var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px))) var(--Responsive-Margin, var(--Margin, 64px)) calc(var(--movie-concessions-products-footer-height) + var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px)));
+}
+
+.movie-concessions-products-page--sales-closing .movie-concessions-products-page__main {
+  padding-bottom: calc(
+    var(--movie-concessions-products-footer-height) +
+    var(--Responsive-Spacing-xl, var(--Spacing-xl, 32px)) +
+    var(--purchase-session-closing-alert-height, 112px) +
+    var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px))
+  );
+}
+
+.movie-concessions-products-page__content {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  min-width: 0;
+  gap: var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px));
+}
+
+.movie-concessions-products-page__categories {
+  display: flex;
+  flex-shrink: 0;
+  gap: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px));
+}
+
+.movie-concessions-products-page__products {
+  display: grid;
+  flex: 1 1 auto;
+  min-width: 0;
+  width: 100%;
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+}
+
+.movie-concessions-products-page__products>.concession-card {
+  width: 100%;
+  min-width: 0;
+}
+
+.movie-concessions-products-page__cart-actions {
+  position: fixed;
+  right: var(--Responsive-Margin, var(--Margin, 64px));
+  bottom: calc(
+    var(--movie-concessions-products-footer-height) +
+    var(--Responsive-spacingBottomSafeArea, var(--spacing-bottom-safe-area, 64px))
+  );
+  z-index: 25;
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+}
+
+/* The shared cart keeps the purchase-page FAB above its fixed footer. */
+.movie-concessions-products-page > .customer-concession-cart-actions {
+  right: var(--Responsive-Margin, var(--Margin, 64px));
+  bottom: calc(
+    var(--movie-concessions-products-footer-height) +
+    var(--Responsive-Spacing-xl, var(--Spacing-xl, 32px))
+  );
+}
+
+.movie-concessions-products-page__product--wide-canvas .concession-card-image {
+  object-position: left center;
+}
+
+.movie-concessions-products-page--has-cart-actions .movie-concessions-products-page__main {
+  padding-bottom: calc(
+    var(--movie-concessions-products-footer-height) +
+    var(--Responsive-spacingBottomSafeArea, var(--spacing-bottom-safe-area, 64px)) +
+    116px +
+    var(--layout-gap-header-nav, 48px)
+  );
+}
+
+.movie-concessions-products-page--has-cart-actions.movie-concessions-products-page--sales-closing .movie-concessions-products-page__main {
+  padding-bottom: calc(
+    var(--movie-concessions-products-footer-height) +
+    var(--Responsive-Spacing-xl, var(--Spacing-xl, 32px)) +
+    var(--purchase-session-closing-alert-height, 112px) +
+    var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px))
+  );
+}
+
+.movie-concessions-products-page--has-cart-actions.movie-concessions-products-page--sales-closing .movie-concessions-products-page__cart-actions {
+  bottom: calc(
+    var(--movie-concessions-products-footer-height) +
+    var(--Responsive-Spacing-xl, var(--Spacing-xl, 32px)) +
+    var(--purchase-session-closing-alert-height, 112px) +
+    var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px))
+  );
+}
+
+.movie-concessions-products-page--has-cart-actions.movie-concessions-products-page--sales-closing > .customer-concession-cart-actions {
+  bottom: calc(
+    var(--movie-concessions-products-footer-height) +
+    var(--Responsive-Spacing-xl, var(--Spacing-xl, 32px)) +
+    var(--purchase-session-closing-alert-height, 112px) +
+    var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px))
+  );
+}
+
+.movie-concessions-products-page>.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 30;
+  min-height: var(--movie-concessions-products-footer-height);
+  border-radius: 0 0 var(--Border-Radius-400, 16px) var(--Border-Radius-400, 16px);
+}
+
+.movie-concessions-products-page--vertical .movie-concessions-products-page__content {
+  flex-direction: row;
+}
+
+.movie-concessions-products-page--vertical .movie-concessions-products-page__categories {
+  position: sticky;
+  top: calc(var(--movie-concessions-products-header-height) + var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px)));
+  flex-direction: column;
+  width: 234px;
+}
+
+.movie-concessions-products-page--vertical .movie-concessions-products-page__categories>.concessions-tab {
+  width: 100%;
+}
+
+.movie-concessions-products-page--vertical .movie-concessions-products-page__products {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.movie-concessions-products-page--horizontal .movie-concessions-products-page__content {
+  flex-direction: column;
+}
+
+.movie-concessions-products-page--horizontal .movie-concessions-products-page__categories {
+  position: sticky;
+  top: var(--movie-concessions-products-header-height);
+  z-index: 10;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-block: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+  background: var(--Contextual-Surface-BackgroundPage-Default, var(--Surface-BackgroundPage-Default, #f8f8f9));
+}
+
+.movie-concessions-products-page--horizontal .movie-concessions-products-page__products {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .movie-concessions-products-page *,
+  .movie-concessions-products-page *::before,
+  .movie-concessions-products-page *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

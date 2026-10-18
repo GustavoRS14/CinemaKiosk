@@ -1,0 +1,25 @@
+.overlay-dialog {
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+}
+
+.overlay-dialog.overlay-dialog--size-xs {
+  width: var(--Responsive-ModalSlideOver-modalWidthXs, 360px);
+}
+
+.overlay-dialog.overlay-dialog--size-sm {
+  width: var(--Responsive-ModalSlideOver-modalWidthSm, 480px);
+}
+
+.overlay-dialog.overlay-dialog--size-md {
+  width: var(--Responsive-ModalSlideOver-modalWidthMd, 640px);
+}
+
+.overlay-dialog.overlay-dialog--size-lg {
+  width: var(--Responsive-ModalSlideOver-modalWidthLg, 800px);
+}
+
+.overlay-dialog.overlay-dialog--size-xl {
+  width: var(--Responsive-ModalSlideOver-modalWidthXl, 960px);
+}

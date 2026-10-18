@@ -1,0 +1,134 @@
+.header {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--Responsive-Spacing-md, var(--Spacing-md, 16px)) var(--Responsive-Margin, var(--Margin, 64px));
+  background-color: var(--Contextual-Surface-Primary-Default, var(--Surface-Primary-Default, #980038));
+  border-bottom: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+  flex-shrink: 0;
+}
+
+/* Background Overrides for specific flows */
+.header[data-type="Purchase"],
+.header[data-type="Offline"],
+.header[data-context="Admin"] {
+  background-color: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff));
+}
+
+/* Center logo exclusively for Offline */
+.header[data-type="Offline"] {
+  justify-content: center;
+}
+
+/* 3-Column Layout Trick for Absolute Centering */
+.header-left {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* New Wrapper for Time/Date and CloseButton */
+.header-actions-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+}
+
+.header-time-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+  flex-shrink: 0;
+  color: var(--Contextual-Text-OnColor-heading, var(--Text-OnColor-heading, #ffffff));
+}
+
+/* The default Header shares the primary surface with the primary Button.
+   Reuse its WCAG-tested White/Black foreground decision for Header content. */
+.header[data-type="Default"]:not([data-context="Admin"]) .header-time-date,
+.header[data-type="Default"]:not([data-context="Admin"]) .user-badge-text-container {
+  color: var(--Button-Text-Primary-onColor, var(--Contextual-Text-OnColor-heading, #ffffff));
+}
+
+.header[data-type="Default"]:not([data-context="Admin"]) .user-badge-icon {
+  color: var(--Button-Icon-Primary-onColor, var(--Contextual-Icon-OnColor-Body, #ffffff));
+}
+
+/* Purchase Variant Time & Date Color Override */
+.header[data-type="Purchase"] .header-time-date {
+  color: var(--Contextual-Text-Primary-default, var(--Text-Primary-default, #980038));
+}
+
+.header-time {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins'));
+  font-weight: var(--Primitive-Fonts-Poppins-Weight-Bold, 700);
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+}
+
+.header-date {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins'));
+  font-weight: var(--Primitive-Fonts-Poppins-Weight-Medium, 500);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+}
+
+/* =========================================
+   ADMIN FLOW SPECIFICS
+   ========================================= */
+.header-admin-content {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+}
+
+.header-vendor-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+  color: var(--Icon-Default-heading, #000);
+}
+
+/* Force any imported SVG inside the wrapper to respect the specific color token */
+.header-vendor-wrapper svg {
+  fill: var(--Contextual-Icon-Default-heading, #000);
+  color: var(--Contextual-Icon-Default-heading, #000);
+}
+
+.header-powered-text {
+  margin: 0;
+  color: var(--Contextual-Text-Default-heading, #000);
+  text-align: center;
+  /* Primária/Captions/Medium */
+  font-family: var(--Font-Primary, Poppins);
+  font-size: var(--Font-Headings-Captions-Text-Size, 12px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(--Font-Headings-Captions-Line-Height, 16px);
+}

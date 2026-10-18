@@ -1,0 +1,105 @@
+.loading-animation {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: var(--loading-animation-size, 240px);
+  height: auto;
+  aspect-ratio: 420 / 520;
+  line-height: 0;
+}
+
+.loading-animation > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Color definitions per design system requirements */
+.loading-animation [fill='#980038' i] {
+  fill: var(--Contextual-Icon-Primary-default, var(--Icon-Primary-default, #980038)) !important;
+}
+
+.loading-animation [stroke='#980038' i] {
+  stroke: var(--Contextual-Icon-Primary-default, var(--Icon-Primary-default, #980038)) !important;
+}
+
+.loading-animation [fill='#FFFFFF' i],
+.loading-animation [fill='white' i] {
+  fill: var(--Contextual-Icon-Primary-onColor, var(--Icon-Primary-onColor, #FFFFFF)) !important;
+}
+
+.loading-animation [stroke='#FFFFFF' i],
+.loading-animation [stroke='white' i] {
+  stroke: var(--Contextual-Icon-Primary-onColor, var(--Icon-Primary-onColor, #FFFFFF)) !important;
+}
+
+/* Chewing Animation: cheek and mouth moving rhythmically in a continuous loop */
+.loading-animation .loading-animation__cheek {
+  transform-box: fill-box;
+  transform-origin: center left;
+  animation: loading-animation-chew 800ms ease-in-out infinite;
+}
+
+.loading-animation .loading-animation__mouth {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: loading-animation-mouth-chew 800ms ease-in-out infinite;
+}
+
+@keyframes loading-animation-chew {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1, 1);
+  }
+
+  20% {
+    /* Jaw moves and cheek puffs out with popcorn */
+    transform: translate(3.5px, 1.5px) scale(1.16, 0.88);
+  }
+
+  45% {
+    /* Bite down: cheek contracts horizontally and extends slightly vertically */
+    transform: translate(-1px, -2px) scale(0.92, 1.10);
+  }
+
+  70% {
+    /* Second chew compression */
+    transform: translate(2.5px, 1px) scale(1.12, 0.90);
+  }
+
+  85% {
+    /* Rebound easing back to rest */
+    transform: translate(-0.5px, -1px) scale(0.96, 1.04);
+  }
+}
+
+@keyframes loading-animation-mouth-chew {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  20% {
+    transform: translate(1px, 1px) scale(1.02, 0.98);
+  }
+
+  45% {
+    transform: translate(-0.5px, -1px) scale(0.98, 1.02);
+  }
+
+  70% {
+    transform: translate(1px, 0.5px) scale(1.02, 0.98);
+  }
+
+  85% {
+    transform: translate(-0.2px, -0.5px) scale(0.99, 1.01);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loading-animation .loading-animation__cheek,
+  .loading-animation .loading-animation__mouth {
+    animation: none;
+  }
+}

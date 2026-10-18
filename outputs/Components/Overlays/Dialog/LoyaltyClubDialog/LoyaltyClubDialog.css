@@ -1,0 +1,150 @@
+.loyalty-club-dialog {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-height: 512px;
+  overflow: hidden;
+  border: var(--Semantic-BorderWidth-25, 1px) solid var(--Contextual-Border-Tertiary-Default, #c1c7d1);
+  border-radius: var(--Semantic-BorderRadius-400, 16px);
+  background: var(--Contextual-Surface-Secondary-Default, #fff);
+  backdrop-filter: blur(8px);
+}
+
+.loyalty-club-dialog__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--Responsive-Spacing-xl, 32px);
+  box-sizing: border-box;
+  padding: var(--Responsive-Spacing-2xl, 48px) var(--Responsive-Spacing-xl, 32px);
+  background: var(--Contextual-Surface-Tertiary-Default, #f1f1f2);
+}
+
+.loyalty-club-dialog__logo {
+  width: 164px;
+  max-width: 100%;
+}
+
+.loyalty-club-dialog__copy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-sm, 12px);
+  width: 100%;
+  text-align: center;
+}
+
+.loyalty-club-dialog__copy h2,
+.loyalty-club-dialog__copy p,
+.loyalty-club-dialog__qr-card p {
+  margin: 0;
+  font-family: var(--Semantic-Font-Primary, 'Poppins', sans-serif);
+  word-break: break-word;
+}
+
+.loyalty-club-dialog__copy h2 {
+  color: var(--Contextual-Text-Default-body, #000);
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, 24px);
+  font-weight: var(--Typography-Semantic-Primária-H5-Semibold-fontWeight, 600);
+  line-height: var(--Responsive-Font-Headings-H5-ParagraphSpacing, 28px);
+}
+
+.loyalty-club-dialog__copy p {
+  color: var(--Contextual-Text-Default-caption, #282e38);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, 16px);
+  font-weight: var(--Typography-Semantic-Primária-Body-Regular-fontWeight, 400);
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, 20px);
+}
+
+.loyalty-club-dialog__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-md, 16px);
+  width: 100%;
+}
+
+.loyalty-club-dialog__actions .totem-button {
+  width: 100%;
+  min-height: 80px;
+}
+
+.loyalty-club-dialog__qr-panel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  overflow: hidden;
+  background: var(--Contextual-Surface-Secondary-Default, #fff);
+}
+
+.loyalty-club-dialog__background {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  max-width: none;
+  transform: translateX(-50%);
+}
+
+.loyalty-club-dialog__background [fill="#64748B" i] {
+  fill: var(--Contextual-Icon-Default-captionMuted, #64748B);
+}
+
+.loyalty-club-dialog__background [fill="white" i],
+.loyalty-club-dialog__background [fill="#FFF" i],
+.loyalty-club-dialog__background [fill="#FFFFFF" i] {
+  fill: var(--Icon-OnColor-body, #FFF);
+}
+
+.loyalty-club-dialog__qr-card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 217px;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--Responsive-Spacing-sm, 12px);
+  box-sizing: border-box;
+  padding: var(--Responsive-Spacing-sm, 12px);
+  border: var(--Semantic-BorderWidth-50, 2px) solid var(--Contextual-Border-Primary-Default, #980038);
+  border-radius: var(--Semantic-BorderRadius-300, 12px);
+  background: var(--Contextual-Surface-Secondary-Default, #fff);
+}
+
+.loyalty-club-dialog__qr-code,
+.loyalty-club-dialog__qr-svg,
+.loyalty-club-dialog__qr-fallback {
+  display: block;
+  width: 189px;
+  height: 189px;
+}
+
+.loyalty-club-dialog__qr-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loyalty-club-dialog__qr-fallback {
+  object-fit: contain;
+}
+
+.loyalty-club-dialog__qr-card p {
+  color: var(--Contextual-Text-Default-caption, #282e38);
+  font-size: var(--Responsive-Font-Headings-BodySm-TextSize, 14px);
+  font-weight: var(--Typography-Semantic-Primária-BodySm-Medium-fontWeight, 500);
+  line-height: var(--Responsive-Font-Headings-BodySm-LineHeight, 16px);
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .loyalty-club-dialog {
+    grid-template-columns: 1fr;
+  }
+
+  .loyalty-club-dialog__qr-panel {
+    min-height: 360px;
+  }
+}

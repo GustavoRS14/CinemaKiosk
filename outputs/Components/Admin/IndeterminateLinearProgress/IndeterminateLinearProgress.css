@@ -1,0 +1,32 @@
+.indeterminate-linear-progress-container {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  overflow: hidden;
+  border-radius: var(--Semantic-BorderRadius-200, var(--BorderRadius-200, 8px));
+  /* Chained variables: Try Contextual prefix -> Try Generic prefix -> Fallback HEX */
+  background: var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #C1C7D1));
+  box-sizing: border-box;
+}
+
+.indeterminate-linear-progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 4px;
+  border-radius: var(--Semantic-BorderRadius-200, var(--BorderRadius-200, 8px));
+  background-color: var(--Contextual-Border-ProgressIndicator-Default, var(--Border-ProgressIndicator-Default, #1B64DA));
+  animation: indeterminate-progress 1.2s infinite ease-in-out;
+  box-sizing: border-box;
+}
+
+@keyframes indeterminate-progress {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(200%);
+  }
+}

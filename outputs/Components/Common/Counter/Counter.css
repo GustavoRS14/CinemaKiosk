@@ -1,0 +1,31 @@
+.totem-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px));
+  width: max-content;
+  position: relative;
+}
+
+.totem-counter__text {
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, var(--Font-Headings-H5-TextSize, 24px));
+  font-weight: 600;
+  line-height: var(--Responsive-Font-Headings-H5-LineHeight, var(--Font-Headings-H5-LineHeight, 28px));
+  min-width: 32px;
+  text-align: center;
+  margin: 0;
+  user-select: none;
+}
+
+.totem-counter[data-state="Disabled"] .totem-counter__text {
+  color: var(--Contextual-Text-Disabled-default, var(--Text-Disabled-default, #5C6674));
+}
+
+.totem-counter__tooltip-wrapper {
+  position: absolute;
+  bottom: calc(100% + 23px); /* 8px gap + 15px caret height */
+  right: 0;
+  z-index: 50;
+}

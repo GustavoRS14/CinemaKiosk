@@ -1,0 +1,38 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "Brand": {
+    "$extensions": {
+      "figma": {
+        "collectionName": "Brand",
+        "modes": [
+          "Mode 1"
+        ],
+        "defaultMode": "Mode 1"
+      },
+      "brand": {
+        "name": "Kinoplex",
+        "roles": {
+          "primary": "Orange",
+          "secondary": "Orange"
+        }
+      }
+    },
+    "Palettes": {
+      "Red": {
+        "50": {
+          "$type": "color",
+          "$value": "#F07D00",
+          "$extensions": {
+            "figma": {
+              "variableName": "Orange/500",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

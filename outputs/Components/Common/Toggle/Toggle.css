@@ -1,0 +1,110 @@
+.totem-toggle {
+position: relative;
+display: inline-flex;
+align-items: center;
+width: var(--Primitive-Scale-1500);
+height: var(--Primitive-Scale-1100);
+border-radius: var(--Semantic-BorderRadius-Round);
+box-sizing: border-box;
+padding: 0;
+border-style: solid;
+border-width: var(--Semantic-BorderWidth-50);
+cursor: pointer;
+appearance: none;
+outline: none;
+user-select: none;
+touch-action: manipulation;
+transition: background-color 200ms ease, border-color 200ms ease;
+font-family: var(--Semantic-Font-Primary);
+}
+
+.totem-toggle[data-state="disabled"] {
+cursor: not-allowed;
+}
+
+/* ACTIVE (ON) */
+.totem-toggle[data-active="true"][data-state="default"] {
+background-color: var(--Contextual-Surface-Primary-Default);
+border-color: var(--Contextual-Border-Primary-Default);
+}
+.totem-toggle[data-active="true"][data-state="pressed"],
+.totem-toggle[data-active="true"][data-state="default"]:hover,
+.totem-toggle[data-active="true"][data-state="default"]:active {
+background-color: var(--Contextual-Surface-Primary-DefaultPressed);
+border-color: var(--Contextual-Border-Primary-DefaultPressed);
+}
+.totem-toggle[data-active="true"][data-state="disabled"] {
+background-color: var(--Contextual-Surface-Disabled-DisabledDefault);
+border-color: var(--Contextual-Border-Disabled-DisabledDefault);
+}
+
+/* INACTIVE (OFF) */
+.totem-toggle[data-active="false"][data-state="default"] {
+background-color: var(--Contextual-Surface-Toggle-InactiveDefault);
+border-color: var(--Contextual-Border-Tertiary-Default);
+}
+.totem-toggle[data-active="false"][data-state="pressed"],
+.totem-toggle[data-active="false"][data-state="default"]:hover,
+.totem-toggle[data-active="false"][data-state="default"]:active {
+background-color: var(--Contextual-Surface-Toggle-InactivePressed);
+border-color: var(--Contextual-Border-Tertiary-Pressed);
+}
+.totem-toggle[data-active="false"][data-state="disabled"] {
+background-color: var(--Contextual-Surface-Disabled-DisabledDefault);
+border-color: var(--Contextual-Border-Disabled-DisabledDefault);
+}
+
+/* --- THUMB --- */
+.totem-toggle-thumb {
+position: absolute;
+width: var(--Primitive-Scale-800);
+height: var(--Primitive-Scale-800);
+border-radius: 50%;
+box-sizing: border-box;
+transition: left 200ms ease, background-color 200ms ease, border-color 200ms ease, border-width 200ms ease;
+pointer-events: none;
+flex-shrink: 0;
+/* Default Thumb Background */
+background-color: var(--Contextual-Surface-Static-Default);
+border-style: solid;
+}
+
+/* Disabled Thumb Background */
+.totem-toggle[data-state="disabled"] .totem-toggle-thumb {
+background-color: var(--Contextual-Surface-Disabled-DisabledSecondary);
+}
+
+/* Inactive Thumb Positioning & Border */
+.totem-toggle[data-active="false"] .totem-toggle-thumb {
+left: calc(var(--Primitive-Scale-200) - var(--Semantic-BorderWidth-50));
+border-width: var(--Semantic-BorderWidth-50);
+}
+.totem-toggle[data-active="false"][data-state="default"] .totem-toggle-thumb {
+border-color: var(--Contextual-Border-Tertiary-Default);
+}
+.totem-toggle[data-active="false"][data-state="pressed"] .totem-toggle-thumb,
+.totem-toggle[data-active="false"][data-state="default"]:hover .totem-toggle-thumb,
+.totem-toggle[data-active="false"][data-state="default"]:active .totem-toggle-thumb {
+border-color: var(--Contextual-Border-Tertiary-Pressed);
+}
+
+/* CRITICAL FIX: Removed border-width to match the active thumb size when disabled */
+.totem-toggle[data-active="false"][data-state="disabled"] .totem-toggle-thumb {
+border-width: 0;
+border-color: transparent;
+}
+
+/* Active Thumb Positioning & Border */
+.totem-toggle[data-active="true"] .totem-toggle-thumb {
+left: calc(100% - var(--Primitive-Scale-800) - (var(--Primitive-Scale-200) - var(--Semantic-BorderWidth-50)));
+border-width: 0;
+border-color: transparent;
+}
+.totem-toggle[data-active="true"][data-state="default"] .totem-toggle-thumb {
+background-color: var(--Button-Icon-Primary-onColor, var(--Contextual-Surface-Static-Default));
+}
+.totem-toggle[data-active="true"][data-state="pressed"] .totem-toggle-thumb,
+.totem-toggle[data-active="true"][data-state="default"]:hover .totem-toggle-thumb,
+.totem-toggle[data-active="true"][data-state="default"]:active .totem-toggle-thumb {
+background-color: var(--Button-Icon-Primary-onColorPressed, var(--Contextual-Surface-Static-Default));
+}

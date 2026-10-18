@@ -1,0 +1,19 @@
+.purchase-session-closing-alert-shell {
+  position: fixed;
+  right: var(--Responsive-Margin, var(--Margin, 64px));
+  bottom: calc(
+    var(--purchase-session-footer-height, 112px) +
+    var(--Responsive-Spacing-xl, var(--Spacing-xl, 32px))
+  );
+  left: var(--Responsive-Margin, var(--Margin, 64px));
+  z-index: 29;
+}
+
+.purchase-session-closing-alert.totem-alert {
+  width: 100%;
+  max-width: none;
+}
+
+.purchase-session-closing-alert__time {
+  font-weight: var(--Typography-Semantic-Primária-Body-Semibold-fontWeight, 600);
+}

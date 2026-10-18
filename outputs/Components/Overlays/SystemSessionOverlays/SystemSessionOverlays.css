@@ -1,0 +1,19 @@
+.system-session-overlays__inactivity-surface {
+  z-index: 2400;
+}
+
+.system-session-overlays__inactivity-content {
+  display: contents;
+}
+
+.system-session-overlays__countdown {
+  color: var(--Contextual-Text-Primary-default, #980038);
+}
+
+.system-session-overlays__inactivity-illustration [fill="#282E38" i] {
+  fill: var(--Contextual-Icon-Static-Caption-default, var(--Icon-Static-Caption-default, #282E38));
+}
+
+.system-session-overlays__inactivity-illustration [stroke="#282E38" i] {
+  stroke: var(--Contextual-Icon-Static-Caption-default, var(--Icon-Static-Caption-default, #282E38));
+}

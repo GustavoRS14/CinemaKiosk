@@ -1,0 +1,76 @@
+.totem-close-button {
+  align-items: center;
+  appearance: none;
+  border-radius: var(--Semantic-BorderRadius-Round, var(--BorderRadius-Round, 512px));
+  border-style: solid;
+  border-width: var(--Semantic-BorderWidth-50, var(--BorderWidth-50, 2px));
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  touch-action: manipulation;
+  user-select: none;
+  transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease;
+}
+
+.totem-close-button[data-state="Disabled"] {
+  cursor: not-allowed;
+}
+
+.totem-close-button__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+/* --- VARIANTS & STATES --- */
+
+/* Type: Contained */
+.totem-close-button[data-type="Contained"][data-state="Default"] {
+  background-color: var(--Contextual-Surface-CloseButton-DefaultContained, var(--Surface-CloseButton-DefaultContained, #E0E3E8));
+  color: var(--Contextual-Icon-Default-body, var(--Icon-Default-body, #000000));
+  border-color: var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #C1C7D1));
+}
+
+.totem-close-button[data-type="Contained"][data-state="Pressed"],
+.totem-close-button[data-type="Contained"][data-state="Default"]:hover,
+.totem-close-button[data-type="Contained"][data-state="Default"]:active {
+  /* Note: JSON spelling is PressedConteined */
+  background-color: var(--Contextual-Surface-CloseButton-PressedConteined, var(--Surface-CloseButton-PressedConteined, #A2ACB9));
+  color: var(--Contextual-Icon-Error-defaultPressed, var(--Icon-Error-defaultPressed, #841717));
+  border-color: var(--Contextual-Border-Tertiary-Pressed, var(--Border-Tertiary-Pressed, #A2ACB9));
+}
+
+.totem-close-button[data-type="Contained"][data-state="Disabled"] {
+  background-color: var(--Contextual-Surface-Disabled-DisabledDefault, var(--Surface-Disabled-DisabledDefault, #C1C7D1));
+  color: var(--Contextual-Icon-Disabled-default, var(--Icon-Disabled-default, #5C6674));
+  border-color: var(--Contextual-Border-Disabled-DisabledDefault, var(--Border-Disabled-DisabledDefault, #C1C7D1));
+}
+
+/* Type: Ghost */
+.totem-close-button[data-type="Ghost"][data-state="Default"] {
+  background-color: transparent;
+  color: var(--Contextual-Icon-Default-body, var(--Icon-Default-body, #000000));
+  border-color: transparent;
+}
+
+.totem-close-button[data-type="Ghost"][data-state="Pressed"],
+.totem-close-button[data-type="Ghost"][data-state="Default"]:hover,
+.totem-close-button[data-type="Ghost"][data-state="Default"]:active {
+  background-color: var(--Contextual-Surface-CloseButton-PressedGhost, var(--Surface-CloseButton-PressedGhost, #E0E3E8));
+  color: var(--Contextual-Icon-Error-defaultPressed, var(--Icon-Error-defaultPressed, #841717));
+  border-color: transparent;
+}
+
+.totem-close-button[data-type="Ghost"][data-state="Disabled"] {
+  background-color: var(--Contextual-Surface-Disabled-DisabledDefault, var(--Surface-Disabled-DisabledDefault, #C1C7D1));
+  color: var(--Contextual-Icon-Disabled-default, var(--Icon-Disabled-default, #5C6674));
+  border-color: transparent;
+}

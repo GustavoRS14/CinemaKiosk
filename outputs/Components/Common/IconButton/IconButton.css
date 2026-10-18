@@ -1,0 +1,53 @@
+.totem-icon-button {
+  align-items: center;
+  appearance: none;
+  border-radius: var(--Semantic-BorderRadius-200, var(--BorderRadius-200, 8px));
+  border-style: solid;
+  border-width: var(--Semantic-BorderWidth-50, var(--BorderWidth-50, 2px));
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  touch-action: manipulation;
+  user-select: none;
+  transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease;
+}
+
+.totem-icon-button[data-state="Disabled"] {
+  cursor: not-allowed;
+}
+
+.totem-icon-button__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+/* --- STATES --- */
+
+.totem-icon-button[data-state="Default"] {
+  background-color: var(--Contextual-Surface-Primary-Default, var(--Surface-Primary-Default, #980038));
+  border-color: var(--Contextual-Border-Primary-Default, var(--Border-Primary-Default, #980038));
+  color: var(--Button-Icon-Primary-onColor, var(--Contextual-Icon-Primary-onColor, #FFFFFF));
+}
+
+.totem-icon-button[data-state="Pressed"],
+.totem-icon-button[data-state="Default"]:hover,
+.totem-icon-button[data-state="Default"]:active {
+  background-color: var(--Contextual-Surface-Primary-DefaultPressed, var(--Surface-Primary-DefaultPressed, #7A002D));
+  border-color: var(--Contextual-Border-Primary-DefaultPressed, var(--Border-Primary-DefaultPressed, #7A002D));
+  color: var(--Button-Icon-Primary-onColorPressed, var(--Contextual-Icon-Primary-onColorPressed, #FFFFFF));
+}
+
+.totem-icon-button[data-state="Disabled"] {
+  background-color: var(--Contextual-Surface-Disabled-DisabledDefault, var(--Surface-Disabled-DisabledDefault, #C1C7D1));
+  border-color: var(--Contextual-Border-Disabled-DisabledDefault, var(--Border-Disabled-DisabledDefault, #C1C7D1));
+  color: var(--Contextual-Icon-Disabled-default, var(--Icon-Disabled-default, #5C6674));
+}

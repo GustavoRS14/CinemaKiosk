@@ -1,0 +1,42 @@
+.customer-concession-cart-actions {
+  position: fixed;
+  right: var(--Responsive-Margin, var(--Margin, 64px));
+  z-index: 25;
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+}
+
+.customer-concession-cart-actions--horizontal {
+  bottom: var(--Responsive-spacingBottomSafeArea, var(--spacing-bottom-safe-area, 64px));
+}
+
+.customer-concession-cart-actions--vertical {
+  bottom: calc(124px + var(--Responsive-Spacing-xl, var(--Spacing-xl, 32px)));
+}
+
+.movie-details-page .customer-concession-cart-actions,
+.page-wrapper .customer-concession-cart-actions,
+.movies-pre-sale-page .customer-concession-cart-actions {
+  right: var(--Responsive-Margin, var(--Margin, 64px));
+}
+
+.movie-details-page .customer-concession-cart-actions--vertical,
+.page-wrapper .customer-concession-cart-actions--vertical,
+.movies-pre-sale-page .customer-concession-cart-actions--vertical {
+  bottom: calc(124px + var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px)));
+}
+
+.page-wrapper:has(.customer-concession-cart-actions) main,
+.movie-details-page:has(.customer-concession-cart-actions) main {
+  padding-bottom: calc(
+    var(--Responsive-spacingBottomSafeArea, var(--spacingBottomSafeArea, 64px)) +
+    116px +
+    var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px)) +
+    var(--Responsive-layoutGapHeaderNav, var(--layout-gap-header-nav, 48px))
+  );
+}
+
+.customer-concession-cart-clear-dialog {
+  z-index: 1300;
+}

@@ -1,0 +1,49 @@
+.hero-carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.hero-carousel__track {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/*
+Default state (idle) is waiting out of view to the right (translateX 100%).
+Transition is ONLY applied to entering and leaving states to avoid rewind-snapping.
+*/
+.hero-carousel__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+  transition: none;
+  z-index: 1;
+}
+
+/* Entering/Active slide sliding in from right to center */
+.hero-carousel__slide--active {
+  transform: translateX(0);
+  transition: transform 0.8s ease-in-out;
+  z-index: 3;
+}
+
+/* Leaving slide sliding out from center to left */
+.hero-carousel__slide--prev {
+  transform: translateX(-100%);
+  transition: transform 0.8s ease-in-out;
+  z-index: 2;
+}
+
+/* CRITICAL FIX: Explicit static state for single-item carousels */
+.hero-carousel__slide--static {
+  transform: translateX(0);
+  transition: none;
+  z-index: 3;
+}

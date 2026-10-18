@@ -1,0 +1,38 @@
+.pagination-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--Responsive-Border-Radius-Round, var(--Border-Radius-Round, 512px));
+  border: var(--Responsive-Border-Width-50, var(--Border-Width-50, 2px)) solid var(--Contextual-Border-Primary-Default, var(--Border-Primary-Default, #980038));
+  background: var(--Contextual-Surface-Primary-Default, var(--Surface-Primary-Default, #980038));
+  color: var(--Contextual-Icon-OnColor-Body, var(--Icon-OnColor-Body, #ffffff));
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pagination-button:active:not(:disabled) {
+  background: var(--Contextual-Surface-Primary-DefaultPressed, var(--Surface-Primary-DefaultPressed, #7a002d));
+  border-color: var(--Contextual-Border-Primary-DefaultPressed, var(--Border-Primary-DefaultPressed, #7a002d));
+  color: var(--Contextual-Icon-Primary-OnColorPressed, var(--Icon-Primary-OnColorPressed, #c1c7d1));
+}
+
+.pagination-button:disabled {
+  background: var(--Contextual-Surface-Disabled-DisabledDefault, var(--Surface-Disabled-DisabledDefault, #c1c7d1));
+  border-color: var(--Contextual-Border-Disabled-DisabledDefault, var(--Border-Disabled-DisabledDefault, #c1c7d1));
+  color: var(--Contextual-Icon-Disabled-Default, var(--Icon-Disabled-Default, #505d6f));
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.pagination-button svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.pagination-button[data-direction="left"] svg {
+  transform: rotate(180deg);
+}

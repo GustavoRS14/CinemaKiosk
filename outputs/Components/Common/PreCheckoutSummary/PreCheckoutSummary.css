@@ -1,0 +1,153 @@
+.pre-checkout-summary {
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  position: relative;
+  border-width: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px));
+  border-style: solid;
+  border-radius: var(--Semantic-BorderRadius-300, var(--BorderRadius-300, 12px));
+  background-color: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff));
+  border-color: var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  padding: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  width: 100%;
+}
+
+.pre-checkout-summary__movie-poster {
+  width: 194px !important;
+  height: 292px !important;
+  max-width: none !important;
+  flex-shrink: 0;
+}
+
+.pre-checkout-summary__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  min-width: 1px;
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  padding-top: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  position: relative;
+}
+
+.pre-checkout-summary__title {
+  font-family: var(--Semantic-Font-Primary, 'Poppins');
+  font-weight: var(--Typography-Semantic-Primária-H5-Bold-fontWeight, 700);
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, var(--Font-Headings-H5-TextSize, 24px));
+  line-height: var(--Responsive-Font-Headings-H5-LineHeight, var(--Font-Headings-H5-LineHeight, 28px));
+  color: var(--Contextual-Text-Default-heading, var(--Text-Default-heading, #000000));
+  margin: 0;
+  word-break: break-word;
+}
+
+.pre-checkout-summary__genre-duration {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+  font-family: var(--Semantic-Font-Primary, 'Poppins');
+  font-weight: var(--Typography-Semantic-Primária-Body-Medium-fontWeight, 500);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  color: var(--Contextual-Text-Default-captionMuted, var(--Text-Default-captionMuted, #64748b));
+  white-space: nowrap;
+  word-break: break-word;
+}
+
+.pre-checkout-summary__date-time {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+  font-family: var(--Semantic-Font-Primary, 'Poppins');
+  font-weight: var(--Typography-Semantic-Primária-H6-Semibold-fontWeight, 600);
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+  color: var(--Contextual-Text-Primary-default, var(--Text-Primary-default, #980038));
+  white-space: nowrap;
+  word-break: break-word;
+}
+
+.pre-checkout-summary__end-time-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+  width: 100%;
+}
+
+.pre-checkout-summary__end-time {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+  font-family: var(--Semantic-Font-Primary, 'Poppins');
+  font-weight: var(--Typography-Semantic-Primária-H6-Medium-fontWeight, 500);
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+  white-space: nowrap;
+}
+
+.pre-checkout-summary__end-time-caption {
+  font-family: var(--Semantic-Font-Primary, 'Poppins');
+  font-weight: var(--Typography-Semantic-Primária-BodySm-Regular-fontWeight, 400);
+  font-size: var(--Responsive-Font-Headings-BodySm-TextSize, var(--Font-Headings-BodySm-TextSize, 14px));
+  line-height: var(--Responsive-Font-Headings-BodySm-LineHeight, var(--Font-Headings-BodySm-LineHeight, 16px));
+  color: var(--Contextual-Text-Default-captionMuted, var(--Text-Default-captionMuted, #64748b));
+  margin: 0;
+}
+
+.pre-checkout-summary__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+  width: 100%;
+}
+
+.pre-checkout-summary__label {
+  font-family: var(--Semantic-Font-Primary, 'Poppins');
+  font-weight: var(--Typography-Semantic-Primária-H6-Medium-fontWeight, 500);
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+  white-space: nowrap;
+  word-break: break-word;
+  margin: 0;
+}
+
+.pre-checkout-summary__tags {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+  flex-wrap: wrap;
+}
+
+.pre-checkout-summary__total-tickets {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.pre-checkout-summary__total-number {
+  color: var(--Contextual-Text-Information-default, var(--Text-Information-default, #1650ae));
+  font-family: var(--Semantic-Font-Primary, 'Poppins');
+  font-weight: var(--Typography-Semantic-Primária-H6-Medium-fontWeight, 500);
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+}
+
+/* ==========================================================================
+   CRITICAL FIX: Responsive Layout for Mobile (<= 600px)
+   ========================================================================== */
+@media (max-width: 600px) {
+  .pre-checkout-summary {
+    flex-direction: column;
+    align-items: flex-start;
+    /* CRITICAL FIX: Ensures poster doesn't stretch */
+  }
+
+  .pre-checkout-summary__content {
+    width: 100%;
+    padding-top: 0;
+    /* Gap from parent handles the vertical spacing now */
+  }
+}

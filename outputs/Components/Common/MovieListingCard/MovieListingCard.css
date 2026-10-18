@@ -1,0 +1,188 @@
+.movie-listing-card {
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  position: relative;
+  border-width: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px));
+  border-style: solid;
+  border-radius: var(--Semantic-BorderRadius-300, var(--BorderRadius-300, 12px));
+  background-color: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff));
+  border-color: var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+}
+
+.movie-listing-card--detailed {
+  flex-direction: row;
+  width: 952px;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  padding: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+}
+
+.movie-listing-card--simplified {
+  flex-direction: column;
+  width: 314px;
+  /* CRITICAL FIX: Restored gap and applied the requested spacing to all sides of the card */
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  padding: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  cursor: pointer;
+}
+
+.movie-listing-card--simplified:hover,
+.movie-listing-card--simplified:active,
+.movie-listing-card--simplified.movie-listing-card--pressed {
+  background-color: var(--Contextual-Surface-Secondary-DefaultPressed, var(--Surface-Secondary-DefaultPressed, #e3e3e4));
+  border-color: var(--Contextual-Border-Tertiary-Pressed, var(--Border-Tertiary-Pressed, #a2acb9));
+}
+
+/* Poster Wrapper overrides (Detailed Only) */
+.movie-listing-card__poster-detailed {
+  width: 272px;
+  height: 412px;
+  flex-shrink: 0;
+  max-width: none;
+  /* Overrides MoviePoster's internal max-width */
+}
+
+/* Properly overrides MoviePoster's internal max-width to allow Figma Fill Container */
+.movie-listing-card__poster-simplified {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  aspect-ratio: 319 / 480;
+  align-self: stretch;
+  flex-shrink: 0;
+}
+
+/* Main Content Wrapper */
+.movie-listing-card__main-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+
+.movie-listing-card--detailed .movie-listing-card__main-content {
+  flex: 1 0 0;
+  min-width: 1px;
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  padding-top: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  align-items: flex-start;
+}
+
+.movie-listing-card--simplified .movie-listing-card__main-content {
+  flex-shrink: 0;
+  width: 100%;
+  gap: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+  align-items: flex-start;
+}
+
+.movie-listing-card__title-row {
+  display: flex;
+  gap: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px));
+  align-items: center;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.movie-listing-card__title {
+  font-family: var(--Semantic-Font-Primary, 'Poppins');
+  font-weight: var(--Typography-Semantic-Primária-H6-Bold-fontWeight, 700);
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+  color: var(--Contextual-Text-Default-heading, var(--Text-Default-heading, #000000));
+  white-space: nowrap;
+}
+
+.movie-listing-card__showtimes-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  width: 100%;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.movie-listing-card__showtimes-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px));
+  width: 100%;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.movie-listing-card__tags-row {
+  display: flex;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.movie-listing-card__auditorium {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+  font-family: var(--Semantic-Font-Primary, 'Poppins');
+  font-weight: var(--Typography-Semantic-Primária-Body-Medium-fontWeight, 500);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+  white-space: nowrap;
+}
+
+.movie-listing-card__experience-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+/* CRITICAL FIX: Forces the inner ExperienceContainer to Fill the 100% width */
+.movie-listing-card__experience-wrapper > * {
+  width: 100%;
+}
+
+.movie-listing-card__carousel {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.movie-listing-card__divider {
+  width: 100%;
+  height: 0;
+  flex-shrink: 0;
+}
+
+.movie-listing-card__simplified-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  /* CRITICAL FIX: Padding completely removed as requested */
+}
+
+/* CRITICAL FIX: Added word-break: break-all to ensure long uninterrupted strings wrap correctly before truncating */
+.movie-listing-card--simplified .movie-listing-card__title {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  min-height: calc(2 * var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px)));
+  max-height: calc(2 * var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px)));
+}
+
+.movie-listing-card__meta {
+  display: flex;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+  align-items: center;
+  font-family: var(--Semantic-Font-Primary, 'Poppins');
+  font-weight: var(--Typography-Semantic-Primária-Body-Medium-fontWeight, 500);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  color: var(--Contextual-Text-Default-captionMuted, #64748B);
+  white-space: nowrap;
+}

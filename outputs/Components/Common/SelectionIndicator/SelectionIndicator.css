@@ -1,0 +1,125 @@
+.selection-indicator {
+  --indicator-bg: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff));
+  --indicator-border: var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+}
+
+/* Default / Unselected */
+.selection-indicator[data-state="Default"][data-selected="false"] {
+  --indicator-bg: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff));
+  --indicator-border: var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+}
+
+/* Default / Selected */
+.selection-indicator[data-state="Default"][data-selected="true"] {
+  --indicator-bg: var(--Contextual-Surface-Primary-Default, var(--Surface-Primary-Default, #980038));
+  --indicator-border: var(--Contextual-Border-Primary-Default, var(--Border-Primary-Default, #980038));
+}
+
+/* Pressed / Unselected */
+.selection-indicator[data-state="Pressed"][data-selected="false"],
+.selection-indicator[data-selected="false"]:active:not([disabled]) {
+  --indicator-bg: var(--Contextual-Surface-Secondary-DefaultPressed, var(--Surface-Secondary-DefaultPressed, #e3e3e4));
+  --indicator-border: var(--Contextual-Border-Tertiary-Pressed, var(--Border-Tertiary-Pressed, #a2acb9));
+}
+
+/* Pressed / Selected */
+.selection-indicator[data-state="Pressed"][data-selected="true"],
+.selection-indicator[data-selected="true"]:active:not([disabled]) {
+  --indicator-bg: var(--Contextual-Surface-Primary-DefaultPressed, var(--Surface-Primary-DefaultPressed, #7a002d));
+  --indicator-border: var(--Contextual-Border-Primary-DefaultPressed, var(--Border-Primary-DefaultPressed, #7a002d));
+}
+
+/* Disabled / Unselected */
+.selection-indicator[data-state="Disabled"][data-selected="false"] {
+  --indicator-bg: var(--Contextual-Surface-DisabledDisabled-default, var(--Contextual-Surface-DisabledDisabled-Default, var(--Surface-DisabledDisabled-Default, #c1c7d1)));
+  --indicator-border: var(--Contextual-Border-DisabledDisabled-secondary, var(--Contextual-Border-DisabledDisabled-Secondary, var(--Border-DisabledDisabled-Secondary, #505d6f)));
+}
+
+/* Disabled / Selected */
+.selection-indicator[data-state="Disabled"][data-selected="true"] {
+  --indicator-bg: var(--Contextual-Surface-DisabledDisabled-default, var(--Contextual-Surface-DisabledDisabled-Default, var(--Surface-DisabledDisabled-Default, #c1c7d1)));
+  --indicator-border: var(--Contextual-Border-DisabledDisabled-secondary, var(--Contextual-Border-DisabledDisabled-Secondary, var(--Border-DisabledDisabled-Secondary, #505d6f)));
+}
+
+/* Read Only / Unselected */
+.selection-indicator[data-state="Read Only"][data-selected="false"] {
+  --indicator-bg: var(--Contextual-Surface-ReadOnly-default, var(--Contextual-Surface-ReadOnly-Default, var(--Surface-ReadOnly-Default, #e0e3e8)));
+  --indicator-border: var(--Contextual-Border-ReadOnly-secondary, var(--Contextual-Border-ReadOnly-Secondary, var(--Border-ReadOnly-Secondary, #505d6f)));
+}
+
+/* Read Only / Selected */
+.selection-indicator[data-state="Read Only"][data-selected="true"] {
+  --indicator-bg: var(--Contextual-Surface-ReadOnly-secondary, var(--Contextual-Surface-ReadOnly-Secondary, var(--Surface-ReadOnly-Secondary, #505d6f)));
+  --indicator-border: var(--Contextual-Border-ReadOnly-secondary, var(--Contextual-Border-ReadOnly-Secondary, var(--Border-ReadOnly-Secondary, #505d6f)));
+}
+
+.selection-indicator-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--Semantic-BorderRadius-Round, var(--BorderRadius-Round, 512px));
+  border-width: var(--Semantic-BorderWidth-50, var(--BorderWidth-50, 2px));
+  border-style: solid;
+  border-color: var(--indicator-border);
+  background-color: var(--indicator-bg);
+  box-sizing: border-box;
+  flex-shrink: 0;
+  transition: all 0.2s ease-in-out;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+.selection-indicator-container:not([data-state="Disabled"]):not([data-state="Read Only"]) {
+  cursor: pointer;
+}
+
+.selection-indicator-container[data-state="Disabled"],
+.selection-indicator-container[data-state="Read Only"] {
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.selection-indicator-container:focus-visible {
+  box-shadow: 0 0 0 2px var(--Contextual-Surface-Static-Default, var(--Surface-Static-Default, #ffffff)), 0 0 0 4px var(--Contextual-Surface-Primary-Default, var(--Surface-Primary-Default, #980038));
+}
+
+.selection-indicator-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--Contextual-Icon-Primary-onColor, var(--Contextual-Icon-Primary-OnColor, var(--Icon-Primary-OnColor, #ffffff)));
+  stroke: currentColor;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.selection-indicator-container[data-selected="true"] .selection-indicator-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.selection-indicator-container[data-state="Default"][data-selected="true"] .selection-indicator-icon {
+  color: var(--Button-Icon-Primary-onColor, var(--Contextual-Icon-Primary-onColor, #ffffff));
+}
+
+.selection-indicator-container[data-state="Pressed"][data-selected="true"] .selection-indicator-icon,
+.selection-indicator-container[data-state="Default"][data-selected="true"]:active .selection-indicator-icon {
+  color: var(--Button-Icon-Primary-onColorPressed, var(--Contextual-Icon-Primary-onColorPressed, #ffffff));
+}
+
+/* Compound State (Selected + Disabled) Icon Color */
+.selection-indicator-container[data-state="Disabled"][data-selected="true"] .selection-indicator-icon {
+  color: var(--Contextual-Border-DisabledDisabled-secondary, var(--Contextual-Border-DisabledDisabled-Secondary, var(--Border-DisabledDisabled-Secondary, #505d6f)));
+}
+
+/* Compound State (Selected + Read Only) Icon Color */
+.selection-indicator-container[data-state="Read Only"][data-selected="true"] .selection-indicator-icon {
+  color: var(--Contextual-Icon-OnColor-body, var(--Icon-OnColor-body, #ffffff));
+}

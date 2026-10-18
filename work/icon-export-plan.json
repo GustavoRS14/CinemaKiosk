@@ -1,0 +1,887 @@
+{
+  "count": 97,
+  "plan": [
+    {
+      "index": 0,
+      "id": "6508:84375",
+      "name": "Accessibility",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "accessibility.svg"
+    },
+    {
+      "index": 1,
+      "id": "4912:7701",
+      "name": "Video",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24.5,
+      "file": "video.svg"
+    },
+    {
+      "index": 2,
+      "id": "4912:7765",
+      "name": "home",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "home.svg"
+    },
+    {
+      "index": 3,
+      "id": "4912:7805",
+      "name": "popcorn",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "popcorn.svg"
+    },
+    {
+      "index": 5,
+      "id": "4886:905",
+      "name": "Minus",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "minus.svg"
+    },
+    {
+      "index": 6,
+      "id": "5053:15223",
+      "name": "Cart",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "cart.svg"
+    },
+    {
+      "index": 7,
+      "id": "4886:967",
+      "name": "Close",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "close.svg"
+    },
+    {
+      "index": 8,
+      "id": "4886:970",
+      "name": "Check",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "check.svg"
+    },
+    {
+      "index": 9,
+      "id": "5187:16720",
+      "name": "Seat",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "seat.svg"
+    },
+    {
+      "index": 10,
+      "id": "5196:23695",
+      "name": "Pinch",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "pinch.svg"
+    },
+    {
+      "index": 11,
+      "id": "5200:6671",
+      "name": "Touch",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "touch.svg"
+    },
+    {
+      "index": 12,
+      "id": "5230:28450",
+      "name": "ChevronRight",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "chevron-right.svg"
+    },
+    {
+      "index": 13,
+      "id": "5230:28461",
+      "name": "ChevronLeft",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "chevron-left.svg"
+    },
+    {
+      "index": 14,
+      "id": "5291:31080",
+      "name": "PIX",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "p-i-x.svg"
+    },
+    {
+      "index": 15,
+      "id": "5291:31249",
+      "name": "Credit Card",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "credit-card.svg"
+    },
+    {
+      "index": 16,
+      "id": "5291:31248",
+      "name": "Debit Card",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "debit-card.svg"
+    },
+    {
+      "index": 17,
+      "id": "4886:1016",
+      "name": "Eye_closed",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "eye-closed.svg"
+    },
+    {
+      "index": 18,
+      "id": "4886:1019",
+      "name": "eye-open",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "eye-open.svg"
+    },
+    {
+      "index": 19,
+      "id": "5348:52330",
+      "name": "Delete",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "delete.svg"
+    },
+    {
+      "index": 20,
+      "id": "5527:30806",
+      "name": "Wheelchair",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "wheelchair.svg"
+    },
+    {
+      "index": 21,
+      "id": "5531:30869",
+      "name": "Wheelchair Companion",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "wheelchair-companion.svg"
+    },
+    {
+      "index": 22,
+      "id": "5625:41106",
+      "name": "Arrow Left Right",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "arrow-left-right.svg"
+    },
+    {
+      "index": 23,
+      "id": "5722:56681",
+      "name": "Check",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "check-2.svg"
+    },
+    {
+      "index": 24,
+      "id": "6224:56241",
+      "name": "Diamond",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "diamond.svg"
+    },
+    {
+      "index": 25,
+      "id": "4886:983",
+      "name": "Search",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "search.svg"
+    },
+    {
+      "index": 26,
+      "id": "4886:1060",
+      "name": "Chevron Down",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "chevron-down.svg"
+    },
+    {
+      "index": 27,
+      "id": "4886:908",
+      "name": "Settings",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "settings.svg"
+    },
+    {
+      "index": 28,
+      "id": "4886:913",
+      "name": "User",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "user.svg"
+    },
+    {
+      "index": 29,
+      "id": "6366:41146",
+      "name": "ID",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "i-d.svg"
+    },
+    {
+      "index": 30,
+      "id": "6373:45298",
+      "name": "Printer",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "printer.svg"
+    },
+    {
+      "index": 31,
+      "id": "6373:45341",
+      "name": "TEF",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "t-e-f.svg"
+    },
+    {
+      "index": 32,
+      "id": "6377:52008",
+      "name": "Danger",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "danger.svg"
+    },
+    {
+      "index": 33,
+      "id": "4886:915",
+      "name": "sign-out",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "sign-out.svg"
+    },
+    {
+      "index": 34,
+      "id": "4886:1062",
+      "name": "Chevron Up",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "chevron-up.svg"
+    },
+    {
+      "index": 35,
+      "id": "6391:54710",
+      "name": "Chip",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "chip.svg"
+    },
+    {
+      "index": 36,
+      "id": "6391:54803",
+      "name": "Update",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "update.svg"
+    },
+    {
+      "index": 37,
+      "id": "6395:67115",
+      "name": "Puzzle",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "puzzle.svg"
+    },
+    {
+      "index": 38,
+      "id": "6391:54831",
+      "name": "Server",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "server.svg"
+    },
+    {
+      "index": 39,
+      "id": "6395:66560",
+      "name": "Key",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "key.svg"
+    },
+    {
+      "index": 40,
+      "id": "4886:973",
+      "name": "warning",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "warning.svg"
+    },
+    {
+      "index": 41,
+      "id": "4886:979",
+      "name": "Trash",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "trash.svg"
+    },
+    {
+      "index": 42,
+      "id": "4886:981",
+      "name": "Edit",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "edit.svg"
+    },
+    {
+      "index": 43,
+      "id": "6411:46045",
+      "name": "Save",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "save.svg"
+    },
+    {
+      "index": 44,
+      "id": "6437:80270",
+      "name": "Location",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "location.svg"
+    },
+    {
+      "index": 45,
+      "id": "6535:92741",
+      "name": "Orientation",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "orientation.svg"
+    },
+    {
+      "index": 46,
+      "id": "6554:66248",
+      "name": "information-circle",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "information-circle.svg"
+    },
+    {
+      "index": 47,
+      "id": "6585:66849",
+      "name": "BR-flag",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "b-r-flag.svg"
+    },
+    {
+      "index": 48,
+      "id": "6585:66848",
+      "name": "ES-Flag",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "e-s-flag.svg"
+    },
+    {
+      "index": 49,
+      "id": "6585:66847",
+      "name": "US-Flag",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "u-s-flag.svg"
+    },
+    {
+      "index": 50,
+      "id": "6586:68550",
+      "name": "Translation",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "translation.svg"
+    },
+    {
+      "index": 51,
+      "id": "6587:76124",
+      "name": "Color Palette",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "color-palette.svg"
+    },
+    {
+      "index": 52,
+      "id": "4886:910",
+      "name": "Setting",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "setting.svg"
+    },
+    {
+      "index": 53,
+      "id": "4886:919",
+      "name": "Dashboard",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "dashboard.svg"
+    },
+    {
+      "index": 54,
+      "id": "4886:930",
+      "name": "Sign Up",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "sign-up.svg"
+    },
+    {
+      "index": 55,
+      "id": "4886:935",
+      "name": "Home",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "home-2.svg"
+    },
+    {
+      "index": 56,
+      "id": "4886:938",
+      "name": "dotted-menu-horizontal",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "dotted-menu-horizontal.svg"
+    },
+    {
+      "index": 57,
+      "id": "4886:943",
+      "name": "dot",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "dot.svg"
+    },
+    {
+      "index": 58,
+      "id": "4886:946",
+      "name": "Money",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "money.svg"
+    },
+    {
+      "index": 59,
+      "id": "4886:956",
+      "name": "Money-2",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "money-2.svg"
+    },
+    {
+      "index": 60,
+      "id": "4886:976",
+      "name": "Info",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "info.svg"
+    },
+    {
+      "index": 61,
+      "id": "4886:986",
+      "name": "download",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "download.svg"
+    },
+    {
+      "index": 62,
+      "id": "4886:988",
+      "name": "Upload",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "upload.svg"
+    },
+    {
+      "index": 63,
+      "id": "4886:990",
+      "name": "mountains",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "mountains.svg"
+    },
+    {
+      "index": 64,
+      "id": "4886:993",
+      "name": "Calendar",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "calendar.svg"
+    },
+    {
+      "index": 65,
+      "id": "4886:1010",
+      "name": "Filter",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "filter.svg"
+    },
+    {
+      "index": 66,
+      "id": "4886:1013",
+      "name": "sort",
+      "type": "COMPONENT",
+      "width": 23,
+      "height": 24,
+      "file": "sort.svg"
+    },
+    {
+      "index": 67,
+      "id": "4886:1023",
+      "name": "Audio",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "audio.svg"
+    },
+    {
+      "index": 68,
+      "id": "4886:1042",
+      "name": "watch",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "watch.svg"
+    },
+    {
+      "index": 69,
+      "id": "4886:1050",
+      "name": "Add",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "add.svg"
+    },
+    {
+      "index": 70,
+      "id": "4886:1054",
+      "name": "Duplicate",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "duplicate.svg"
+    },
+    {
+      "index": 71,
+      "id": "4886:1064",
+      "name": "Chevron Right",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "chevron-right-2.svg"
+    },
+    {
+      "index": 72,
+      "id": "4886:1066",
+      "name": "Chevron Left",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "chevron-left-2.svg"
+    },
+    {
+      "index": 73,
+      "id": "4886:1068",
+      "name": "chevron-down",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "chevron-down-2.svg"
+    },
+    {
+      "index": 74,
+      "id": "4886:1070",
+      "name": "chevron-up",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "chevron-up-2.svg"
+    },
+    {
+      "index": 75,
+      "id": "4886:1072",
+      "name": "Arrow Down",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "arrow-down.svg"
+    },
+    {
+      "index": 76,
+      "id": "4886:1075",
+      "name": "Arrow Up",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "arrow-up.svg"
+    },
+    {
+      "index": 77,
+      "id": "4886:1078",
+      "name": "Grid",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "grid.svg"
+    },
+    {
+      "index": 78,
+      "id": "4886:1087",
+      "name": "List",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "list.svg"
+    },
+    {
+      "index": 79,
+      "id": "4886:1090",
+      "name": "Sidebar-close",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "sidebar-close.svg"
+    },
+    {
+      "index": 80,
+      "id": "4886:1094",
+      "name": "airplane-travel",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "airplane-travel.svg"
+    },
+    {
+      "index": 81,
+      "id": "4886:1099",
+      "name": "suitcase-business",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "suitcase-business.svg"
+    },
+    {
+      "index": 82,
+      "id": "4886:1102",
+      "name": "Bank",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "bank.svg"
+    },
+    {
+      "index": 83,
+      "id": "4886:1107",
+      "name": "Construction",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "construction.svg"
+    },
+    {
+      "index": 84,
+      "id": "4886:1110",
+      "name": "Candy",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "candy.svg"
+    },
+    {
+      "index": 85,
+      "id": "4886:1113",
+      "name": "Book",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "book.svg"
+    },
+    {
+      "index": 86,
+      "id": "4886:1118",
+      "name": "HR",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "h-r.svg"
+    },
+    {
+      "index": 87,
+      "id": "4886:1121",
+      "name": "Audit",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "audit.svg"
+    },
+    {
+      "index": 88,
+      "id": "4886:1124",
+      "name": "Movie-projector",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "movie-projector.svg"
+    },
+    {
+      "index": 89,
+      "id": "4886:1138",
+      "name": "IT",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "i-t.svg"
+    },
+    {
+      "index": 90,
+      "id": "4886:1144",
+      "name": "Movie-tape",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "movie-tape.svg"
+    },
+    {
+      "index": 91,
+      "id": "4886:1151",
+      "name": "Door",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "door.svg"
+    },
+    {
+      "index": 92,
+      "id": "4886:1154",
+      "name": "Image",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "image.svg"
+    },
+    {
+      "index": 93,
+      "id": "4886:1157",
+      "name": "File",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "file.svg"
+    },
+    {
+      "index": 94,
+      "id": "4886:1160",
+      "name": "Flash",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "flash.svg"
+    },
+    {
+      "index": 95,
+      "id": "4886:1164",
+      "name": "Keyboard",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "keyboard.svg"
+    },
+    {
+      "index": 96,
+      "id": "4886:1167",
+      "name": "Filter",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "filter-2.svg"
+    },
+    {
+      "index": 97,
+      "id": "4886:1195",
+      "name": "Magic Wand",
+      "type": "COMPONENT",
+      "width": 24,
+      "height": 24,
+      "file": "magic-wand.svg"
+    }
+  ],
+  "collisions": {
+    "home": 2,
+    "check": 2,
+    "chevron-right": 2,
+    "chevron-left": 2,
+    "chevron-down": 2,
+    "chevron-up": 2,
+    "filter": 2
+  }
+}

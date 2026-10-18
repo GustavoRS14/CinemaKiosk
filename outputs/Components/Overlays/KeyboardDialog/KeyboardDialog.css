@@ -1,0 +1,66 @@
+.keyboard-dialog {
+  overflow: hidden;
+  background: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #FFF));
+  border: var(--Semantic-BorderWidth-25, 1px) solid var(--Contextual-Border-Tertiary-Default, #C1C7D1);
+  border-radius: var(--Semantic-BorderRadius-400, 16px);
+  backdrop-filter: blur(8px);
+}
+
+.keyboard-dialog__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  padding: var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px));
+}
+
+.keyboard-dialog__copy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px));
+  width: 100%;
+  text-align: center;
+}
+
+.keyboard-dialog__copy h2,
+.keyboard-dialog__copy p {
+  margin: 0;
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, Poppins, sans-serif));
+}
+
+.keyboard-dialog__copy h2 {
+  color: var(--Contextual-Text-Default-body, #000);
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, 24px);
+  font-weight: 600;
+  line-height: var(--Responsive-Font-Headings-H5-ParagraphSpacing, 28px);
+}
+
+.keyboard-dialog__copy p {
+  color: var(--Contextual-Text-Default-caption, #282E38);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, 16px);
+  font-weight: 400;
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, 20px);
+}
+
+.keyboard-dialog__input-keypad,
+.keyboard-dialog__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  width: 100%;
+}
+
+.keyboard-dialog__actions {
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+}
+
+.keyboard-dialog__primary-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+}
+
+.keyboard-dialog__primary-actions .totem-button,
+.keyboard-dialog__tertiary-action {
+  width: 100%;
+}

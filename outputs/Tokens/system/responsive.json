@@ -1,0 +1,2055 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "Responsive": {
+    "$extensions": {
+      "figma": {
+        "collectionName": "Responsive",
+        "modes": [
+          "Vertical",
+          "Horizontal"
+        ],
+        "defaultMode": "Vertical"
+      }
+    },
+    "Vertical": {
+      "Font": {
+        "Headings": {
+          "H1": {
+            "TextSize": {
+              "$type": "dimension",
+              "$value": {
+                "value": 60,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H1/TextSize",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "ParagraphSpacing": {
+              "$type": "dimension",
+              "$value": {
+                "value": 72,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H1/ParagraphSpacing",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "LineHeight": {
+              "$type": "dimension",
+              "$value": {
+                "value": 72,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H1/LineHeight",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "H2": {
+            "TextSize": {
+              "$type": "dimension",
+              "$value": {
+                "value": 48,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H2/TextSize",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "ParagraphSpacing": {
+              "$type": "dimension",
+              "$value": {
+                "value": 56,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H2/ParagraphSpacing",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "LineHeight": {
+              "$type": "dimension",
+              "$value": {
+                "value": 56,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H2/LineHeight",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "H3": {
+            "TextSize": {
+              "$type": "dimension",
+              "$value": {
+                "value": 40,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H3/TextSize",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "ParagraphSpacing": {
+              "$type": "dimension",
+              "$value": {
+                "value": 48,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H3/ParagraphSpacing",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "LineHeight": {
+              "$type": "dimension",
+              "$value": {
+                "value": 48,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H3/LineHeight",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "H4": {
+            "TextSize": {
+              "$type": "dimension",
+              "$value": {
+                "value": 32,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H4/TextSize",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "ParagraphSpacing": {
+              "$type": "dimension",
+              "$value": {
+                "value": 40,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H4/ParagraphSpacing",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "LineHeight": {
+              "$type": "dimension",
+              "$value": {
+                "value": 40,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H4/LineHeight",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "H5": {
+            "TextSize": {
+              "$type": "dimension",
+              "$value": {
+                "value": 24,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H5/TextSize",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "ParagraphSpacing": {
+              "$type": "dimension",
+              "$value": {
+                "value": 28,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H5/ParagraphSpacing",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "LineHeight": {
+              "$type": "dimension",
+              "$value": {
+                "value": 28,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H5/LineHeight",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "H6": {
+            "TextSize": {
+              "$type": "dimension",
+              "$value": {
+                "value": 20,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H6/TextSize",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "ParagraphSpacing": {
+              "$type": "dimension",
+              "$value": {
+                "value": 24,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H6/ParagraphSpacing",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "LineHeight": {
+              "$type": "dimension",
+              "$value": {
+                "value": 24,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H6/LineHeight",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "Body": {
+            "TextSize": {
+              "$type": "dimension",
+              "$value": {
+                "value": 16,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/Body/TextSize",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "ParagraphSpacing": {
+              "$type": "dimension",
+              "$value": {
+                "value": 20,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/Body/ParagraphSpacing",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "LineHeight": {
+              "$type": "dimension",
+              "$value": {
+                "value": 20,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/Body/LineHeight",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "Captions": {
+            "TextSize": {
+              "$type": "dimension",
+              "$value": {
+                "value": 12,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/Captions/TextSize",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "ParagraphSpacing": {
+              "$type": "dimension",
+              "$value": {
+                "value": 16,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/Captions/ParagraphSpacing",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "LineHeight": {
+              "$type": "dimension",
+              "$value": {
+                "value": 16,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/Captions/LineHeight",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "BodyLg": {
+            "TextSize": {
+              "$type": "dimension",
+              "$value": {
+                "value": 20,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/BodyLg/TextSize",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "ParagraphSpacing": {
+              "$type": "dimension",
+              "$value": {
+                "value": 24,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/BodyLg/ParagraphSpacing",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "LineHeight": {
+              "$type": "dimension",
+              "$value": {
+                "value": 24,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/BodyLg/LineHeight",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "BodySm": {
+            "TextSize": {
+              "$type": "dimension",
+              "$value": {
+                "value": 14,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/BodySm/TextSize",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "ParagraphSpacing": {
+              "$type": "dimension",
+              "$value": {
+                "value": 16,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/BodySm/ParagraphSpacing",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "LineHeight": {
+              "$type": "dimension",
+              "$value": {
+                "value": 16,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/BodySm/LineHeight",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "Margin": {
+        "$type": "dimension",
+        "$value": {
+          "value": 64,
+          "unit": "px"
+        },
+        "$extensions": {
+          "figma": {
+            "variableName": "Margin",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "Spacing": {
+        "3xs": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.50}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/3xs",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "2xs": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.100}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/2xs",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "xs": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.200}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/xs",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "sm": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.300}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/sm",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.400}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/md",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.600}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/lg",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "xl": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.800}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/xl",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "2xl": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.1100}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/2xl",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "3xl": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.1450}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/3xl",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "4xl": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.1500}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/4xl",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "spacingSectionDefault": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.1400}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/spacingSectionDefault",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        }
+      },
+      "min_height_page": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1920,
+          "unit": "px"
+        },
+        "$extensions": {
+          "figma": {
+            "variableName": "min_height_page",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "container_max_width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1320,
+          "unit": "px"
+        },
+        "$extensions": {
+          "figma": {
+            "variableName": "container_max_width",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "bottom_padding_fab_visible": {
+        "$type": "dimension",
+        "$value": {
+          "value": 116,
+          "unit": "px"
+        },
+        "$extensions": {
+          "figma": {
+            "variableName": "bottom_padding_fab_visible",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "display_orientation": {
+        "$type": "dimension",
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        },
+        "$extensions": {
+          "figma": {
+            "variableName": "display_orientation",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "HasAlert": {
+        "$type": "boolean",
+        "$value": true,
+        "$extensions": {
+          "figma": {
+            "variableName": "HasAlert",
+            "resolvedType": "BOOLEAN",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "FrameWidth": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1080,
+          "unit": "px"
+        },
+        "$extensions": {
+          "figma": {
+            "variableName": "FrameWidth",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "MarginGrid": {
+        "$type": "dimension",
+        "$value": "{Primitive.Scale.300}",
+        "$extensions": {
+          "figma": {
+            "variableName": "MarginGrid",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "ButtonInputHeight": {
+        "$type": "dimension",
+        "$value": {
+          "value": 80,
+          "unit": "px"
+        },
+        "$extensions": {
+          "figma": {
+            "variableName": "ButtonInputHeight",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "ButtonMinHeight": {
+        "$type": "dimension",
+        "$value": {
+          "value": 48,
+          "unit": "px"
+        },
+        "$extensions": {
+          "figma": {
+            "variableName": "ButtonMinHeight",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "container_max_width2": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1320,
+          "unit": "px"
+        },
+        "$extensions": {
+          "figma": {
+            "variableName": "container_max_width2",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "layoutGapHeaderNav": {
+        "$type": "dimension",
+        "$value": "{Responsive.Spacing.2xl}",
+        "$extensions": {
+          "figma": {
+            "variableName": "layoutGapHeaderNav",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "spacingBottomSafeArea": {
+        "$type": "dimension",
+        "$value": "{Primitive.Scale.0}",
+        "$extensions": {
+          "figma": {
+            "variableName": "spacingBottomSafeArea",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "spacingTopSafeArea": {
+        "$type": "dimension",
+        "$value": "{Primitive.Scale.0}",
+        "$extensions": {
+          "figma": {
+            "variableName": "spacingTopSafeArea",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "spacingLeftSafeArea": {
+        "$type": "dimension",
+        "$value": "{Responsive.Margin}",
+        "$extensions": {
+          "figma": {
+            "variableName": "spacingLeftSafeArea",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "slideOverMargin": {
+        "$type": "dimension",
+        "$value": "{Responsive.Spacing.lg}",
+        "$extensions": {
+          "figma": {
+            "variableName": "slideOverMargin",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "VerticalOnly": {
+        "$type": "boolean",
+        "$value": true,
+        "$extensions": {
+          "figma": {
+            "variableName": "VerticalOnly",
+            "resolvedType": "BOOLEAN",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "HorizontalOnly": {
+        "$type": "boolean",
+        "$value": false,
+        "$extensions": {
+          "figma": {
+            "variableName": "HorizontalOnly",
+            "resolvedType": "BOOLEAN",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "Expanded(False)": {
+        "$type": "boolean",
+        "$value": false,
+        "$extensions": {
+          "figma": {
+            "variableName": "Expanded(False)",
+            "resolvedType": "BOOLEAN",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "Expanded(True)": {
+        "$type": "boolean",
+        "$value": true,
+        "$extensions": {
+          "figma": {
+            "variableName": "Expanded(True)",
+            "resolvedType": "BOOLEAN",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "ModalSlideOver": {
+        "modalWidthXs": {
+          "$type": "dimension",
+          "$value": {
+            "value": 360,
+            "unit": "px"
+          },
+          "$extensions": {
+            "figma": {
+              "variableName": "ModalSlideOver/modalWidthXs",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "modalWidthSm": {
+          "$type": "dimension",
+          "$value": {
+            "value": 480,
+            "unit": "px"
+          },
+          "$extensions": {
+            "figma": {
+              "variableName": "ModalSlideOver/modalWidthSm",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "modalWidthMd": {
+          "$type": "dimension",
+          "$value": {
+            "value": 640,
+            "unit": "px"
+          },
+          "$extensions": {
+            "figma": {
+              "variableName": "ModalSlideOver/modalWidthMd",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "modalWidthLg": {
+          "$type": "dimension",
+          "$value": {
+            "value": 880,
+            "unit": "px"
+          },
+          "$extensions": {
+            "figma": {
+              "variableName": "ModalSlideOver/modalWidthLg",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "modalWidthXl": {
+          "$type": "dimension",
+          "$value": {
+            "value": 1140,
+            "unit": "px"
+          },
+          "$extensions": {
+            "figma": {
+              "variableName": "ModalSlideOver/modalWidthXl",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "Horizontal": {
+      "Font": {
+        "Headings": {
+          "H1": {
+            "TextSize": {
+              "$type": "dimension",
+              "$value": {
+                "value": 60,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H1/TextSize",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "ParagraphSpacing": {
+              "$type": "dimension",
+              "$value": {
+                "value": 72,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H1/ParagraphSpacing",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "LineHeight": {
+              "$type": "dimension",
+              "$value": {
+                "value": 72,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H1/LineHeight",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "H2": {
+            "TextSize": {
+              "$type": "dimension",
+              "$value": {
+                "value": 48,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H2/TextSize",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "ParagraphSpacing": {
+              "$type": "dimension",
+              "$value": {
+                "value": 56,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H2/ParagraphSpacing",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "LineHeight": {
+              "$type": "dimension",
+              "$value": {
+                "value": 56,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H2/LineHeight",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "H3": {
+            "TextSize": {
+              "$type": "dimension",
+              "$value": {
+                "value": 40,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H3/TextSize",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "ParagraphSpacing": {
+              "$type": "dimension",
+              "$value": {
+                "value": 48,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H3/ParagraphSpacing",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "LineHeight": {
+              "$type": "dimension",
+              "$value": {
+                "value": 48,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H3/LineHeight",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "H4": {
+            "TextSize": {
+              "$type": "dimension",
+              "$value": {
+                "value": 32,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H4/TextSize",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "ParagraphSpacing": {
+              "$type": "dimension",
+              "$value": {
+                "value": 40,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H4/ParagraphSpacing",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "LineHeight": {
+              "$type": "dimension",
+              "$value": {
+                "value": 40,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H4/LineHeight",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "H5": {
+            "TextSize": {
+              "$type": "dimension",
+              "$value": {
+                "value": 24,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H5/TextSize",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "ParagraphSpacing": {
+              "$type": "dimension",
+              "$value": {
+                "value": 28,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H5/ParagraphSpacing",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "LineHeight": {
+              "$type": "dimension",
+              "$value": {
+                "value": 28,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H5/LineHeight",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "H6": {
+            "TextSize": {
+              "$type": "dimension",
+              "$value": {
+                "value": 20,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H6/TextSize",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "ParagraphSpacing": {
+              "$type": "dimension",
+              "$value": {
+                "value": 24,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H6/ParagraphSpacing",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "LineHeight": {
+              "$type": "dimension",
+              "$value": {
+                "value": 24,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/H6/LineHeight",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "Body": {
+            "TextSize": {
+              "$type": "dimension",
+              "$value": {
+                "value": 16,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/Body/TextSize",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "ParagraphSpacing": {
+              "$type": "dimension",
+              "$value": {
+                "value": 20,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/Body/ParagraphSpacing",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "LineHeight": {
+              "$type": "dimension",
+              "$value": {
+                "value": 20,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/Body/LineHeight",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "Captions": {
+            "TextSize": {
+              "$type": "dimension",
+              "$value": {
+                "value": 12,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/Captions/TextSize",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "ParagraphSpacing": {
+              "$type": "dimension",
+              "$value": {
+                "value": 16,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/Captions/ParagraphSpacing",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "LineHeight": {
+              "$type": "dimension",
+              "$value": {
+                "value": 16,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/Captions/LineHeight",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "BodyLg": {
+            "TextSize": {
+              "$type": "dimension",
+              "$value": {
+                "value": 20,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/BodyLg/TextSize",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "ParagraphSpacing": {
+              "$type": "dimension",
+              "$value": {
+                "value": 24,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/BodyLg/ParagraphSpacing",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "LineHeight": {
+              "$type": "dimension",
+              "$value": {
+                "value": 24,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/BodyLg/LineHeight",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "BodySm": {
+            "TextSize": {
+              "$type": "dimension",
+              "$value": {
+                "value": 14,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/BodySm/TextSize",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "ParagraphSpacing": {
+              "$type": "dimension",
+              "$value": {
+                "value": 16,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/BodySm/ParagraphSpacing",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "LineHeight": {
+              "$type": "dimension",
+              "$value": {
+                "value": 16,
+                "unit": "px"
+              },
+              "$extensions": {
+                "figma": {
+                  "variableName": "Font/Headings/BodySm/LineHeight",
+                  "resolvedType": "FLOAT",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "Margin": {
+        "$type": "dimension",
+        "$value": {
+          "value": 64,
+          "unit": "px"
+        },
+        "$extensions": {
+          "figma": {
+            "variableName": "Margin",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "Spacing": {
+        "3xs": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.50}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/3xs",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "2xs": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.100}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/2xs",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "xs": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.200}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/xs",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "sm": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.300}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/sm",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.400}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/md",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.600}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/lg",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "xl": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.800}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/xl",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "2xl": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.1100}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/2xl",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "3xl": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.1450}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/3xl",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "4xl": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.1500}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/4xl",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "spacingSectionDefault": {
+          "$type": "dimension",
+          "$value": "{Primitive.Scale.1400}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Spacing/spacingSectionDefault",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        }
+      },
+      "min_height_page": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1024,
+          "unit": "px"
+        },
+        "$extensions": {
+          "figma": {
+            "variableName": "min_height_page",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "container_max_width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1320,
+          "unit": "px"
+        },
+        "$extensions": {
+          "figma": {
+            "variableName": "container_max_width",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "bottom_padding_fab_visible": {
+        "$type": "dimension",
+        "$value": {
+          "value": 116,
+          "unit": "px"
+        },
+        "$extensions": {
+          "figma": {
+            "variableName": "bottom_padding_fab_visible",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "display_orientation": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1,
+          "unit": "px"
+        },
+        "$extensions": {
+          "figma": {
+            "variableName": "display_orientation",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "HasAlert": {
+        "$type": "boolean",
+        "$value": true,
+        "$extensions": {
+          "figma": {
+            "variableName": "HasAlert",
+            "resolvedType": "BOOLEAN",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "FrameWidth": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1440,
+          "unit": "px"
+        },
+        "$extensions": {
+          "figma": {
+            "variableName": "FrameWidth",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "MarginGrid": {
+        "$type": "dimension",
+        "$value": "{Primitive.Scale.300}",
+        "$extensions": {
+          "figma": {
+            "variableName": "MarginGrid",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "ButtonInputHeight": {
+        "$type": "dimension",
+        "$value": {
+          "value": 80,
+          "unit": "px"
+        },
+        "$extensions": {
+          "figma": {
+            "variableName": "ButtonInputHeight",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "ButtonMinHeight": {
+        "$type": "dimension",
+        "$value": {
+          "value": 48,
+          "unit": "px"
+        },
+        "$extensions": {
+          "figma": {
+            "variableName": "ButtonMinHeight",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "container_max_width2": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1320,
+          "unit": "px"
+        },
+        "$extensions": {
+          "figma": {
+            "variableName": "container_max_width2",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "layoutGapHeaderNav": {
+        "$type": "dimension",
+        "$value": "{Primitive.Scale.0}",
+        "$extensions": {
+          "figma": {
+            "variableName": "layoutGapHeaderNav",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "spacingBottomSafeArea": {
+        "$type": "dimension",
+        "$value": "{Responsive.Margin}",
+        "$extensions": {
+          "figma": {
+            "variableName": "spacingBottomSafeArea",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "spacingTopSafeArea": {
+        "$type": "dimension",
+        "$value": "{Responsive.Spacing.2xl}",
+        "$extensions": {
+          "figma": {
+            "variableName": "spacingTopSafeArea",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "spacingLeftSafeArea": {
+        "$type": "dimension",
+        "$value": "{Primitive.Scale.0}",
+        "$extensions": {
+          "figma": {
+            "variableName": "spacingLeftSafeArea",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "slideOverMargin": {
+        "$type": "dimension",
+        "$value": "{Responsive.Spacing.lg}",
+        "$extensions": {
+          "figma": {
+            "variableName": "slideOverMargin",
+            "resolvedType": "FLOAT",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "VerticalOnly": {
+        "$type": "boolean",
+        "$value": false,
+        "$extensions": {
+          "figma": {
+            "variableName": "VerticalOnly",
+            "resolvedType": "BOOLEAN",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "HorizontalOnly": {
+        "$type": "boolean",
+        "$value": true,
+        "$extensions": {
+          "figma": {
+            "variableName": "HorizontalOnly",
+            "resolvedType": "BOOLEAN",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "Expanded(False)": {
+        "$type": "boolean",
+        "$value": false,
+        "$extensions": {
+          "figma": {
+            "variableName": "Expanded(False)",
+            "resolvedType": "BOOLEAN",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "Expanded(True)": {
+        "$type": "boolean",
+        "$value": true,
+        "$extensions": {
+          "figma": {
+            "variableName": "Expanded(True)",
+            "resolvedType": "BOOLEAN",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "ModalSlideOver": {
+        "modalWidthXs": {
+          "$type": "dimension",
+          "$value": {
+            "value": 360,
+            "unit": "px"
+          },
+          "$extensions": {
+            "figma": {
+              "variableName": "ModalSlideOver/modalWidthXs",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "modalWidthSm": {
+          "$type": "dimension",
+          "$value": {
+            "value": 480,
+            "unit": "px"
+          },
+          "$extensions": {
+            "figma": {
+              "variableName": "ModalSlideOver/modalWidthSm",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "modalWidthMd": {
+          "$type": "dimension",
+          "$value": {
+            "value": 640,
+            "unit": "px"
+          },
+          "$extensions": {
+            "figma": {
+              "variableName": "ModalSlideOver/modalWidthMd",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "modalWidthLg": {
+          "$type": "dimension",
+          "$value": {
+            "value": 880,
+            "unit": "px"
+          },
+          "$extensions": {
+            "figma": {
+              "variableName": "ModalSlideOver/modalWidthLg",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "modalWidthXl": {
+          "$type": "dimension",
+          "$value": {
+            "value": 1140,
+            "unit": "px"
+          },
+          "$extensions": {
+            "figma": {
+              "variableName": "ModalSlideOver/modalWidthXl",
+              "resolvedType": "FLOAT",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

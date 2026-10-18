@@ -1,0 +1,68 @@
+.radio-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--Contextual-Border-Primary-Default, var(--Border-Primary-Default, #980038));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff));
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.radio-button[data-selected="true"] {
+  border-color: var(--Contextual-Border-Primary-Default, var(--Border-Primary-Default, #980038));
+}
+
+.radio-button[data-selected="true"]::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--Contextual-Surface-Primary-Default, var(--Surface-Primary-Default, #980038));
+}
+
+/* Default Unselected State */
+.radio-button[data-state="Default"][data-selected="false"] {
+  border: var(--Semantic-BorderWidth-50, var(--BorderWidth-50, 2px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #C1C7D1));
+}
+
+/* Hover & Pressed for Default Unselected State */
+.radio-button[data-state="Default"][data-selected="false"]:hover,
+.radio-button[data-state="Default"][data-selected="false"]:active {
+  border: var(--Semantic-BorderWidth-50, var(--BorderWidth-50, 2px)) solid var(--Contextual-Border-Tertiary-Pressed, var(--Border-Tertiary-Pressed, #A2ACB9));
+}
+
+/* Hover & Pressed */
+.radio-button:hover:not([aria-disabled="true"]):not([aria-readonly="true"]),
+.radio-button:active:not([aria-disabled="true"]):not([aria-readonly="true"]) {
+  background-color: var(--Contextual-Surface-Secondary-DefaultPressed, var(--Surface-Secondary-DefaultPressed, #e3e3e4));
+}
+
+/* Disabled State */
+.radio-button[aria-disabled="true"] {
+  cursor: not-allowed;
+  user-select: none;
+  border-color: var(--Contextual-Border-Disabled-DisabledSecondary, var(--Border-Disabled-DisabledSecondary, #E0E0E0));
+  background-color: var(--Contextual-Surface-Disabled-DisabledDefault, var(--Surface-Disabled-DisabledDefault, #F5F5F5));
+}
+
+.radio-button[aria-disabled="true"][data-selected="true"]::after {
+  background-color: var(--Contextual-Surface-Disabled-DisabledSecondary, var(--Surface-Disabled-DisabledSecondary, #9E9E9E));
+}
+
+/* Read Only State */
+.radio-button[aria-readonly="true"] {
+  cursor: not-allowed;
+  user-select: none;
+  border-color: var(--Contextual-Border-ReadOnly-Secondary, var(--Border-ReadOnly-Secondary, #980038));
+  background-color: var(--Contextual-Surface-ReadOnly-Default, var(--Surface-ReadOnly-Default, #C1C7D1));
+  opacity: 1.0;
+}
+
+.radio-button[aria-readonly="true"][data-selected="true"]::after {
+  background-color: var(--Contextual-Surface-ReadOnly-Secondary, var(--Surface-ReadOnly-Secondary, #980038));
+}

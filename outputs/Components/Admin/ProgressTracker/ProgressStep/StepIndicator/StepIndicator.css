@@ -1,0 +1,72 @@
+.totem-step-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.totem-step-indicator__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--Semantic-Border-Radius-Round, var(--Border-Radius-Round, 512px));
+  padding: 2px;
+  flex-shrink: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Current State */
+.totem-step-indicator[data-state="Current"] .totem-step-indicator__inner {
+  background-color: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff));
+  border: var(--Semantic-BorderWidth-50, var(--BorderWidth-50, 2px)) solid var(--Contextual-Border-Primary-Default, var(--Border-Primary-Default, #980038));
+}
+
+.totem-step-indicator[data-state="Current"] .totem-step-indicator__text {
+  color: var(--Contextual-Text-Primary-default, var(--Text-Primary-default, #980038));
+}
+
+/* Not Reached State (formerly Default) */
+.totem-step-indicator[data-state="Not Reached"] .totem-step-indicator__inner {
+  background: var(--Surface-Disabled-Disabled-default, #C1C7D1);
+  border: var(--Semantic-BorderWidth-50, var(--BorderWidth-50, 2px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+}
+
+.totem-step-indicator[data-state="Not Reached"] .totem-step-indicator__text {
+  color: var(--Text-Disabled-default, #505D6F);
+  text-align: center;
+}
+
+/* Completed State */
+.totem-step-indicator[data-state="Completed"] .totem-step-indicator__inner {
+  background-color: var(--Contextual-Surface-Primary-Default, var(--Surface-Primary-Default, #980038));
+  border: var(--Semantic-BorderWidth-50, var(--BorderWidth-50, 2px)) solid var(--Contextual-Border-Primary-Default, var(--Border-Primary-Default, #980038));
+}
+
+.totem-step-indicator[data-state="Completed"] .totem-step-indicator__text {
+  color: var(--Contextual-Text-Primary-inverse, var(--Text-Primary-inverse, #ffffff));
+}
+
+/* Text styles */
+.totem-step-indicator__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  margin: 0;
+
+  font-family: var(--Semantic-Font-Primary, 'Poppins');
+  font-weight: var(--Typography-Semantic-Primária-Body-Bold-fontWeight, 700);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+}
+
+/* =========================================
+   ICON STYLES (COMPLETED STATE)
+   ========================================= */
+.totem-step-indicator[data-state="Completed"] .totem-step-indicator__icon {
+  color: var(--Icon-On-color-body, #FFF);
+}

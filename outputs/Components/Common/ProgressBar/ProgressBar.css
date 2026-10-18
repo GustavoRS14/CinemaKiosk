@@ -1,0 +1,31 @@
+.progress-bar-container {
+  position: relative;
+  height: 4px;
+  width: 100%;
+  /* Default to 100% to be responsive */
+  overflow: hidden;
+  border-radius: var(--Semantic-BorderRadius-100, var(--BorderRadius-100, 4px));
+  background-color: var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #C1C7D1));
+  box-sizing: border-box;
+}
+
+.progress-bar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: var(--Semantic-BorderRadius-200, var(--BorderRadius-200, 8px));
+  background-color: var(--Contextual-Border-Primary-Default, var(--Surface-Border-Default, #980038));
+  transition: width 0.4s ease-in-out;
+}
+
+/* =========================================
+   INTENT: INFORMATION
+   ========================================= */
+.progress-bar-container[data-intent="Information"] {
+  background-color: var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #C1C7D1));
+}
+
+.progress-bar-container[data-intent="Information"] .progress-bar-fill {
+  background-color: var(--Contextual-Border-Information-SolidDefault, var(--Border-Information-SolidDefault, #1650AE));
+}

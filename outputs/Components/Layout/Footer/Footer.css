@@ -1,0 +1,59 @@
+.footer {
+  align-items: center;
+  background: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #FFFFFF));
+  border-block-start-color: var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #C1C7D1));
+  border-block-start-style: solid;
+  border-block-start-width: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px));
+  box-sizing: border-box;
+  display: flex;
+  inline-size: 100%;
+  justify-content: space-between;
+  min-block-size: auto;
+  padding: var(--Responsive-Spacing-md, var(--Spacing-md, 16px)) var(--Responsive-Margin, var(--Margin, 64px));
+}
+
+.footer__left {
+  align-items: center;
+  display: flex;
+  gap: var(--Responsive-Spacing-4xl, var(--Spacing-4xl, 96px));
+}
+
+.footer__right {
+  align-items: center;
+  display: flex;
+  gap: var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px));
+}
+
+.footer__total {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.footer__total-label {
+  color: var(--Contextual-Text-Default-captionMuted, var(--Text-Default-captionMuted, #A2ACB9));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, Poppins, sans-serif));
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+  font-weight: 500;
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+}
+
+.footer__price {
+  color: var(--Contextual-Text-Primary-default, var(--Text-Primary-default, #980038));
+  display: flex;
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, Poppins, sans-serif));
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+  font-weight: 700;
+  gap: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+}
+
+.footer__button {
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, var(--Font-Headings-H5-TextSize, 24px)) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
+  line-height: var(--Responsive-Font-Headings-H5-ParagraphSpacing, var(--Font-Headings-H5-ParagraphSpacing, 28px)) !important;
+}

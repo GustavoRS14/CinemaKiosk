@@ -1,0 +1,131 @@
+.ticket-option {
+  --ticket-option-border-width: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px));
+  background-color: var(--Contextual-Surface-Tertiary-Default, var(--Surface-Tertiary-Default, #f1f1f2));
+  border: var(--ticket-option-border-width) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+  border-radius: var(--Semantic-BorderRadius-300, var(--BorderRadius-300, 12px));
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-3xs, var(--Spacing-3xs, 2px));
+  align-items: flex-start;
+  position: relative;
+  width: 920px;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.ticket-option-top {
+  display: flex;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  align-items: center;
+  padding: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ticket-option-info {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px));
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.ticket-option-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.ticket-option-type p {
+  font-family: var(--Semantic-Font-Primária, var(--Font-Primária, "Poppins"));
+  font-weight: var(--Typography-Semantic-Primária-H6-Bold-fontWeight, 700);
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #171718));
+  margin: 0;
+  word-break: break-word;
+}
+
+.ticket-option-price {
+  display: flex;
+  gap: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+  align-items: center;
+  width: 100%;
+}
+
+.ticket-option-price p {
+  font-family: var(--Semantic-Font-Secondary, var(--Font-Secondary, "Gellix", sans-serif));
+  font-weight: var(--Typography-Semantic-Primária-Body-Regular-fontWeight, 400);
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+  color: var(--Contextual-Text-Default-caption, var(--Text-Default-caption, #282e38));
+  margin: 0;
+  white-space: nowrap;
+}
+
+.ticket-option-counter {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.ticket-option-divider-container {
+  height: 40px;
+  position: relative;
+  width: calc(100% + var(--ticket-option-border-width) + var(--ticket-option-border-width));
+  margin-inline: calc(0px - var(--ticket-option-border-width));
+  overflow: hidden;
+  z-index: 10;
+}
+
+.ticket-option-ticket-effect {
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.ticket-option-ellipse {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff));
+  border: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.ticket-option-divider-line {
+  flex: 1 0 0;
+  position: relative;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+}
+
+.ticket-option-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ticket-option-supporting-text {
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, "Poppins", sans-serif));
+  font-weight: var(--Typography-Semantic-Primária-Body-Medium-fontWeight, 500);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  color: var(--Contextual-Text-Default-caption, var(--Text-Default-caption, #282e38));
+  margin: 0;
+  width: 100%;
+  word-break: break-word;
+}

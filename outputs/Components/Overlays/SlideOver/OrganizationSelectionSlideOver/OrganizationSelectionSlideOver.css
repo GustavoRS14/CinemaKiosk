@@ -1,0 +1,126 @@
+.organization-selection-slide-over {
+  display: flex;
+  width: var(--Responsive-ModalSlideOver-modalWidthSm, 480px);
+  height: min(1024px, 100dvh);
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: var(--Semantic-BorderWidth-25, 1px) solid var(--Contextual-Border-Tertiary-Default, #c1c7d1);
+  border-radius: var(--Semantic-BorderRadius-400, 16px);
+  background: var(--Contextual-Surface-Secondary-Default, #fff);
+  backdrop-filter: blur(8px);
+}
+
+.organization-selection-slide-over[data-width="xs"] { width: var(--Responsive-ModalSlideOver-modalWidthXs, 360px); }
+.organization-selection-slide-over[data-width="sm"] { width: var(--Responsive-ModalSlideOver-modalWidthSm, 480px); }
+.organization-selection-slide-over[data-width="md"] { width: var(--Responsive-ModalSlideOver-modalWidthMd, 640px); }
+.organization-selection-slide-over[data-width="lg"] { width: var(--Responsive-ModalSlideOver-modalWidthLg, 800px); }
+.organization-selection-slide-over[data-width="xl"] { width: var(--Responsive-ModalSlideOver-modalWidthXl, 960px); }
+
+.organization-selection-slide-over__header {
+  z-index: 2;
+  flex: 0 0 auto;
+  min-height: 96px;
+  transition: border-color 120ms ease;
+}
+
+.organization-selection-slide-over--scrolled .organization-selection-slide-over__header {
+  border-bottom: var(--Semantic-BorderWidth-25, 1px) solid var(--Contextual-Border-Tertiary-Default, #c1c7d1);
+}
+
+.organization-selection-slide-over__content {
+  display: flex;
+  min-height: 0;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-xl, 32px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: var(--Responsive-Spacing-lg, 24px);
+  scrollbar-gutter: stable;
+}
+
+.organization-selection-slide-over__options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-md, 16px);
+}
+
+.organization-selection-slide-over__option {
+  width: 100%;
+}
+
+.organization-selection-slide-over__option .selection-card-support-text:empty {
+  display: none;
+}
+
+.organization-selection-slide-over__empty {
+  display: flex;
+  min-height: 0;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--Responsive-Spacing-xl, 32px);
+  text-align: center;
+}
+
+.organization-selection-slide-over__empty-illustration {
+  width: 224px;
+  height: 224px;
+  flex: 0 0 224px;
+}
+
+.organization-selection-slide-over__empty-illustration [fill="#980038" i] {
+  fill: var(--Contextual-Icon-Primary-default, var(--Icon-Primary-default, #980038));
+}
+
+.organization-selection-slide-over__empty-copy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-sm, 12px);
+}
+
+.organization-selection-slide-over__empty-copy h2,
+.organization-selection-slide-over__empty-copy p {
+  margin: 0;
+  font-family: var(--Semantic-Font-Primary, 'Poppins', sans-serif);
+}
+
+.organization-selection-slide-over__empty-copy h2 {
+  color: var(--Contextual-Text-Default-body, #000);
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, 24px);
+  font-weight: var(--Typography-Semantic-Primária-H5-Semibold-fontWeight, 600);
+  line-height: var(--Responsive-Font-Headings-H5-ParagraphSpacing, 28px);
+}
+
+.organization-selection-slide-over__empty-copy p {
+  color: var(--Contextual-Text-Default-caption, #282e38);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, 16px);
+  font-weight: var(--Typography-Semantic-Primária-Body-Regular-fontWeight, 400);
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, 20px);
+}
+
+.organization-selection-slide-over__footer {
+  z-index: 2;
+  width: 100%;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+
+.organization-selection-slide-over__footer .totem-modal-footer__actions-inner {
+  justify-content: flex-end;
+}
+
+.organization-selection-slide-over__footer .totem-modal-footer__primary-action-slot,
+.organization-selection-slide-over__footer .totem-button {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .organization-selection-slide-over {
+    width: 100%;
+    border-radius: 0;
+  }
+}

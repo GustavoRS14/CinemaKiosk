@@ -1,0 +1,38 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "Brand": {
+    "$extensions": {
+      "figma": {
+        "collectionName": "Brand",
+        "modes": [
+          "Mode 1"
+        ],
+        "defaultMode": "Mode 1"
+      },
+      "brand": {
+        "name": "Multicine",
+        "roles": {
+          "primary": "Red",
+          "secondary": "Red"
+        }
+      }
+    },
+    "Palettes": {
+      "Red": {
+        "50": {
+          "$type": "color",
+          "$value": "#D51F2D",
+          "$extensions": {
+            "figma": {
+              "variableName": "Red/500",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.modifier-group {
+  display: flex;
+  flex-direction: column;
+  padding: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  width: 100%;
+  position: relative;
+  background: var(--Contextual-Surface-Tertiary-Default, var(--Surface-Tertiary-Default, #F1F1F2));
+  border-radius: var(--Semantic-BorderRadius-300, var(--BorderRadius-300, 12px));
+  border: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #C1C7D1));
+  box-sizing: border-box;
+}
+
+.modifier-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.modifier-group-title {
+  font-family: var(--Semantic-Font-Primary, 'Poppins');
+  font-weight: 600;
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, var(--Font-Headings-H5-TextSize, 24px));
+  line-height: var(--Responsive-Font-Headings-H5-LineHeight, var(--Font-Headings-H5-LineHeight, 28px));
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+  margin: 0;
+  padding: 0;
+}
+
+.modifier-group-products {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  width: 100%;
+}

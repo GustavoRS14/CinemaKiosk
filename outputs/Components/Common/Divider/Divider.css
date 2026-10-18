@@ -1,0 +1,64 @@
+.divider {
+  --divider-color: var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+  --divider-width: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px));
+  --divider-style: solid;
+}
+
+.divider[data-state="Disabled"] {
+  --divider-color: var(--Contextual-Border-Disabled-DisabledSecondary, var(--Border-Disabled-DisabledSecondary, #505D6F));
+}
+
+.divider[data-state="Read Only"] {
+  --divider-color: var(--Contextual-Border-ReadOnly-Default, var(--Border-ReadOnly-Default, #A2ACB9));
+}
+
+.divider[data-type="Dashed"] {
+  /* Using specific pseudo-classes below for horizontal and vertical dashed logic */
+}
+
+.divider-horizontal[data-type="Dashed"] {
+  border: none;
+  height: var(--divider-width);
+  background-image: linear-gradient(to right, var(--divider-color) 50%, transparent 50%);
+  background-size: 12px 100%;
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+.divider-vertical[data-type="Dashed"] {
+  border: none;
+  width: var(--divider-width);
+  background-image: linear-gradient(to bottom, var(--divider-color) 50%, transparent 50%);
+  background-size: 100% 12px;
+  background-repeat: repeat-y;
+  background-position: center;
+}
+
+.divider-container {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.divider-horizontal {
+  width: 100%;
+  height: 0;
+  border-top-width: var(--divider-width);
+  border-top-style: var(--divider-style);
+  border-top-color: var(--divider-color);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.divider-vertical {
+  height: auto;
+  align-self: stretch;
+  width: 0;
+  border-left-width: var(--divider-width);
+  border-left-style: var(--divider-style);
+  border-left-color: var(--divider-color);
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+}

@@ -1,0 +1,300 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "Brand": {
+    "$extensions": {
+      "figma": {
+        "collectionName": "Brand",
+        "modes": [
+          "Mode 1"
+        ],
+        "defaultMode": "Mode 1"
+      },
+      "brand": {
+        "name": "Cinesercla",
+        "roles": {
+          "primary": "DarkRed",
+          "secondary": "CoolGrey"
+        }
+      }
+    },
+    "Palettes": {
+      "DarkRed": {
+        "50": {
+          "$type": "color",
+          "$value": "#F5E6EB",
+          "$extensions": {
+            "figma": {
+              "variableName": "DarkRed/50",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#EACCD7",
+          "$extensions": {
+            "figma": {
+              "variableName": "DarkRed/100",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#D699AF",
+          "$extensions": {
+            "figma": {
+              "variableName": "DarkRed/200",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#C16688",
+          "$extensions": {
+            "figma": {
+              "variableName": "DarkRed/300",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "350": {
+          "$type": "color",
+          "$value": "#B74D74",
+          "$extensions": {
+            "figma": {
+              "variableName": "DarkRed/350",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#AD3360",
+          "$extensions": {
+            "figma": {
+              "variableName": "DarkRed/400",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#980038",
+          "$extensions": {
+            "figma": {
+              "variableName": "DarkRed/500",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#7A002D",
+          "$extensions": {
+            "figma": {
+              "variableName": "DarkRed/600",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#5B0022",
+          "$extensions": {
+            "figma": {
+              "variableName": "DarkRed/700",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#3D0016",
+          "$extensions": {
+            "figma": {
+              "variableName": "DarkRed/800",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#1E000B",
+          "$extensions": {
+            "figma": {
+              "variableName": "DarkRed/900",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        }
+      },
+      "CoolGrey": {
+        "50": {
+          "$type": "color",
+          "$value": "#F8F9FA",
+          "$extensions": {
+            "figma": {
+              "variableName": "CoolGrey/50",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#F2F2F4",
+          "$extensions": {
+            "figma": {
+              "variableName": "CoolGrey/100",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#E5E5E9",
+          "$extensions": {
+            "figma": {
+              "variableName": "CoolGrey/200",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#D7D9DE",
+          "$extensions": {
+            "figma": {
+              "variableName": "CoolGrey/300",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#CACCD3",
+          "$extensions": {
+            "figma": {
+              "variableName": "CoolGrey/400",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#BDBFC8",
+          "$extensions": {
+            "figma": {
+              "variableName": "CoolGrey/500",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#9799A0",
+          "$extensions": {
+            "figma": {
+              "variableName": "CoolGrey/600",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#717378",
+          "$extensions": {
+            "figma": {
+              "variableName": "CoolGrey/700",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#4C4C50",
+          "$extensions": {
+            "figma": {
+              "variableName": "CoolGrey/800",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#262628",
+          "$extensions": {
+            "figma": {
+              "variableName": "CoolGrey/900",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

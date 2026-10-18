@@ -1,0 +1,37 @@
+.totem-modal-header {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-xl, var(--Spacing-xl, 32px));
+  padding: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  background-color: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff));
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.totem-modal-header__title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0 0;
+  min-width: 1px; /* Ensure flex shrinking works for text-overflow */
+  overflow: hidden;
+}
+
+.totem-modal-header__title {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font-family: var(--Semantic-Font-Primary, 'Poppins');
+  font-weight: var(--Typography-Semantic-Primária-H5-Semibold-fontWeight, 600);
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, var(--Font-Headings-H5-TextSize, 24px));
+  line-height: var(--Responsive-Font-Headings-H5-LineHeight, var(--Font-Headings-H5-LineHeight, 28px));
+  color: var(--Contextual-Text-Default-heading, var(--Text-Default-heading, #000000));
+}
+
+.totem-modal-header__close-btn {
+  flex-shrink: 0;
+  cursor: pointer;
+}

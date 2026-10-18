@@ -1,0 +1,76 @@
+.payment-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  background: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff));
+  border-radius: var(--Semantic-BorderRadius-300, var(--BorderRadius-300, 12px));
+  border: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #C1C7D1));
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.payment-option:not(:disabled):not([aria-disabled="true"]):not([aria-readonly="true"]):hover,
+.payment-option:not(:disabled):not([aria-disabled="true"]):not([aria-readonly="true"]):active {
+  background: var(--Contextual-Surface-Secondary-DefaultPressed, var(--Surface-Secondary-DefaultPressed, #e3e3e4));
+}
+
+.payment-option[aria-pressed="true"] {
+  background: var(--Contextual-Surface-Primary-Alternative, var(--Surface-Primary-Alternative, #eaccd7));
+  border-color: var(--Contextual-Border-Primary-Default, var(--Border-Primary-Default, #980038));
+}
+
+.payment-option-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  background: var(--Contextual-Surface-Tertiary-Default, var(--Surface-Tertiary-Default, #f1f1f2));
+  border-radius: var(--Semantic-BorderRadius-Round, var(--BorderRadius-Round, 512px));
+  border: var(--Semantic-BorderWidth-50, var(--BorderWidth-50, 2px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+  color: var(--Contextual-Icon-Primary-default, var(--Icon-Primary-default, #980038));
+}
+
+.payment-option:not(:disabled):not([aria-disabled="true"]):not([aria-readonly="true"]):hover .payment-option-icon-wrapper,
+.payment-option:not(:disabled):not([aria-disabled="true"]):not([aria-readonly="true"]):active .payment-option-icon-wrapper {
+  background: var(--Contextual-Surface-Tertiary-Pressed, var(--Surface-Tertiary-Pressed, #e3e3e4));
+  border-color: var(--Contextual-Border-Tertiary-Pressed, var(--Border-Tertiary-Pressed, #a2acb9));
+  color: var(--Contextual-Icon-Primary-defaultPressed, var(--Icon-Primary-defaultPressed, #7a002d));
+}
+
+.payment-option-icon-wrapper svg,
+.payment-option-icon-wrapper img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.payment-option-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+  flex: 1;
+}
+
+.payment-option-title {
+  font-family: var(--Responsive-Font-Primary, var(--Font-Primary, 'Poppins'));
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, var(--Font-Headings-H5-TextSize, 24px));
+  font-weight: 600;
+  line-height: var(--Responsive-Font-Headings-H5-ParagraphSpacing, var(--Font-Headings-H5-ParagraphSpacing, 28px));
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+  margin: 0;
+}
+
+.payment-option-description {
+  font-family: var(--Responsive-Font-Primary, var(--Font-Primary, 'Poppins'));
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  font-weight: 400;
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  color: var(--Contextual-Text-Default-caption, var(--Text-Default-caption, #282e38));
+  margin: 0;
+}

@@ -1,0 +1,185 @@
+.concession-on-cart {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  width: 750px;
+  max-width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+/* =========================================
+   STATUS = DEFAULT
+   ========================================= */
+.concession-content-left {
+  display: flex;
+  flex: 1 0 0;
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  min-width: 0;
+}
+
+/* Flow: Express -> Centered alignment */
+.concession-on-cart[data-flow="Express"] .concession-content-left {
+  align-items: center;
+}
+
+/* Flow: Personalized -> Top-left alignment */
+.concession-on-cart[data-flow="Personalized"] .concession-content-left {
+  align-items: flex-start;
+}
+
+.concession-image-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.concession-image-container {
+  width: 85px;
+  height: 85px;
+  position: relative;
+  border-radius: var(--Semantic-BorderRadius-Internal, var(--BorderRadius-Internal, 10px));
+  overflow: hidden;
+  background-color: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #f8f8f9));
+}
+
+.concession-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.concession-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  flex: 1 0 0;
+  min-width: 0;
+}
+
+.concession-details-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+  align-self: stretch;
+}
+
+.concession-modifiers-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+  align-self: stretch;
+}
+
+.concession-title {
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, "Poppins", sans-serif));
+  font-weight: var(--Typography-Semantic-Primária-Body-Regular-fontWeight, 400);
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #171718));
+  margin: 0;
+  width: 100%;
+  
+  /* 2-Line Truncation for Default Status */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal; /* Override standard text wrap to allow multiple lines */
+}
+
+.concession-price-row {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+  color: var(--Contextual-Text-Primary-default, var(--Contextual-Text-Primary-Default, var(--Text-Primary-Default, #980038)));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, "Poppins", sans-serif));
+  font-weight: var(--Typography-Semantic-Primária-H6-SemiBold-fontWeight, 600);
+}
+
+.concession-price-currency,
+.concession-price-value {
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  margin: 0;
+}
+
+.concession-actions-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+/* =========================================
+   STATUS = REMOVED
+   ========================================= */
+.concession-on-cart[data-status="Removed"] {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0;
+  padding-top: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  border-radius: var(--Semantic-BorderRadius-200, var(--BorderRadius-200, 8px));
+  overflow: clip; /* For the bottom progress bar */
+  background-color: var(--Contextual-Surface-Tertiary-Default, var(--Surface-Tertiary-Default, #f1f1f2));
+}
+
+.concession-on-cart[data-status="Removed"] .concession-title {
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, "Poppins", sans-serif));
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+  font-style: normal;
+  font-weight: var(--Typography-Semantic-Primária-H6-Medium-fontWeight, 500);
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+}
+
+.concession-removed-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  width: 100%;
+  padding-left: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  padding-right: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  padding-bottom: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  box-sizing: border-box;
+}
+
+.concession-removed-content .concession-title {
+  flex: 1 0 0;
+  min-width: 0; /* CRITICAL: Allows flex child to truncate text instead of stretching */
+  
+  /* 1-Line Truncation override for Removed Status */
+  -webkit-line-clamp: 1;
+}
+
+.concession-progress-bar-container {
+  width: 100%;
+  height: 4px;
+  position: relative;
+  background-color: transparent;
+}
+
+@keyframes concession-shrink {
+  from { width: 100%; }
+  to { width: 0%; }
+}
+
+.concession-progress-bar-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 4px;
+  background-color: var(--Contextual-Border-Primary-Default, var(--Border-Primary-Default, #980038));
+  border-radius: var(--Semantic-BorderRadius-200, var(--BorderRadius-200, 8px));
+  width: 100%;
+  transform-origin: left;
+  animation: concession-shrink 4s linear forwards;
+}

@@ -1,0 +1,89 @@
+.progress-tracker {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px));
+    gap: var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 48px));
+    background-color: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff));
+}
+
+/* Specific borders for orientation variants */
+.progress-tracker--vertical {
+    border-bottom: var(--Semantic-BorderWidth-25, 1px) solid var(--Contextual-Border-Tertiary-Default, #C1C7D1);
+}
+
+.progress-tracker--horizontal {
+    border-right: var(--Semantic-BorderWidth-25, 1px) solid var(--Contextual-Border-Tertiary-Default, #C1C7D1);
+}
+
+.progress-tracker-logo {
+    display: flex;
+    /* Fixed height with auto width + aspect ratio ensures the width scales automatically if height changes */
+    height: 40px;
+    width: auto;
+    aspect-ratio: 116 / 40;
+    color: var(--Contextual-Icon-Default-heading, #000);
+    /* CRITICAL FIX: Aligns the logo strictly to the left edge */
+    align-self: flex-start;
+}
+
+.progress-tracker-logo>svg {
+    width: 100%;
+    height: 100%;
+}
+
+.progress-tracker__brand-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    width: 100%;
+}
+
+.progress-tracker__cancel {
+    flex: 0 0 auto;
+}
+
+.progress-tracker-list {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+/* =========================================
+   HORIZONTAL ORIENTATION
+   ========================================= */
+.progress-tracker--horizontal .progress-tracker-list {
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+    /* CRITICAL FIX: Allows the child horizontal ProgressSteps to stretch and draw their vertical lines */
+    align-items: stretch;
+    gap: var(--Spacing-xs, 8px);
+}
+
+.progress-tracker--horizontal > .progress-tracker__cancel {
+    align-self: flex-start;
+}
+
+/* =========================================
+   VERTICAL ORIENTATION
+   ========================================= */
+.progress-tracker--vertical .progress-tracker-list {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--Spacing-xs, 8px);
+}
+
+/* Forces the steps to expand and stretch the dividers between them */
+.progress-tracker--vertical .progress-tracker__step {
+    flex: 1 1 0;
+}
+
+/* The last step doesn't have a divider, so it shouldn't expand */
+.progress-tracker--vertical .progress-tracker__step:last-child {
+    flex: 0 0 auto;
+}

@@ -1,0 +1,22 @@
+.experience-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  background: var(--Contextual-Surface-Tertiary-Default, var(--Surface-Tertiary-Default, #F1F1F2));
+  border-left-style: solid;
+  border-left-width: var(--Responsive-BorderWidth-100, var(--BorderWidth-100, 4px));
+  border-radius: var(--Responsive-BorderRadius-100, var(--BorderRadius-100, 4px));
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  padding: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px)) var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  width: fit-content;
+  max-width: 100%;
+}
+
+.experience-container[data-format="Premium"] {
+  border-left-color: var(--Contextual-Border-Experience-Premium, var(--Border-Experience-Premium, #D97706));
+}
+
+.experience-container[data-format="3D"] {
+  border-left-color: var(--Contextual-Border-Experience-3D, var(--Border-Experience-3D, #1B64DA));
+}

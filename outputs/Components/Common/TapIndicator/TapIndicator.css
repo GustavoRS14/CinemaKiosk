@@ -1,0 +1,80 @@
+.tap-indicator {
+    display: flex;
+    width: 144px;
+    height: 144px;
+    max-height: 144px;
+    flex-shrink: 0;
+    overflow: hidden;
+    padding: var(--Responsive-Spacing-lg, 24px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--Responsive-Spacing-xs, 8px);
+    box-sizing: border-box;
+
+    /* Shape & Borders */
+    border-radius: var(--Semantic-BorderRadius-Round, 512px);
+    border: var(--Semantic-BorderWidth-25, 1px) solid var(--Contextual-Border-Static-White, #FFF);
+
+    /*Glassmorphism Background */
+    background: linear-gradient(0deg, var(--Contextual-Surface-Translucent-OverlayDarkBase, var(--Surface-Translucent-OverlayDarkBase, rgba(0, 0, 0, 0.30))) 0%, var(--Contextual-Surface-Translucent-OverlayDarkBase, var(--Surface-Translucent-OverlayDarkBase, rgba(0, 0, 0, 0.30))) 100%), linear-gradient(0deg, var(--Contextual-Surface-Translucent-OverlayDarkSubtle, var(--Surface-Translucent-OverlayDarkSubtle, rgba(0, 0, 0, 0.20))) 0%, var(--Contextual-Surface-Translucent-OverlayDarkSubtle, var(--Surface-Translucent-OverlayDarkSubtle, rgba(0, 0, 0, 0.20))) 100%), var(--Contextual-Surface-Translucent-OverlayLightBase, var(--Surface-Translucent-OverlayLightBase, rgba(255, 255, 255, 0.30)));
+
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+
+    cursor: pointer;
+    user-select: none;
+
+    /* Attract Loop Animation */
+    animation: tapIndicatorPulse 2.5s infinite ease-in-out;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.tap-indicator:active {
+    transform: scale(0.95);
+    animation: none;
+    /* Stops pulsing when interacted with */
+}
+
+.tap-indicator__icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    /* Applies token color to the SVG */
+    color: var(--Contextual-Icon-OnColor-heading, #FFF);
+}
+
+.tap-indicator__icon path,
+.tap-indicator__icon circle,
+.tap-indicator__icon rect {
+    fill: currentColor;
+}
+
+.tap-indicator__label {
+    color: var(--Contextual-Text-OnColor-body, #FFF);
+    text-align: center;
+    text-transform: uppercase;
+    word-break: break-word;
+
+    /* Base Typography Tokens: H6 Semibold */
+    font-family: var(--Semantic-Font-Primary, 'Poppins', sans-serif);
+    font-size: var(--Responsive-Font-Headings-H6-TextSize, 20px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--Responsive-Font-Headings-H6-LineHeight, 24px);
+}
+
+/* Subtle continuous pulse for Kiosk interfaces */
+@keyframes tapIndicatorPulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

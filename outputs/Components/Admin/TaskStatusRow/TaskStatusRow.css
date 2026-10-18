@@ -1,0 +1,96 @@
+.task-status-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  width: 100%;
+}
+
+.task-status-row-header {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  width: 100%;
+}
+
+.task-status-row-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+  flex: 1 0 0;
+}
+
+.task-status-row-title-container {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+  width: 100%;
+}
+
+.task-status-row-title {
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-weight: var(--Typography-Semantic-Primária-H6-Medium-fontWeight, 500);
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, 20px);
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, 24px);
+  margin: 0;
+}
+
+.task-status-row-title-suffix {
+  color: var(--Contextual-Text-Default-captionMuted, var(--Text-Default-captionMuted, #64748B));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-weight: var(--Typography-Semantic-Primária-H6-Regular-fontWeight, 400);
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, 20px);
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, 24px);
+  margin: 0;
+}
+
+.task-status-row-description {
+  color: var(--Contextual-Text-Default-captionMuted, var(--Text-Default-captionMuted, #64748B));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-weight: var(--Typography-Semantic-Primária-Body-Regular-fontWeight, 400);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, 16px);
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, 20px);
+  margin: 0;
+}
+
+.task-status-row-percentage {
+  display: flex;
+  align-items: center;
+  color: var(--Contextual-Text-Information-default, var(--Text-Information-default, #1650AE));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-weight: var(--Typography-Semantic-Primária-H6-SemiBold-fontWeight, 600);
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, 20px);
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, 24px);
+  margin: 0;
+}
+
+.task-status-row-progress-action {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  width: 100%;
+}
+
+.task-status-row-progress-action>.progress-bar-container {
+  flex: 1 0 0;
+}
+
+.task-status-row-step-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+  width: 100%;
+  text-align: center;
+}
+
+.task-status-row-step-indicator p {
+  color: var(--Contextual-Text-Default-caption, var(--Text-Default-caption, #282E38));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-weight: var(--Typography-Semantic-Primária-Body-Medium-fontWeight, 500);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, 16px);
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, 20px);
+  margin: 0;
+}

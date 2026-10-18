@@ -1,0 +1,113 @@
+.totem-theme-preview-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  padding: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  background-color: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff));
+  border: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+  border-radius: var(--Semantic-BorderRadius-100, var(--BorderRadius-100, 4px));
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.totem-theme-preview-card__title-row {
+  display: flex;
+  align-items: center;
+  gap: var(--Responsive-Spacing-sm, 12px);
+  width: 100%;
+  min-width: 0;
+}
+
+.totem-theme-preview-card__icon {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  align-items: center;
+  justify-content: center;
+  color: var(--Contextual-Icon-Default-body, #000);
+}
+
+.totem-theme-preview-card__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.totem-theme-preview-card__icon svg [fill]:not([fill="none"]) {
+  fill: var(--Contextual-Icon-Default-body, #000);
+}
+
+.totem-theme-preview-card__icon svg [stroke] {
+  stroke: var(--Contextual-Icon-Default-body, #000);
+}
+
+.totem-theme-preview-card__title {
+  margin: 0;
+  min-width: 0;
+  flex: 1 1 auto;
+  word-break: break-word;
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, "Poppins"));
+  font-weight: var(--Typography-Semantic-Primária-H6-Semibold-fontWeight, 600);
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+}
+
+.totem-theme-preview-card__divider {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.totem-theme-preview-card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  width: 100%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.totem-theme-preview-card__example {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  padding: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px));
+  background-color: var(--Contextual-Surface-BackgroundPage-Default, var(--Surface-BackgroundPage-Default, #f8f8f8));
+  border: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+  border-radius: var(--Semantic-BorderRadius-100, var(--BorderRadius-100, 4px));
+  width: 100%;
+  flex-shrink: 0;
+  word-break: break-word;
+  box-sizing: border-box;
+}
+
+.totem-theme-preview-card__example-heading {
+  margin: 0;
+  white-space: nowrap;
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, "Poppins"));
+  font-weight: var(--Typography-Semantic-Primária-H5-Semibold-fontWeight, 600);
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, var(--Font-Headings-H5-TextSize, 24px));
+  line-height: var(--Responsive-Font-Headings-H5-ParagraphSpacing, var(--Font-Headings-H5-ParagraphSpacing, 28px));
+  color: var(--Contextual-Text-Primary-default, var(--Text-Primary-default, #980038));
+}
+
+.totem-theme-preview-card__example-description {
+  margin: 0;
+  min-width: 100%;
+  width: min-content;
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, "Poppins"));
+  font-weight: var(--Typography-Semantic-Primária-Body-Medium-fontWeight, 500);
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+}
+
+.totem-theme-preview-card__button {
+  width: 100%;
+  flex-shrink: 0;
+}

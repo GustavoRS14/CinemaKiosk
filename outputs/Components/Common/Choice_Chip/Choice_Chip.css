@@ -1,0 +1,97 @@
+.choice-chip {
+  /* Default Unselected */
+  --chip-bg: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff));
+  --chip-border: var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+  --chip-text: var(--Contextual-Text-Default-caption, var(--Text-Default-caption, #282e38));
+}
+
+.choice-chip[data-selected="true"] {
+  /* Default Selected */
+  --chip-bg: var(--Contextual-Surface-Primary-Default, var(--Surface-Primary-Default, #980038));
+  --chip-border: var(--Contextual-Border-Primary-Default, var(--Border-Primary-Default, #980038));
+  --chip-text: var(--Button-Text-Primary-onColor, var(--Contextual-Text-OnColor-body, #ffffff));
+}
+
+.choice-chip[data-state="Disabled"][data-selected="true"] {
+  /* Disabled Selected */
+  --chip-bg: var(--Contextual-Surface-DisabledDisabled-secondary, var(--Contextual-Surface-DisabledDisabled-Secondary, var(--Surface-DisabledDisabled-Secondary, #505d6f)));
+  --chip-border: var(--Contextual-Border-DisabledDisabled-secondary, var(--Contextual-Border-DisabledDisabled-Secondary, var(--Border-DisabledDisabled-Secondary, #505d6f)));
+  --chip-text: var(--Contextual-Text-Disabled-onColor, var(--Contextual-Text-Disabled-OnColor, var(--Text-Disabled-OnColor, #a2acb9)));
+}
+
+.choice-chip[data-state="Disabled"][data-selected="false"] {
+  /* Disabled Unselected */
+  --chip-bg: var(--Contextual-Surface-DisabledDisabled-default, var(--Contextual-Surface-DisabledDisabled-Default, var(--Surface-DisabledDisabled-Default, #e3e3e4)));
+  --chip-border: var(--Contextual-Border-DisabledDisabled-default, var(--Contextual-Border-DisabledDisabled-Default, var(--Border-DisabledDisabled-Default, #e3e3e4)));
+  --chip-text: var(--Contextual-Text-Disabled-default, var(--Contextual-Text-Disabled-Default, var(--Text-Disabled-Default, #a2acb9)));
+}
+
+.choice-chip[data-state="Read Only"][data-selected="true"] {
+  /* Read Only Selected */
+  --chip-bg: var(--Contextual-Surface-ReadOnly-secondary, var(--Contextual-Surface-ReadOnly-Secondary, var(--Surface-ReadOnly-Secondary, #a2acb9)));
+  --chip-border: var(--Contextual-Border-ReadOnly-secondary, var(--Contextual-Border-ReadOnly-Secondary, var(--Border-ReadOnly-Secondary, #a2acb9)));
+  --chip-text: var(--Contextual-Text-ReadOnly-onColor, var(--Contextual-Text-ReadOnly-OnColor, var(--Text-ReadOnly-OnColor, #ffffff)));
+}
+
+.choice-chip[data-state="Read Only"][data-selected="false"] {
+  /* Read Only Unselected */
+  --chip-bg: var(--Contextual-Surface-ReadOnly-default, var(--Contextual-Surface-ReadOnly-Default, var(--Surface-ReadOnly-Default, #f1f1f2)));
+  --chip-border: var(--Contextual-Border-ReadOnly-default, var(--Contextual-Border-ReadOnly-Default, var(--Border-ReadOnly-Default, #c1c7d1)));
+  --chip-text: var(--Contextual-Text-ReadOnly-default, var(--Contextual-Text-ReadOnly-Default, var(--Text-ReadOnly-Default, #5a5a62)));
+}
+
+.choice-chip[data-state="Pressed"][data-selected="true"],
+.choice-chip[data-selected="true"]:active:not([disabled]) {
+  /* Pressed Selected */
+  --chip-bg: var(--Contextual-Surface-Primary-DefaultPressed, var(--Surface-Primary-DefaultPressed, #7a002d));
+  --chip-border: var(--Contextual-Border-Primary-DefaultPressed, var(--Border-Primary-DefaultPressed, #7a002d));
+  --chip-text: var(--Button-Text-Primary-onColorPressed, var(--Contextual-Text-Primary-onColorPressed, #ffffff));
+}
+
+.choice-chip[data-state="Pressed"][data-selected="false"],
+.choice-chip[data-selected="false"]:active:not([disabled]) {
+  /* Pressed Unselected */
+  --chip-bg: var(--Contextual-Surface-Secondary-DefaultPressed, var(--Surface-Secondary-DefaultPressed, #e3e3e4));
+  --chip-border: var(--Contextual-Border-Tertiary-Pressed, var(--Border-Tertiary-Pressed, #a2acb9));
+}
+
+.choice-chip-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px)) var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  border-radius: var(--Semantic-BorderRadius-Round, var(--BorderRadius-Round, 512px));
+  border-width: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px));
+  border-style: solid;
+  border-color: var(--chip-border);
+  background-color: var(--chip-bg);
+  color: var(--chip-text);
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  flex-shrink: 0;
+}
+
+.choice-chip-container:not([data-state="Disabled"]):not([data-state="Read Only"]) {
+  cursor: pointer;
+}
+
+.choice-chip-container[data-state="Disabled"],
+.choice-chip-container[data-state="Read Only"] {
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.choice-chip-text {
+  word-break: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  white-space: nowrap;
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-weight: 500; /* Medium */
+  font-size: 16px;
+  line-height: 20px;
+  color: inherit;
+  margin: 0;
+}

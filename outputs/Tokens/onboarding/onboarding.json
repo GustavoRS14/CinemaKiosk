@@ -1,0 +1,167 @@
+{
+"$schema": "https://design-tokens.github.io/community-group/format/",
+"Brand": {
+"$extensions": {
+"figma": {
+"collectionName": "Brand",
+"modes": [
+"Mode 1"
+],
+"defaultMode": "Mode 1"
+},
+"brand": {
+"name": "Onboarding",
+"roles": {
+"primary": "Slate"
+}
+}
+},
+"Palettes": {
+"Slate": {
+"50": {
+"$type": "color",
+"$value": "{Primitive.Slate.50}",
+"$extensions": {
+"figma": {
+"variableName": "Slate/50",
+"resolvedType": "COLOR",
+"scopes": [
+"ALL_SCOPES"
+]
+}
+}
+},
+"100": {
+"$type": "color",
+"$value": "{Primitive.Slate.100}",
+"$extensions": {
+"figma": {
+"variableName": "Slate/100",
+"resolvedType": "COLOR",
+"scopes": [
+"ALL_SCOPES"
+]
+}
+}
+},
+"200": {
+"$type": "color",
+"$value": "{Primitive.Slate.200}",
+"$extensions": {
+"figma": {
+"variableName": "Slate/200",
+"resolvedType": "COLOR",
+"scopes": [
+"ALL_SCOPES"
+]
+}
+}
+},
+"300": {
+"$type": "color",
+"$value": "{Primitive.Slate.300}",
+"$extensions": {
+"figma": {
+"variableName": "Slate/300",
+"resolvedType": "COLOR",
+"scopes": [
+"ALL_SCOPES"
+]
+}
+}
+},
+"350": {
+"$type": "color",
+"$value": "{Primitive.Slate.350}",
+"$extensions": {
+"figma": {
+"variableName": "Slate/350",
+"resolvedType": "COLOR",
+"scopes": [
+"ALL_SCOPES"
+]
+}
+}
+},
+"400": {
+"$type": "color",
+"$value": "{Primitive.Slate.400}",
+"$extensions": {
+"figma": {
+"variableName": "Slate/400",
+"resolvedType": "COLOR",
+"scopes": [
+"ALL_SCOPES"
+]
+}
+}
+},
+"500": {
+"$type": "color",
+"$value": "{Primitive.Foundations.Black}",
+"$extensions": {
+"figma": {
+"variableName": "Slate/500",
+"resolvedType": "COLOR",
+"scopes": [
+"ALL_SCOPES"
+]
+}
+}
+},
+"600": {
+"$type": "color",
+"$value": "{Primitive.Slate.600}",
+"$extensions": {
+"figma": {
+"variableName": "Slate/600",
+"resolvedType": "COLOR",
+"scopes": [
+"ALL_SCOPES"
+]
+}
+}
+},
+"700": {
+"$type": "color",
+"$value": "{Primitive.Slate.700}",
+"$extensions": {
+"figma": {
+"variableName": "Slate/700",
+"resolvedType": "COLOR",
+"scopes": [
+"ALL_SCOPES"
+]
+}
+}
+},
+"800": {
+"$type": "color",
+"$value": "{Primitive.Slate.800}",
+"$extensions": {
+"figma": {
+"variableName": "Slate/800",
+"resolvedType": "COLOR",
+"scopes": [
+"ALL_SCOPES"
+]
+}
+}
+},
+"900": {
+"$type": "color",
+"$value": "{Primitive.Slate.900}",
+"$extensions": {
+"figma": {
+"variableName": "Slate/900",
+"resolvedType": "COLOR",
+"scopes": [
+"ALL_SCOPES"
+]
+}
+}
+}
+}
+}
+}
+}

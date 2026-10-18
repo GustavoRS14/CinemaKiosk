@@ -1,0 +1,225 @@
+.totem-button {
+  align-items: center;
+  appearance: none;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  user-select: none;
+  white-space: nowrap;
+
+  font-family: var(--Semantic-Font-Primary, Poppins, sans-serif);
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, 24px);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: var(--Typography-Semantic-Primária-H5-Semibold-letterSpacing);
+  line-height: var(--Responsive-Font-Headings-H5-ParagraphSpacing, 28px);
+
+  gap: var(--Responsive-Spacing-xs, 8px);
+  block-size: var(--Responsive-ButtonInputHeight, 80px);
+  padding-block: var(--Responsive-Spacing-sm, 12px);
+  padding-inline: var(---Responsive-Spacing-md, 16px);
+
+  border-style: solid;
+  border-width: var(--Semantic-BorderWidth-50);
+  cursor: pointer;
+
+  background-color: transparent;
+  border-color: transparent;
+  color: inherit;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.totem-button[data-state="disabled"] {
+  cursor: not-allowed;
+}
+
+/* Border Radius */
+.totem-button[data-radius="2xs"] {
+  border-radius: var(--Semantic-BorderRadius-100, 4px);
+}
+
+.totem-button[data-radius="xs"] {
+  border-radius: var(--Semantic-BorderRadius-200, 8px);
+}
+
+.totem-button[data-radius="sm"] {
+  border-radius: var(--Semantic-BorderRadius-250, 10px);
+}
+
+.totem-button[data-radius="md"] {
+  border-radius: var(--Semantic-BorderRadius-300, 12px);
+}
+
+.totem-button[data-radius="lg"] {
+  border-radius: var(--Semantic-BorderRadius-400, 16px);
+}
+
+.totem-button[data-radius="xl"] {
+  border-radius: var(--Semantic-BorderRadius-Round, 512px);
+}
+
+/* --- INTENT: PRIMARY --- */
+
+/* Primary / Solid */
+.totem-button[data-intent="primary"][data-variant="solid"][data-state="default"] {
+  background-color: var(--Contextual-Surface-Primary-Default);
+  color: var(--Button-Text-Primary-onColor, var(--Contextual-Text-Primary-onColor));
+  border-color: var(--Contextual-Border-Primary-Default);
+}
+
+.totem-button[data-intent="primary"][data-variant="solid"][data-state="pressed"],
+.totem-button[data-intent="primary"][data-variant="solid"][data-state="default"]:hover,
+.totem-button[data-intent="primary"][data-variant="solid"][data-state="default"]:active {
+  background-color: var(--Contextual-Surface-Primary-DefaultPressed);
+  color: var(--Button-Text-Primary-onColorPressed, var(--Contextual-Text-Primary-onColorPressed));
+  border-color: var(--Contextual-Border-Primary-DefaultPressed);
+}
+
+.totem-button[data-intent="primary"][data-variant="solid"][data-state="disabled"] {
+  background-color: var(--Contextual-Surface-Disabled-DisabledDefault);
+  color: var(--Contextual-Text-Disabled-default);
+  border-color: var(--Contextual-Border-Disabled-DisabledDefault);
+}
+
+/* Primary / Subtle */
+.totem-button[data-intent="primary"][data-variant="subtle"][data-state="default"] {
+  background-color: var(--Contextual-Surface-Primary-Alternative);
+  color: var(--Contextual-Text-Primary-default);
+  border-color: var(--Contextual-Border-Primary-Default);
+}
+
+.totem-button[data-intent="primary"][data-variant="subtle"][data-state="pressed"],
+.totem-button[data-intent="primary"][data-variant="subtle"][data-state="default"]:hover,
+.totem-button[data-intent="primary"][data-variant="subtle"][data-state="default"]:active {
+  background-color: var(--Contextual-Surface-Primary-AlternativePressed);
+  color: var(--Contextual-Text-Primary-defaultPressed);
+  border-color: var(--Contextual-Border-Primary-DefaultPressed);
+}
+
+.totem-button[data-intent="primary"][data-variant="subtle"][data-state="disabled"] {
+  background-color: var(--Contextual-Surface-Disabled-DisabledDefault);
+  color: var(--Contextual-Text-Disabled-default);
+  border-color: var(--Contextual-Border-Disabled-DisabledDefault);
+}
+
+/* Primary / Ghost */
+.totem-button[data-intent="primary"][data-variant="ghost"] {
+  border-width: var(--Semantic-BorderWidth-None);
+}
+
+.totem-button[data-intent="primary"][data-variant="ghost"][data-state="default"] {
+  color: var(--Contextual-Text-Primary-default);
+}
+
+.totem-button[data-intent="primary"][data-variant="ghost"][data-state="pressed"],
+.totem-button[data-intent="primary"][data-variant="ghost"][data-state="default"]:hover,
+.totem-button[data-intent="primary"][data-variant="ghost"][data-state="default"]:active {
+  background-color: var(--Contextual-Surface-Secondary-DefaultPressed);
+  color: var(--Contextual-Text-Primary-defaultPressed);
+}
+
+.totem-button[data-intent="primary"][data-variant="ghost"][data-state="disabled"] {
+  color: var(--Contextual-Text-Disabled-default);
+}
+
+/* Primary / Outlined */
+.totem-button[data-intent="primary"][data-variant="outlined"][data-state="default"] {
+  color: var(--Contextual-Text-Primary-default);
+  border-color: var(--Contextual-Border-Primary-Default);
+}
+
+.totem-button[data-intent="primary"][data-variant="outlined"][data-state="pressed"],
+.totem-button[data-intent="primary"][data-variant="outlined"][data-state="default"]:hover,
+.totem-button[data-intent="primary"][data-variant="outlined"][data-state="default"]:active {
+  background-color: var(--Contextual-Surface-Secondary-DefaultPressed);
+  color: var(--Contextual-Text-Primary-defaultPressed);
+  border-color: var(--Contextual-Border-Primary-DefaultPressed);
+}
+
+.totem-button[data-intent="primary"][data-variant="outlined"][data-state="disabled"] {
+  color: var(--Contextual-Text-Disabled-default);
+  border-color: var(--Contextual-Border-Disabled-DisabledSecondary);
+}
+
+
+/* --- INTENT: INFORMATION & NEUTRAL (Rendered as Ghost) --- */
+.totem-button[data-intent="information"],
+.totem-button[data-intent="neutral"] {
+  border-width: var(--Semantic-BorderWidth-None);
+}
+
+/* Information */
+.totem-button[data-intent="information"][data-state="default"] {
+  color: var(--Contextual-Text-Information-default);
+}
+
+.totem-button[data-intent="information"][data-state="pressed"],
+.totem-button[data-intent="information"][data-state="default"]:hover,
+.totem-button[data-intent="information"][data-state="default"]:active {
+  background-color: var(--Contextual-Surface-Secondary-DefaultPressed);
+  color: var(--Contextual-Text-Information-defaultPressed);
+}
+
+.totem-button[data-intent="information"][data-state="disabled"] {
+  color: var(--Contextual-Text-Disabled-default);
+}
+
+/* Neutral */
+.totem-button[data-intent="neutral"][data-state="default"] {
+  color: var(--Contextual-Text-Default-caption);
+}
+
+.totem-button[data-intent="neutral"][data-state="pressed"],
+.totem-button[data-intent="neutral"][data-state="default"]:hover,
+.totem-button[data-intent="neutral"][data-state="default"]:active {
+  background-color: var(--Contextual-Surface-Secondary-DefaultPressed);
+  color: var(--Contextual-Text-Default-caption);
+}
+
+.totem-button[data-intent="neutral"][data-state="disabled"] {
+  color: var(--Contextual-Text-Disabled-default);
+}
+
+/* --- ICONS --- */
+.totem-button-icon-slot {
+  align-items: center;
+  block-size: var(--Primitive-Scale-600);
+  display: inline-flex;
+  flex: 0 0 auto;
+  inline-size: var(--Primitive-Scale-600);
+  justify-content: center;
+  color: inherit;
+}
+
+.totem-button[data-intent="primary"][data-variant="solid"][data-state="default"] .totem-button-icon-slot {
+  color: var(--Button-Icon-Primary-onColor, var(--Contextual-Icon-Primary-onColor));
+}
+
+.totem-button[data-intent="primary"][data-variant="solid"][data-state="pressed"] .totem-button-icon-slot,
+.totem-button[data-intent="primary"][data-variant="solid"][data-state="default"]:hover .totem-button-icon-slot,
+.totem-button[data-intent="primary"][data-variant="solid"][data-state="default"]:active .totem-button-icon-slot {
+  color: var(--Button-Icon-Primary-onColorPressed, var(--Contextual-Icon-Primary-onColorPressed));
+}
+
+.totem-button-plus-icon {
+  block-size: calc(var(--Primitive-Scale-300) + var(--Semantic-BorderWidth-50));
+  inline-size: calc(var(--Primitive-Scale-300) + var(--Semantic-BorderWidth-50));
+}
+
+.totem-button-badge {
+  align-items: center;
+  background: var(--Contextual-Surface-Primary-Default, var(--Surface-Primary-Default, #980038));
+  border-radius: var(--Semantic-BorderRadius-Round, var(--BorderRadius-Round, 512px));
+  color: var(--Contextual-Text-Primary-onColor, var(--Text-OnColor-Body, #ffffff));
+  display: inline-flex;
+  flex: 0 0 32px;
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  font-weight: 500;
+  height: 32px;
+  justify-content: center;
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  min-width: 32px;
+  padding: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+}

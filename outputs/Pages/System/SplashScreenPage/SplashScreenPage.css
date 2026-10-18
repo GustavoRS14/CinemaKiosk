@@ -1,0 +1,36 @@
+.splash-screen-page {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  height: 100vh;
+  min-height: 100vh;
+  height: 100dvh;
+  min-height: 100dvh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: var(--Semantic-BorderRadius-400, var(--BorderRadius-400, 16px));
+  background: var(--Contextual-Surface-BackgroundPage-Default, var(--Surface-BackgroundPage-Default, #F8F8F8));
+  box-shadow: 0 0 0 100vmax var(--Contextual-Surface-Inverse-Secondary, var(--Surface-Inverse-Secondary, #000000));
+  box-sizing: border-box;
+}
+
+.splash-screen-page,
+.splash-screen-page * {
+  box-sizing: border-box;
+}
+
+.splash-screen-page__content {
+  display: flex;
+  width: min(256px, calc(100% - (2 * var(--Responsive-Spacing-lg, 24px))));
+  min-width: 0;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--Responsive-Spacing-xl, 32px);
+}
+
+.splash-screen-page__progress {
+  width: 100%;
+}

@@ -1,0 +1,65 @@
+.customer-home-page {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: var(--Semantic-BorderRadius-400, var(--BorderRadius-400, 16px));
+  background: var(--Contextual-Surface-BackgroundPage-Default, var(--Surface-BackgroundPage-Default, #f8f8f8));
+  box-shadow: 0 0 0 100vmax var(--Contextual-Surface-Inverse-Secondary, var(--Surface-Inverse-Secondary, #000000));
+  box-sizing: border-box;
+}
+
+.customer-home-page,
+.customer-home-page * {
+  box-sizing: border-box;
+}
+
+.customer-home-page__hero {
+  position: relative;
+  width: 100%;
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+.customer-home-page__hero--interactive {
+  cursor: pointer;
+}
+
+.customer-home-page .welcome-footer,
+.customer-home-page .metadata-bar {
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.customer-home-page .welcome-footer {
+  position: relative;
+  z-index: 4;
+}
+
+.customer-home-page .welcome-footer__actions {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, minmax(0, 301.33px));
+  justify-content: center;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+}
+
+.customer-home-page .welcome-footer__actions .card-option-container {
+  width: 100%;
+}
+
+@media (max-width: 760px) {
+  .customer-home-page .welcome-footer {
+    padding-inline: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  }
+
+  .customer-home-page .welcome-footer__actions {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .customer-home-page .welcome-footer__actions .card-option-container {
+    padding-inline: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+  }
+}

@@ -1,0 +1,30 @@
+.modal-accessibility-trigger {
+  position: fixed;
+  z-index: 1300;
+  display: flex;
+  overflow: hidden;
+  background: var(--Contextual-Surface-Accessibility-Default, var(--Surface-Accessibility-Default, #1650ae));
+}
+
+/* Vertical totem: the Navbar is horizontal and Accessibility is its last quarter. */
+.modal-accessibility-trigger[data-orientation='vertical'] {
+  right: 0;
+  bottom: 0;
+  width: 25%;
+  height: 124px;
+  border-radius: 0 0 var(--Semantic-BorderRadius-400, var(--BorderRadius-400, 16px)) 0;
+}
+
+/* Horizontal totem: the Navbar is vertical and Accessibility is its last quarter. */
+.modal-accessibility-trigger[data-orientation='horizontal'] {
+  bottom: 0;
+  left: 0;
+  width: 178px;
+  height: calc((100dvh - 80px) / 4);
+  border-radius: 0 0 0 var(--Semantic-BorderRadius-400, var(--BorderRadius-400, 16px));
+}
+
+.modal-accessibility-trigger .navbar-button {
+  width: 100%;
+  height: 100%;
+}

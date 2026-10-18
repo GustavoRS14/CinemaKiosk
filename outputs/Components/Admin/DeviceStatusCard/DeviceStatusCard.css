@@ -1,0 +1,83 @@
+.device-status-card {
+  background-color: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff));
+  border: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+  border-radius: var(--Semantic-BorderRadius-200, var(--BorderRadius-200, 8px));
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  align-items: flex-start;
+  padding: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  width: 100%;
+  position: relative;
+}
+
+.device-status-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.device-status-card__icon-wrapper {
+  background-color: var(--Contextual-Surface-Tertiary-Default, var(--Surface-Tertiary-Default, #f1f1f2));
+  border-radius: var(--Semantic-BorderRadius-Round, var(--BorderRadius-Round, 512px));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.device-status-card__icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--Contextual-Icon-Default-body, var(--Icon-Default-body, #000000));
+  fill: var(--Contextual-Icon-Default-body, var(--Icon-Default-body, #000000));
+}
+
+.device-status-card__icon img,
+.device-status-card__icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.device-status-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+  align-items: flex-start;
+  width: 100%;
+}
+
+.device-status-card__title {
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+  font-weight: 600;
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+  margin: 0;
+}
+
+.device-status-card__metadata {
+  color: var(--Contextual-Text-Default-captionMuted, var(--Text-Default-captionMuted, #64748b));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  font-weight: 500;
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  margin: 0;
+}
+
+.device-status-card__action {
+  width: 100%;
+}
+
+/* CRITICAL FIX: Forces immediate children (the Button) to fill the container */
+.device-status-card__action > * {
+  width: 100%;
+}

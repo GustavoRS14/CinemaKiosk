@@ -1,0 +1,5401 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "Contextual": {
+    "$extensions": {
+      "figma": {
+        "collectionName": "Contextual",
+        "modes": [
+          "Light",
+          "Dark"
+        ],
+        "defaultMode": "Light"
+      }
+    },
+    "Light": {
+      "Contrast": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Semantic.Neutral.800}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Contrast/Default",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        }
+      },
+      "Surface": {
+        "Primary": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Primary/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Alternative": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Primary/Alternative",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Focus": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Primary/Focus",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "DefaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Primary/DefaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "AlternativePressed": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Primary/AlternativePressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Secondary": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Secondary/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Focus": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Secondary/Focus",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "DefaultPressed": {
+            "$type": "color",
+            "$value": "{Primitive.Grey.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Secondary/DefaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Tertiary": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.50}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tertiary/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tertiary/Pressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Focus": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tertiary/Focus",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Tonal": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tonal/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tonal/Pressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Disabled": {
+          "DisabledDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Disabled/DisabledDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "DisabledSecondary": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Disabled/DisabledSecondary",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Tag": {
+          "Brand": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.50}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tag/Brand",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Information": {
+            "$type": "color",
+            "$value": "{Semantic.Information.50}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tag/Information",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Success": {
+            "$type": "color",
+            "$value": "{Semantic.Success.50}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tag/Success",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Warning": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.50}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tag/Warning",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Errror": {
+            "$type": "color",
+            "$value": "{Semantic.Error.50}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tag/Errror",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Neutral": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.50}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tag/Neutral",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Accessibility": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Information.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Accessibility/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Semantic.Information.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Accessibility/Pressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Toggle": {
+          "InactiveDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.50}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Toggle/InactiveDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "InactivePressed": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Toggle/InactivePressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Translucent": {
+          "OverlayDarkSubtle": {
+            "$type": "color",
+            "$value": "{Semantic.Opacities.Black20}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Translucent/OverlayDarkSubtle",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "OverlayDarkBase": {
+            "$type": "color",
+            "$value": "{Semantic.Opacities.Black30}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Translucent/OverlayDarkBase",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "OverlayLightBase": {
+            "$type": "color",
+            "$value": "{Semantic.Opacities.White30}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Translucent/OverlayLightBase",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Inverse": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Inverse/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Secondary": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.Black}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Inverse/Secondary",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Information": {
+          "SolidDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Information.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Information/SolidDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SolidPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Information.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Information/SolidPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SubtleDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Information.50}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Information/SubtleDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SubtlePressed": {
+            "$type": "color",
+            "$value": "{Semantic.Information.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Information/SubtlePressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Warning": {
+          "SolidDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Warning/SolidDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SolidPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Warning/SolidPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SubtleDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.50}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Warning/SubtleDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SubtlePressed": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Warning/SubtlePressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Error": {
+          "SubtleDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Error.50}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Error/SubtleDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Success": {
+          "SubtleDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Success.50}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Success/SubtleDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Static": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Static/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "DefaultPressed": {
+            "$type": "color",
+            "$value": "{Primitive.Grey.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Static/DefaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Skeleton": {
+          "Base": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Skeleton/Base",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Shimmer": {
+            "Option1": {
+              "$type": "color",
+              "$value": "{Semantic.Opacities.White00}",
+              "$extensions": {
+                "figma": {
+                  "variableName": "Surface/Skeleton/Shimmer/Option1",
+                  "resolvedType": "COLOR",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "Option2": {
+              "$type": "color",
+              "$value": "{Primitive.Grey.100}",
+              "$extensions": {
+                "figma": {
+                  "variableName": "Surface/Skeleton/Shimmer/Option2",
+                  "resolvedType": "COLOR",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "BackgroundPage": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.25}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/BackgroundPage/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "CloseButton": {
+          "DefaultContained": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/CloseButton/DefaultContained",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "PressedConteined": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/CloseButton/PressedConteined",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "PressedGhost": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/CloseButton/PressedGhost",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "ReadOnly": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/ReadOnly/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Secondary": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/ReadOnly/Secondary",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "Text": {
+        "Default": {
+          "heading": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.Black}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Default/heading",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.Black}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Default/body",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "caption": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Default/caption",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "placeholder": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Default/placeholder",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "captionMuted": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Default/captionMuted",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Primary": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Primary/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "defaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Primary/defaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Primary/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColorPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Primary/onColorPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Error": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Error.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Error/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "defaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Error.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Error/defaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Error/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColorPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Error/onColorPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Tag": {
+          "Brand": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Tag/Brand",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Information": {
+            "$type": "color",
+            "$value": "{Semantic.Information.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Tag/Information",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Success": {
+            "$type": "color",
+            "$value": "{Semantic.Success.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Tag/Success",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Warning": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Tag/Warning",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Errror": {
+            "$type": "color",
+            "$value": "{Semantic.Error.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Tag/Errror",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Neutral": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Tag/Neutral",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Information": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Information.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Information/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "defaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Information.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Information/defaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Information/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColorPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Information/onColorPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Warning": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Warning/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "defaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Warning/defaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Warning/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColorPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Warning/onColorPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Success": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Success.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Success/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "defaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Success.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Success/defaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Success/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColorPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Success/onColorPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Neutral": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Neutral/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Neutral/pressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Disabled": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Disabled/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Disabled/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Static": {
+          "Primary": {
+            "default": {
+              "$type": "color",
+              "$value": "{Semantic.Primary.Default}",
+              "$extensions": {
+                "figma": {
+                  "variableName": "Text/Static/Primary/default",
+                  "resolvedType": "COLOR",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "defaultPressed": {
+              "$type": "color",
+              "$value": "{Semantic.Primary.600}",
+              "$extensions": {
+                "figma": {
+                  "variableName": "Text/Static/Primary/defaultPressed",
+                  "resolvedType": "COLOR",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "Black": {
+            "default": {
+              "$type": "color",
+              "$value": "{Semantic.Foundations.Black}",
+              "$extensions": {
+                "figma": {
+                  "variableName": "Text/Static/Black/default",
+                  "resolvedType": "COLOR",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "Inverse": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Inverse/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "OnColor": {
+          "heading": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/OnColor/heading",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/OnColor/body",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "caption": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/OnColor/caption",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "placeholder": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/OnColor/placeholder",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "ReadOnly": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/ReadOnly/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/ReadOnly/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "Icon": {
+        "Default": {
+          "heading": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.Black}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Default/heading",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.Black}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Default/body",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "caption": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Default/caption",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "placeholder": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Default/placeholder",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "captionMuted": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Default/captionMuted",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Primary": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Primary/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "defaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Primary/defaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Primary/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColorPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Primary/onColorPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Error": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Error.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Error/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "defaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Error.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Error/defaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Error/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColorPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Error/onColorPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Information": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Information.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Information/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "defaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Information.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Information/defaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Information/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColorPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Information/onColorPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Warning": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Warning/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "defaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Warning/defaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Warning/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColorPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Warning/onColorPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Success": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Success.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Success/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "defaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Success.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Success/defaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Success/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColorPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Success/onColorPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Neutral": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Neutral/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Neutral/pressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Disabled": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Disabled/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Disabled/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Seats": {
+          "Disabled": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Seats/Disabled",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "AvailableDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Seats/AvailableDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "AvailablePressed": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Seats/AvailablePressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SelectedDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Seats/SelectedDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SelectedPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Seats/SelectedPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "AccessibleDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Information.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Seats/AccessibleDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "AccessiblePressed": {
+            "$type": "color",
+            "$value": "{Semantic.Information.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Seats/AccessiblePressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Inverse": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Inverse/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Experience": {
+          "3D": {
+            "$type": "color",
+            "$value": "{Semantic.Information.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Experience/3D",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Static": {
+          "Information": {
+            "default": {
+              "$type": "color",
+              "$value": "{Semantic.Information.600}",
+              "$extensions": {
+                "figma": {
+                  "variableName": "Icon/Static/Information/default",
+                  "resolvedType": "COLOR",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "defaultPressed": {
+              "$type": "color",
+              "$value": "{Semantic.Information.700}",
+              "$extensions": {
+                "figma": {
+                  "variableName": "Icon/Static/Information/defaultPressed",
+                  "resolvedType": "COLOR",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "Primary": {
+            "default": {
+              "$type": "color",
+              "$value": "{Semantic.Primary.Default}",
+              "$extensions": {
+                "figma": {
+                  "variableName": "Icon/Static/Primary/default",
+                  "resolvedType": "COLOR",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "defaultPressed": {
+              "$type": "color",
+              "$value": "{Semantic.Primary.600}",
+              "$extensions": {
+                "figma": {
+                  "variableName": "Icon/Static/Primary/defaultPressed",
+                  "resolvedType": "COLOR",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "Caption": {
+            "default": {
+              "$type": "color",
+              "$value": "{Semantic.Neutral.800}",
+              "$extensions": {
+                "figma": {
+                  "variableName": "Icon/Static/Caption/default",
+                  "resolvedType": "COLOR",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "OnColor": {
+          "heading": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/OnColor/heading",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/OnColor/body",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "caption": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/OnColor/caption",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "placeholder": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/OnColor/placeholder",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "ReadOnly": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/ReadOnly/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/ReadOnly/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "Border": {
+        "Contrast": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Contrast/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Static": {
+          "White": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Static/White",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Primary": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Primary/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Alternative": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Primary/Alternative",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Focus": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Primary/Focus",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "DefaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Primary/DefaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "AlternativePressed": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Primary/AlternativePressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Secondary": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Secondary/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Focus": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Secondary/Focus",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "DefaultPressed": {
+            "$type": "color",
+            "$value": "{Primitive.Grey.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Secondary/DefaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Tertiary": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Tertiary/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Tertiary/Pressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Focus": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Tertiary/Focus",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Disabled": {
+          "DisabledDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Disabled/DisabledDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "DisabledSecondary": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Disabled/DisabledSecondary",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Error": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Error.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Error/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "DefaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Error.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Error/DefaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SubtleDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Error.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Error/SubtleDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Success": {
+          "SubtleDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Success.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Success/SubtleDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Tag": {
+          "Brand": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Tag/Brand",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Information": {
+            "$type": "color",
+            "$value": "{Semantic.Information.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Tag/Information",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Success": {
+            "$type": "color",
+            "$value": "{Semantic.Success.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Tag/Success",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Warning": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Tag/Warning",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Errror": {
+            "$type": "color",
+            "$value": "{Semantic.Error.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Tag/Errror",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Neutral": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Tag/Neutral",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Tooltip": {
+          "Tooltip": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Tooltip/Tooltip",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Information": {
+          "SolidDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Information.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Information/SolidDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SolidPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Information.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Information/SolidPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SubtleDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Information.50}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Information/SubtleDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SubtlePressed": {
+            "$type": "color",
+            "$value": "{Semantic.Information.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Information/SubtlePressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Warning": {
+          "SolidDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Warning/SolidDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SolidPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Warning/SolidPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SubtleDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.50}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Warning/SubtleDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SubtlePressed": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Warning/SubtlePressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Inverse": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Inverse/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Experience": {
+          "Premium": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Experience/Premium",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "3D": {
+            "$type": "color",
+            "$value": "{Semantic.Information.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Experience/3D",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "ProgressIndicator": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Information.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/ProgressIndicator/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "ReadOnly": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/ReadOnly/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Secondary": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/ReadOnly/Secondary",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "Shadow": {
+        "Default": {
+          "ShadowStrong": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.Black}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Shadow/Default/ShadowStrong",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "BrandAsset": {
+        "DefaultColor": {
+          "main": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "BrandAsset/DefaultColor/main",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "accentDarkBg": {
+            "$type": "color",
+            "$value": "{Semantic.Secondary.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "BrandAsset/DefaultColor/accentDarkBg",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "accentLightBg": {
+            "$type": "color",
+            "$value": "{Semantic.Secondary.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "BrandAsset/DefaultColor/accentLightBg",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "BrandText": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "BrandAsset/DefaultColor/BrandText",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "BrandTertiary": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "BrandAsset/DefaultColor/BrandTertiary",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "WhiteColor": {
+          "main": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "BrandAsset/WhiteColor/main",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "accentDarkBg": {
+            "$type": "color",
+            "$value": "{Semantic.Secondary.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "BrandAsset/WhiteColor/accentDarkBg",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "accentLightBg": {
+            "$type": "color",
+            "$value": "{Semantic.Secondary.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "BrandAsset/WhiteColor/accentLightBg",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "Dark": {
+      "Contrast": {
+        "Default": {
+          "$type": "color",
+          "$value": "{Semantic.Foundations.White}",
+          "$extensions": {
+            "figma": {
+              "variableName": "Contrast/Default",
+              "resolvedType": "COLOR",
+              "scopes": [
+                "ALL_SCOPES"
+              ]
+            }
+          }
+        }
+      },
+      "Surface": {
+        "Primary": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Primary/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Alternative": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Primary/Alternative",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Focus": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Primary/Focus",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "DefaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Primary/DefaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "AlternativePressed": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Primary/AlternativePressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Secondary": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.900}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Secondary/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Focus": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.900}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Secondary/Focus",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "DefaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Secondary/DefaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Tertiary": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tertiary/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tertiary/Pressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Focus": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tertiary/Focus",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Tonal": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tonal/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tonal/Pressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Disabled": {
+          "DisabledDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Disabled/DisabledDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "DisabledSecondary": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.400}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Disabled/DisabledSecondary",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Tag": {
+          "Brand": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tag/Brand",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Information": {
+            "$type": "color",
+            "$value": "{Semantic.Information.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tag/Information",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Success": {
+            "$type": "color",
+            "$value": "{Semantic.Success.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tag/Success",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Warning": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tag/Warning",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Errror": {
+            "$type": "color",
+            "$value": "{Semantic.Error.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tag/Errror",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Neutral": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Tag/Neutral",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Accessibility": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Information.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Accessibility/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Semantic.Information.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Accessibility/Pressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Toggle": {
+          "InactiveDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Toggle/InactiveDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "InactivePressed": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Toggle/InactivePressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Translucent": {
+          "OverlayDarkSubtle": {
+            "$type": "color",
+            "$value": "{Semantic.Opacities.Black20}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Translucent/OverlayDarkSubtle",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "OverlayDarkBase": {
+            "$type": "color",
+            "$value": "{Semantic.Opacities.Black30}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Translucent/OverlayDarkBase",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "OverlayLightBase": {
+            "$type": "color",
+            "$value": "{Semantic.Opacities.White30}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Translucent/OverlayLightBase",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Inverse": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Inverse/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Secondary": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.Black}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Inverse/Secondary",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Information": {
+          "SolidDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Information.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Information/SolidDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SolidPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Information.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Information/SolidPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SubtleDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Information.900}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Information/SubtleDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SubtlePressed": {
+            "$type": "color",
+            "$value": "{Semantic.Information.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Information/SubtlePressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Warning": {
+          "SolidDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Warning/SolidDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SolidPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Warning/SolidPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SubtleDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.900}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Warning/SubtleDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SubtlePressed": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Warning/SubtlePressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Error": {
+          "SubtleDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Error.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Error/SubtleDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Success": {
+          "SubtleDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Success.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Success/SubtleDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Static": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Static/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "DefaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Static/DefaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Skeleton": {
+          "Base": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/Skeleton/Base",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Shimmer": {
+            "Option1": {
+              "$type": "color",
+              "$value": "{Semantic.Opacities.White00}",
+              "$extensions": {
+                "figma": {
+                  "variableName": "Surface/Skeleton/Shimmer/Option1",
+                  "resolvedType": "COLOR",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "Option2": {
+              "$type": "color",
+              "$value": "{Semantic.Neutral.200}",
+              "$extensions": {
+                "figma": {
+                  "variableName": "Surface/Skeleton/Shimmer/Option2",
+                  "resolvedType": "COLOR",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "BackgroundPage": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/BackgroundPage/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "CloseButton": {
+          "DefaultContained": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/CloseButton/DefaultContained",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "PressedConteined": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/CloseButton/PressedConteined",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "PressedGhost": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/CloseButton/PressedGhost",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "ReadOnly": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.800}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/ReadOnly/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Secondary": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Surface/ReadOnly/Secondary",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "Text": {
+        "Default": {
+          "heading": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Default/heading",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Default/body",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "caption": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Default/caption",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "placeholder": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Default/placeholder",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "captionMuted": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Default/captionMuted",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Primary": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Primary/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "defaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Primary/defaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Primary/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColorPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Primary/onColorPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Error": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Error.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Error/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "defaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Error.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Error/defaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Error/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColorPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Error/onColorPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Tag": {
+          "Brand": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Tag/Brand",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Information": {
+            "$type": "color",
+            "$value": "{Semantic.Information.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Tag/Information",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Success": {
+            "$type": "color",
+            "$value": "{Semantic.Success.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Tag/Success",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Warning": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Tag/Warning",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Errror": {
+            "$type": "color",
+            "$value": "{Semantic.Error.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Tag/Errror",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Neutral": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Tag/Neutral",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Information": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Information.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Information/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "defaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Information.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Information/defaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Information/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColorPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Information/onColorPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Warning": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Warning/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "defaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Warning/defaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Warning/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColorPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Warning/onColorPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Success": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Success.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Success/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "defaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Success.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Success/defaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Success/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColorPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Success/onColorPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Neutral": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Neutral/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Neutral/pressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Disabled": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Disabled/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Disabled/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Static": {
+          "Primary": {
+            "default": {
+              "$type": "color",
+              "$value": "{Semantic.Primary.Default}",
+              "$extensions": {
+                "figma": {
+                  "variableName": "Text/Static/Primary/default",
+                  "resolvedType": "COLOR",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "defaultPressed": {
+              "$type": "color",
+              "$value": "{Semantic.Primary.600}",
+              "$extensions": {
+                "figma": {
+                  "variableName": "Text/Static/Primary/defaultPressed",
+                  "resolvedType": "COLOR",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "Black": {
+            "default": {
+              "$type": "color",
+              "$value": "{Semantic.Foundations.Black}",
+              "$extensions": {
+                "figma": {
+                  "variableName": "Text/Static/Black/default",
+                  "resolvedType": "COLOR",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "Inverse": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.Black}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/Inverse/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "OnColor": {
+          "heading": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/OnColor/heading",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/OnColor/body",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "caption": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/OnColor/caption",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "placeholder": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/OnColor/placeholder",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "ReadOnly": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/ReadOnly/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Text/ReadOnly/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "Icon": {
+        "Default": {
+          "heading": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Default/heading",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Default/body",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "caption": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Default/caption",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "placeholder": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Default/placeholder",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "captionMuted": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Default/captionMuted",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Primary": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Primary/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "defaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Primary/defaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Primary/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColorPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Primary/onColorPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Error": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Error.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Error/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "defaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Error.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Error/defaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Error/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColorPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Error/onColorPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Information": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Information.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Information/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "defaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Information.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Information/defaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Information/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColorPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Information/onColorPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Warning": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Warning/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "defaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Warning/defaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Warning/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColorPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Warning/onColorPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Success": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Success.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Success/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "defaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Success.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Success/defaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Success/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColorPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Success/onColorPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Neutral": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Neutral/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "pressed": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.100}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Neutral/pressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Disabled": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Disabled/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Disabled/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Seats": {
+          "Disabled": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Seats/Disabled",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "AvailableDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.50}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Seats/AvailableDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "AvailablePressed": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Seats/AvailablePressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SelectedDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.350}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Seats/SelectedDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SelectedPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Seats/SelectedPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "AccessibleDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Information.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Seats/AccessibleDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "AccessiblePressed": {
+            "$type": "color",
+            "$value": "{Semantic.Information.400}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Seats/AccessiblePressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Inverse": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.Black}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Inverse/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Experience": {
+          "3D": {
+            "$type": "color",
+            "$value": "{Semantic.Information.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/Experience/3D",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Static": {
+          "Information": {
+            "default": {
+              "$type": "color",
+              "$value": "{Semantic.Information.600}",
+              "$extensions": {
+                "figma": {
+                  "variableName": "Icon/Static/Information/default",
+                  "resolvedType": "COLOR",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "defaultPressed": {
+              "$type": "color",
+              "$value": "{Semantic.Information.700}",
+              "$extensions": {
+                "figma": {
+                  "variableName": "Icon/Static/Information/defaultPressed",
+                  "resolvedType": "COLOR",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "Primary": {
+            "default": {
+              "$type": "color",
+              "$value": "{Semantic.Primary.Default}",
+              "$extensions": {
+                "figma": {
+                  "variableName": "Icon/Static/Primary/default",
+                  "resolvedType": "COLOR",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            },
+            "defaultPressed": {
+              "$type": "color",
+              "$value": "{Semantic.Primary.600}",
+              "$extensions": {
+                "figma": {
+                  "variableName": "Icon/Static/Primary/defaultPressed",
+                  "resolvedType": "COLOR",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          },
+          "Caption": {
+            "default": {
+              "$type": "color",
+              "$value": "{Semantic.Neutral.800}",
+              "$extensions": {
+                "figma": {
+                  "variableName": "Icon/Static/Caption/default",
+                  "resolvedType": "COLOR",
+                  "scopes": [
+                    "ALL_SCOPES"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "OnColor": {
+          "heading": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/OnColor/heading",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "body": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/OnColor/body",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "caption": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/OnColor/caption",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "placeholder": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/OnColor/placeholder",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "ReadOnly": {
+          "default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/ReadOnly/default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "onColor": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Icon/ReadOnly/onColor",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "Border": {
+        "Contrast": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Contrast/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Static": {
+          "White": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Static/White",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Primary": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Primary/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Alternative": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Primary/Alternative",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Focus": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Primary/Focus",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "DefaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Primary/DefaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "AlternativePressed": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Primary/AlternativePressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Secondary": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Secondary/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Focus": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Secondary/Focus",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "DefaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.400}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Secondary/DefaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Tertiary": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Tertiary/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Pressed": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.400}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Tertiary/Pressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Focus": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Tertiary/Focus",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Disabled": {
+          "DisabledDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Disabled/DisabledDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "DisabledSecondary": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.400}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Disabled/DisabledSecondary",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Error": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Error.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Error/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "DefaultPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Error.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Error/DefaultPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SubtleDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Error.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Error/SubtleDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Success": {
+          "SubtleDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Success.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Success/SubtleDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Tag": {
+          "Brand": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Tag/Brand",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Information": {
+            "$type": "color",
+            "$value": "{Semantic.Information.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Tag/Information",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Success": {
+            "$type": "color",
+            "$value": "{Semantic.Success.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Tag/Success",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Warning": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Tag/Warning",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Errror": {
+            "$type": "color",
+            "$value": "{Semantic.Error.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Tag/Errror",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Neutral": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Tag/Neutral",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Tooltip": {
+          "Tooltip": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.400}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Tooltip/Tooltip",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Information": {
+          "SolidDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Information.400}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Information/SolidDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SolidPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Information.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Information/SolidPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SubtleDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Information.400}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Information/SubtleDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SubtlePressed": {
+            "$type": "color",
+            "$value": "{Semantic.Information.400}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Information/SubtlePressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Warning": {
+          "SolidDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Warning/SolidDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SolidPressed": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Warning/SolidPressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SubtleDefault": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.400}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Warning/SubtleDefault",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "SubtlePressed": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.400}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Warning/SubtlePressed",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Inverse": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Neutral.700}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Inverse/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "Experience": {
+          "Premium": {
+            "$type": "color",
+            "$value": "{Semantic.Warning.400}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Experience/Premium",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "3D": {
+            "$type": "color",
+            "$value": "{Semantic.Information.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/Experience/3D",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "ProgressIndicator": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Information.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/ProgressIndicator/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "ReadOnly": {
+          "Default": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.400}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/ReadOnly/Default",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "Secondary": {
+            "$type": "color",
+            "$value": "{Semantic.Grey.300}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Border/ReadOnly/Secondary",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "Shadow": {
+        "Default": {
+          "ShadowStrong": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.Black}",
+            "$extensions": {
+              "figma": {
+                "variableName": "Shadow/Default/ShadowStrong",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "BrandAsset": {
+        "DefaultColor": {
+          "main": {
+            "$type": "color",
+            "$value": "{Semantic.Primary.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "BrandAsset/DefaultColor/main",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "accentDarkBg": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "BrandAsset/DefaultColor/accentDarkBg",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "accentLightBg": {
+            "$type": "color",
+            "$value": "{Semantic.Secondary.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "BrandAsset/DefaultColor/accentLightBg",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "BrandText": {
+            "$type": "color",
+            "$value": "{Semantic.Secondary.200}",
+            "$extensions": {
+              "figma": {
+                "variableName": "BrandAsset/DefaultColor/BrandText",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "BrandTertiary": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "BrandAsset/DefaultColor/BrandTertiary",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        },
+        "WhiteColor": {
+          "main": {
+            "$type": "color",
+            "$value": "{Semantic.Foundations.White}",
+            "$extensions": {
+              "figma": {
+                "variableName": "BrandAsset/WhiteColor/main",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "accentDarkBg": {
+            "$type": "color",
+            "$value": "{Semantic.Secondary.Default}",
+            "$extensions": {
+              "figma": {
+                "variableName": "BrandAsset/WhiteColor/accentDarkBg",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          },
+          "accentLightBg": {
+            "$type": "color",
+            "$value": "{Semantic.Secondary.600}",
+            "$extensions": {
+              "figma": {
+                "variableName": "BrandAsset/WhiteColor/accentLightBg",
+                "resolvedType": "COLOR",
+                "scopes": [
+                  "ALL_SCOPES"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.locale-avatar-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--Responsive-Size-Flag-Default, var(--Size-Flag-Default, 32px));
+  height: var(--Responsive-Size-Flag-Default, var(--Size-Flag-Default, 32px));
+  border-radius: var(--Responsive-Radius-Round, var(--Radius-Round, 50%));
+  overflow: hidden;
+}
+
+.locale-avatar-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

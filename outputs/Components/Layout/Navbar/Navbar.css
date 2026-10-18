@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff));
+}
+
+/* =========================================
+   ORIENTATION STYLES (MAPPED TO TOTEM SCREEN)
+   Horizontal Totem -> Vertical Navbar (Side)
+   Vertical Totem -> Horizontal Navbar (Bottom)
+   ========================================= */
+
+.navbar[data-orientation="horizontal"] {
+  flex-direction: column;
+  height: 100%;
+  width: 178px;
+  flex-shrink: 0;
+  border-right: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+}
+
+.navbar[data-orientation="vertical"] {
+  flex-direction: row;
+  width: 100%;
+  border-top: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+}

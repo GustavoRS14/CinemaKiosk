@@ -1,0 +1,112 @@
+.key-keyboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 112px;
+  position: relative;
+}
+
+.key-keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: var(--Responsive-ButtonInputHeight, 80px);
+  padding: var(--Responsive-Spacing-md, var(--Spacing-md, 16px)) var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  border-radius: var(--Semantic-BorderRadius-300, var(--BorderRadius-300, 12px));
+  border-width: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px));
+  border-style: solid;
+  box-sizing: border-box;
+  
+  background-color: var(--Contextual-Surface-Tertiary-Default, var(--Surface-Tertiary-Default, #F1F1F2));
+  border-color: var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #C1C7D1));
+  color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #282E38));
+  
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-weight: var(--Typography-Semantic-Primária-H4-Semibold-fontWeight, 600);
+  font-size: var(--Responsive-Font-Headings-H4-TextSize, var(--Font-Headings-H4-TextSize, 32px));
+  line-height: var(--Responsive-Font-Headings-H4-ParagraphSpacing, var(--Font-Headings-H4-ParagraphSpacing, 40px));
+  text-align: center;
+}
+
+/* Base Surfaces */
+.key-keyboard[data-surface='Secondary'] {
+  background-color: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #FFFFFF));
+}
+
+/* Pressed States */
+.key-keyboard[data-state='Pressed'],
+.key-keyboard[data-state='Default']:hover,
+.key-keyboard[data-state='Default']:active {
+  background-color: var(--Contextual-Surface-Tertiary-pressed, var(--Contextual-Surface-Tertiary-Pressed, var(--Surface-Tertiary-Pressed, #E3E3E4)));
+  border-color: var(--Contextual-Border-Tertiary-pressed, var(--Contextual-Border-Tertiary-Pressed, var(--Border-Tertiary-Pressed, #A2ACB9)));
+}
+
+.key-keyboard[data-surface='Secondary'][data-state='Pressed'],
+.key-keyboard[data-surface='Secondary'][data-state='Default']:hover,
+.key-keyboard[data-surface='Secondary'][data-state='Default']:active {
+  background-color: var(--Contextual-Surface-Secondary-DefaultPressed, var(--Surface-Secondary-DefaultPressed, #E3E3E4));
+  border-color: var(--Contextual-Border-Tertiary-pressed, var(--Contextual-Border-Tertiary-Pressed, var(--Border-Tertiary-Pressed, #A2ACB9)));
+}
+
+/* Intents (Text / Icon Color) */
+.key-keyboard[data-intent='Destructive'] {
+  color: var(--Contextual-Text-Error-default, var(--Contextual-Text-Error-Default, var(--Text-Error-Default, #B01E1E)));
+}
+
+.key-keyboard[data-intent='Destructive'][data-state='Pressed'],
+.key-keyboard[data-intent='Destructive'][data-state='Default']:hover,
+.key-keyboard[data-intent='Destructive'][data-state='Default']:active {
+  color: var(--Contextual-Text-Error-defaultPressed, var(--Contextual-Text-Error-DefaultPressed, var(--Text-Error-DefaultPressed, #841717)));
+}
+
+/* Disabled State */
+.key-keyboard[data-state='Disabled'],
+.key-keyboard:disabled {
+  background-color: var(--Contextual-Surface-DisabledDisabled-default, var(--Contextual-Surface-DisabledDisabled-Default, var(--Surface-DisabledDisabled-Default, #C1C7D1)));
+  border-color: var(--Contextual-Border-DisabledDisabled-default, var(--Contextual-Border-DisabledDisabled-Default, var(--Border-DisabledDisabled-Default, #C1C7D1)));
+  color: var(--Contextual-Text-Disabled-default, var(--Contextual-Text-Disabled-Default, var(--Text-Disabled-Default, #505D6F)));
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.key-keyboard-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Using mask-image allows us to colorize the SVG dynamically based on current color */
+.key-keyboard-icon svg {
+  width: 100%;
+  height: 100%;
+  color: inherit;
+}
+
+[data-high-contrast='true'] .key-keyboard-text {
+  background-color: var(--Contextual-Contrast-Default);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+[data-high-contrast='true'] .key-keyboard[data-intent='Destructive'] .key-keyboard-icon {
+  background-color: var(--Contextual-Contrast-Default);
+  color: var(--Accessibility-Icon-Error-default);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+[data-high-contrast='true'] .key-keyboard[data-intent='Destructive']:is(
+  [data-state='Pressed'],
+  [data-state='Default']:hover,
+  [data-state='Default']:active
+) .key-keyboard-icon {
+  color: var(--Accessibility-Icon-Error-defaultPressed);
+}

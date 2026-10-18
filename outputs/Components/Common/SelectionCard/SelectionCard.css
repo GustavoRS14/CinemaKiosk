@@ -1,0 +1,151 @@
+.selection-card {
+display: flex;
+width: 417px;
+flex-direction: column;
+align-items: flex-start;
+cursor: pointer;
+box-sizing: border-box;
+}
+
+.selection-card[aria-disabled="true"],
+.selection-card[aria-readonly="true"] {
+cursor: not-allowed;
+user-select: none;
+}
+
+.selection-card-master {
+display: flex;
+padding: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+align-items: center;
+gap: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+flex: 1 0 0;
+align-self: stretch;
+border-radius: var(--Semantic-BorderRadius-300, var(--BorderRadius-300, 12px));
+border: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #c1c7d1));
+background: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #ffffff));
+box-sizing: border-box;
+}
+
+.selection-card-movie-poster {
+width: 64px;
+height: 96px;
+max-width: none;
+flex: 0 0 64px;
+aspect-ratio: auto;
+border-radius: var(--Semantic-BorderRadius-200, 8px);
+}
+
+.selection-card-text {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px));
+flex: 1 0 0;
+}
+
+.selection-card-title-group {
+display: flex;
+align-items: center;
+gap: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px));
+align-self: stretch;
+}
+
+.selection-card-title {
+margin: 0;
+color: var(--Contextual-Text-Default-body, var(--Text-Default-body, #000000));
+font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+font-style: normal;
+}
+
+/* Title Size Variants */
+.selection-card-title[data-text-size="lg"] {
+font-size: var(--Responsive-Font-Headings-H5-TextSize, var(--Font-Headings-H5-TextSize, 24px));
+line-height: var(--Responsive-Font-Headings-H5-LineHeight, var(--Font-Headings-H5-LineHeight, 28px));
+}
+
+.selection-card-title[data-text-size="sm"] {
+font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+}
+
+/* Title Weight Variants */
+.selection-card-title[data-text-weight="Medium"] { font-weight: 500; }
+.selection-card-title[data-text-weight="Semibold"] { font-weight: 600; }
+.selection-card-title[data-text-weight="Bold"] { font-weight: 700; }
+
+.selection-card-tag-wrapper {
+display: flex;
+align-items: flex-start;
+}
+
+.selection-card-support-text {
+margin: 0;
+color: var(--Contextual-Text-Default-captionMuted, var(--Text-Default-captionMuted, #64748b));
+font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+font-style: normal;
+font-weight: 400;
+line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+align-self: stretch;
+}
+
+.selection-card-radio {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+pointer-events: none; /* CRITICAL FIX: Prevent Radio Button from stealing clicks */
+}
+
+/* =========================================
+STATE OVERRIDES
+========================================= */
+
+/* State: Default - Selected */
+.selection-card[data-state="Default"][data-selected="true"] .selection-card-master {
+border-color: var(--Contextual-Border-Primary-Default, var(--Border-Primary-Default, #980038));
+}
+
+.selection-card[data-state="Default"][data-selected="true"] .selection-card-title {
+color: var(--Contextual-Text-Primary-default, var(--Text-Primary-default, #980038));
+}
+
+/* Hover & Pressed: Default - Selected (True) */
+.selection-card[data-state="Default"][data-selected="true"]:hover .selection-card-master,
+.selection-card[data-state="Default"][data-selected="true"]:active .selection-card-master {
+border: var(--Semantic-BorderWidth-25, var(--Border-Width-25, 1px)) solid var(--Contextual-Border-Primary-DefaultPressed, var(--Border-Primary-Default-pressed, #7A002D));
+background: var(--Contextual-Surface-Secondary-DefaultPressed, var(--Surface-Secondary-Default-pressed, #E3E3E4));
+}
+
+.selection-card[data-state="Default"][data-selected="true"]:hover .selection-card-title,
+.selection-card[data-state="Default"][data-selected="true"]:active .selection-card-title {
+color: var(--Contextual-Text-Primary-defaultPressed, var(--Text-Primary-default-pressed, #7A002D));
+}
+
+/* Hover & Pressed: Default - Unselected (False) */
+.selection-card[data-state="Default"][data-selected="false"]:hover .selection-card-master,
+.selection-card[data-state="Default"][data-selected="false"]:active .selection-card-master {
+border: var(--Semantic-BorderWidth-25, var(--Border-Width-25, 1px)) solid var(--Contextual-Border-Tertiary-Pressed, var(--Border-Tertiary-Pressed, #A2ACB9));
+background: var(--Contextual-Surface-Secondary-DefaultPressed, var(--Surface-Secondary-Default-pressed, #E3E3E4));
+}
+
+/* State: Disabled */
+.selection-card[aria-disabled="true"] .selection-card-master {
+border-color: var(--Contextual-Border-Disabled-DisabledDefault, var(--Border-Disabled-Disabled-Default, #C1C7D1));
+background: var(--Contextual-Surface-Disabled-DisabledDefault, var(--Surface-Disabled-Disabled-default, #C1C7D1));
+}
+
+.selection-card[aria-disabled="true"] .selection-card-title,
+.selection-card[aria-disabled="true"] .selection-card-support-text {
+color: var(--Contextual-Text-Disabled-default, var(--Text-Disabled-default, #505D6F));
+}
+
+/* State: Read Only */
+.selection-card[aria-readonly="true"] .selection-card-master {
+border: var(--Semantic-BorderWidth-25, var(--Border-Width-25, 1px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #C1C7D1));
+background: var(--Contextual-Surface-ReadOnly-Default, var(--Surface-Read-Only-Default, #E0E3E8));
+}
+
+.selection-card[aria-readonly="true"] .selection-card-title,
+.selection-card[aria-readonly="true"] .selection-card-support-text {
+color: var(--Contextual-Text-ReadOnly-default, var(--Text-Read-Only-default, #505D6F));
+}

@@ -1,0 +1,100 @@
+.tag {
+  --tag-bg: var(--Contextual-Surface-Tag-Brand, var(--Surface-Tag-Brand, #F5E6EB));
+  --tag-border: var(--Contextual-Border-Tag-Brand, var(--Border-Tag-Brand, #980038));
+  --tag-text: var(--Contextual-Text-Tag-Brand, var(--Text-Tag-Brand, #980038));
+}
+
+.tag[data-status="Brand"] {
+  --tag-bg: var(--Contextual-Surface-Tag-Brand, var(--Surface-Tag-Brand, #F5E6EB));
+  --tag-border: var(--Contextual-Border-Tag-Brand, var(--Border-Tag-Brand, #980038));
+  --tag-text: var(--Contextual-Text-Tag-Brand, var(--Text-Tag-Brand, #980038));
+}
+
+.tag[data-status="Information"] {
+  --tag-bg: var(--Contextual-Surface-Tag-Information, var(--Surface-Tag-Information, #E8F0FB));
+  --tag-border: var(--Contextual-Border-Tag-Information, var(--Border-Tag-Information, #1650AE));
+  --tag-text: var(--Contextual-Text-Tag-Information, var(--Text-Tag-Information, #1650AE));
+}
+
+.tag[data-status="Warning"] {
+  --tag-bg: var(--Contextual-Surface-Tag-Warning, var(--Surface-Tag-Warning, #FBF1E6));
+  --tag-border: var(--Contextual-Border-Tag-Warning, var(--Border-Tag-Warning, #824704));
+  --tag-text: var(--Contextual-Text-Tag-Warning, var(--Text-Tag-Warning, #824704));
+}
+
+.tag[data-status="Success"] {
+  --tag-bg: var(--Contextual-Surface-Tag-Success, var(--Surface-Tag-Success, #E8F2EC));
+  --tag-border: var(--Contextual-Border-Tag-Success, var(--Border-Tag-Success, #16803D));
+  --tag-text: var(--Contextual-Text-Tag-Success, var(--Text-Tag-Success, #16803D));
+}
+
+.tag[data-status="Error"] {
+  --tag-bg: var(--Contextual-Surface-Tag-Errror, var(--Surface-Tag-Errror, #FBE9E9));
+  --tag-border: var(--Contextual-Border-Tag-Errror, var(--Border-Tag-Errror, #B01E1E));
+  --tag-text: var(--Contextual-Text-Tag-Errror, var(--Text-Tag-Errror, #B01E1E));
+}
+
+.tag[data-status="Neutral"] {
+  --tag-bg: var(--Contextual-Surface-Tag-Neutral, var(--Surface-Tag-Neutral, #F0F1F3));
+  --tag-border: var(--Contextual-Border-Tag-Neutral, var(--Border-Tag-Neutral, #64748B));
+  --tag-text: var(--Contextual-Text-Tag-Neutral, var(--Text-Tag-Neutral, #64748B));
+}
+
+.tag[data-state="Disabled"],
+.tag[data-state="Read Only"] {
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.tag[data-state="Disabled"] {
+  --tag-bg: var(--Contextual-Surface-Disabled-DisabledDefault, var(--Surface-Disabled-DisabledDefault, #E0E3E8));
+  --tag-border: var(--Contextual-Border-Disabled-DisabledSecondary, var(--Border-Disabled-DisabledSecondary, #C1C7D1));
+  --tag-text: var(--Contextual-Text-Disabled-default, var(--Text-Disabled-default, #64748B));
+}
+
+.tag[data-state="Read Only"] {
+  --tag-bg: var(--Contextual-Surface-ReadOnly-Default, var(--Surface-ReadOnly-Default, #F0F1F3));
+  --tag-border: var(--Contextual-Border-ReadOnly-Default, var(--Border-ReadOnly-Default, #C1C7D1));
+  --tag-text: var(--Contextual-Text-ReadOnly-default, var(--Text-ReadOnly-default, #64748B));
+}
+
+.tag-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+  padding-top: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+  padding-bottom: var(--Responsive-Spacing-2xs, var(--Spacing-2xs, 4px));
+  padding-left: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px));
+  padding-right: var(--Responsive-Spacing-sm, var(--Spacing-sm, 12px));
+  border-radius: var(--Semantic-BorderRadius-Round, var(--BorderRadius-Round, 512px));
+  border-width: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px));
+  border-style: solid;
+  border-color: var(--tag-border);
+  background-color: var(--tag-bg);
+  color: var(--tag-text);
+  box-sizing: border-box;
+  flex-shrink: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.tag-text {
+  word-break: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-weight: 500;
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+  color: inherit;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.tag-text p {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+}

@@ -1,0 +1,52 @@
+.validation-tooltip-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: max-content;
+}
+
+.validation-tooltip-message {
+  background-color: var(--Contextual-Surface-Inverse-Default, var(--Surface-Inverse-Default, #282E38));
+  border-color: var(--Contextual-Border-Inverse-Default, var(--Border-Inverse-Default, #282E38));
+  border-top-left-radius: var(--Semantic-BorderRadius-200, var(--BorderRadius-200, 8px));
+  border-top-right-radius: var(--Semantic-BorderRadius-200, var(--BorderRadius-200, 8px));
+  border-bottom-left-radius: var(--Semantic-BorderRadius-200, var(--BorderRadius-200, 8px));
+  border-bottom-right-radius: var(--Semantic-BorderRadius-None, var(--BorderRadius-None, 0px));
+  border-style: solid;
+  border-width: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px));
+  box-sizing: border-box;
+  color: var(--Contextual-Text-OnColor-body, var(--Text-OnColor-body, #FFFFFF));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+}
+
+.validation-tooltip-text {
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, 'Poppins', sans-serif));
+  font-size: var(--Responsive-Font-Headings-H6-TextSize, var(--Font-Headings-H6-TextSize, 20px));
+  font-weight: 500;
+  line-height: var(--Responsive-Font-Headings-H6-LineHeight, var(--Font-Headings-H6-LineHeight, 24px));
+  margin: 0;
+  word-break: break-word;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.validation-tooltip-arrow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  z-index: 10;
+  width: 21px;
+  height: 15px;
+  color: var(--Contextual-Surface-Inverse-Default, var(--Surface-Inverse-Default, #282E38));
+}
+
+.validation-tooltip-arrow svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

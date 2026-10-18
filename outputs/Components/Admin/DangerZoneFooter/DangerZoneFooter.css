@@ -1,0 +1,64 @@
+.danger-zone-footer {
+  align-items: center;
+  background: var(--Contextual-Surface-Secondary-Default, var(--Surface-Secondary-Default, #FFFFFF));
+  border: var(--Semantic-BorderWidth-25, var(--BorderWidth-25, 1px)) solid var(--Contextual-Border-Tertiary-Default, var(--Border-Tertiary-Default, #C1C7D1));
+  border-radius: var(--Semantic-BorderRadius-300, var(--BorderRadius-300, 12px));
+  box-sizing: border-box;
+  display: flex;
+  gap: var(--Responsive-Spacing-2xl, var(--Spacing-2xl, 32px));
+  inline-size: 100%;
+  justify-content: space-between;
+  min-block-size: 130px;
+  padding-block: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+  padding-inline: var(--Responsive-Spacing-lg, var(--Spacing-lg, 24px));
+}
+
+.danger-zone-footer__text-container {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+}
+
+.danger-zone-footer__title-group {
+  align-items: center;
+  display: flex;
+  gap: var(--Responsive-Spacing-xs, var(--Spacing-xs, 8px));
+}
+
+.danger-zone-footer__icon {
+  block-size: var(--Primitive-Scale-600, var(--Scale-600, 24px));
+  color: var(--Contextual-Icon-Error-default, var(--Icon-Error-default, #B01E1E));
+  fill: var(--Contextual-Icon-Error-default, var(--Icon-Error-default, #B01E1E));
+  display: inline-flex;
+  flex: 0 0 auto;
+  inline-size: var(--Primitive-Scale-600, var(--Scale-600, 24px));
+}
+
+.danger-zone-footer__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.danger-zone-footer__title {
+  color: var(--Contextual-Text-Error-default, var(--Text-Error-default, #B01E1E));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, Poppins, sans-serif));
+  font-size: var(--Responsive-Font-Headings-H5-TextSize, var(--Font-Headings-H5-TextSize, 24px));
+  font-weight: 600;
+  line-height: var(--Responsive-Font-Headings-H5-ParagraphSpacing, var(--Font-Headings-H5-ParagraphSpacing, 28px));
+}
+
+.danger-zone-footer__subtitle {
+  color: var(--Contextual-Text-Default-captionMuted, var(--Text-Default-captionMuted, #71717A));
+  font-family: var(--Semantic-Font-Primary, var(--Font-Primary, Poppins, sans-serif));
+  font-size: var(--Responsive-Font-Headings-Body-TextSize, var(--Font-Headings-Body-TextSize, 16px));
+  font-weight: 400;
+  line-height: var(--Responsive-Font-Headings-Body-LineHeight, var(--Font-Headings-Body-LineHeight, 20px));
+}
+
+.danger-zone-footer__actions {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: var(--Responsive-Spacing-md, var(--Spacing-md, 16px));
+}
