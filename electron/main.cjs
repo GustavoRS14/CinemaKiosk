@@ -168,12 +168,20 @@ async function loadRenderer(window) {
   await window.loadURL('http://127.0.0.1:6006');
 }
 
-async function showStartupScreen(window) {
+async function showInitialScreen(window) {
   await loadRenderer(window);
   if (!window || window.isDestroyed()) return;
-  const destination = onboardingWasCompleteAtLaunch ? '/' : '/onboarding';
+
+  if (!onboardingWasCompleteAtLaunch) {
+    await window.webContents.executeJavaScript(`
+      window.history.replaceState({}, '', '/onboarding');
+      window.dispatchEvent(new PopStateEvent('popstate'));
+    `);
+    return;
+  }
+
   await window.webContents.executeJavaScript(`
-    window.sessionStorage.setItem('totem-startup-destination', ${JSON.stringify(destination)});
+    window.sessionStorage.setItem('totem-startup-destination', '/');
     window.history.replaceState({}, '', '/splash');
     window.dispatchEvent(new PopStateEvent('popstate'));
   `);
@@ -217,7 +225,7 @@ function createWindow() {
   });
 
   mainWindow.once('ready-to-show', () => mainWindow?.show());
-  void showStartupScreen(mainWindow);
+  void showInitialScreen(mainWindow);
 }
 
 function enableWindowsStartup() {
