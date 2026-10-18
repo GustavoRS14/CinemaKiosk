@@ -168,6 +168,17 @@ async function loadRenderer(window) {
   await window.loadURL('http://127.0.0.1:6006');
 }
 
+async function showStartupScreen(window) {
+  await loadRenderer(window);
+  if (!window || window.isDestroyed()) return;
+  const destination = onboardingWasCompleteAtLaunch ? '/' : '/onboarding';
+  await window.webContents.executeJavaScript(`
+    window.sessionStorage.setItem('totem-startup-destination', ${JSON.stringify(destination)});
+    window.history.replaceState({}, '', '/splash');
+    window.dispatchEvent(new PopStateEvent('popstate'));
+  `);
+}
+
 function createWindow() {
   mainWindow = new BrowserWindow({
     width: 1280,
@@ -206,7 +217,7 @@ function createWindow() {
   });
 
   mainWindow.once('ready-to-show', () => mainWindow?.show());
-  void loadRenderer(mainWindow);
+  void showStartupScreen(mainWindow);
 }
 
 function enableWindowsStartup() {
