@@ -1,4 +1,5 @@
 const { app, BrowserWindow, ipcMain, shell } = require('electron');
+const { execFile } = require('node:child_process');
 const fs = require('node:fs');
 const path = require('node:path');
 const sharp = require('sharp');
@@ -9,9 +10,33 @@ const UPDATE_TENANT_ICON_CHANNEL = 'totem:update-tenant-icon';
 const ONBOARDING_STATE_FILE = 'onboarding-state.json';
 const PRODUCT_NAME = 'Totem Cinema';
 const ICON_SIZES = [16, 24, 32, 48, 64, 128, 256];
+const EXTERNAL_MOUSE_POLL_INTERVAL_MS = 3000;
+const HIDDEN_CURSOR_CSS = 'html, body, body *, body *::before, body *::after { cursor: none !important; }';
+const EXTERNAL_MOUSE_POWERSHELL = String.raw`
+$externalMouse = Get-PnpDevice -Class Mouse -PresentOnly -ErrorAction SilentlyContinue |
+  Where-Object { $_.Status -eq 'OK' } |
+  ForEach-Object {
+    $device = $_
+    $identity = "$($device.FriendlyName) $($device.Name) $($device.InstanceId)"
+    if ($identity -match '(?i)touchpad|trackpad|clickpad|precision touch') { return }
+
+    $locationPaths = (Get-PnpDeviceProperty -InstanceId $device.InstanceId -KeyName 'DEVPKEY_Device_LocationPaths' -ErrorAction SilentlyContinue).Data -join ' '
+    $parent = (Get-PnpDeviceProperty -InstanceId $device.InstanceId -KeyName 'DEVPKEY_Device_Parent' -ErrorAction SilentlyContinue).Data
+    $connection = "$($device.InstanceId) $parent $locationPaths"
+    if ($connection -match '(?i)BTHENUM|BTHLEDEVICE|BLUETOOTH' -or ($connection -match '(?i)USB' -and $connection -notmatch '(?i)I2C|ACPI')) {
+      $device
+    }
+  } |
+  Select-Object -First 1
+[bool]$externalMouse
+`;
 
 let mainWindow;
 let onboardingWasCompleteAtLaunch = false;
+let cursorCssKey;
+let externalMousePoll;
+let externalMouseCheckInFlight = false;
+let externalMouseRefreshPending = false;
 
 const normalizeName = (value) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]/gi, '').toLowerCase();
 
@@ -112,6 +137,70 @@ function persistOnboardingComplete() {
   fs.writeFileSync(onboardingStatePath(), JSON.stringify({ completed: true }), 'utf8');
 }
 
+async function setCursorHidden(window, hidden) {
+  if (!window || window.isDestroyed()) return;
+  if (hidden && !cursorCssKey) {
+    cursorCssKey = await window.webContents.insertCSS(HIDDEN_CURSOR_CSS);
+    return;
+  }
+  if (!hidden && cursorCssKey) {
+    const key = cursorCssKey;
+    cursorCssKey = undefined;
+    await window.webContents.removeInsertedCSS(key).catch(() => {});
+  }
+}
+
+function detectExternalMouse() {
+  return new Promise((resolve) => {
+    if (process.platform !== 'win32') {
+      resolve(true);
+      return;
+    }
+    execFile(
+      'powershell.exe',
+      ['-NoLogo', '-NoProfile', '-NonInteractive', '-Command', EXTERNAL_MOUSE_POWERSHELL],
+      { windowsHide: true, timeout: 5000 },
+      (error, stdout) => resolve(error ? true : stdout.trim().toLowerCase() === 'true'),
+    );
+  });
+}
+
+async function refreshExternalMouseState(window) {
+  if (!window || window.isDestroyed() || !window.isKiosk()) return;
+  if (externalMouseCheckInFlight) {
+    externalMouseRefreshPending = true;
+    return;
+  }
+  externalMouseCheckInFlight = true;
+  try {
+    const hasExternalMouse = await detectExternalMouse();
+    if (window.isKiosk()) await setCursorHidden(window, !hasExternalMouse);
+  } finally {
+    externalMouseCheckInFlight = false;
+    if (externalMouseRefreshPending) {
+      externalMouseRefreshPending = false;
+      void refreshExternalMouseState(window);
+    }
+  }
+}
+
+function startExternalMouseMonitoring(window) {
+  if (externalMousePoll) clearInterval(externalMousePoll);
+  void refreshExternalMouseState(window);
+  externalMousePoll = setInterval(
+    () => void refreshExternalMouseState(window),
+    EXTERNAL_MOUSE_POLL_INTERVAL_MS,
+  );
+}
+
+function stopExternalMouseMonitoring(window) {
+  if (externalMousePoll) {
+    clearInterval(externalMousePoll);
+    externalMousePoll = undefined;
+  }
+  void setCursorHidden(window, false);
+}
+
 function applyKioskMode(window) {
   if (!window || window.isDestroyed()) return;
   window.setResizable(false);
@@ -123,10 +212,12 @@ function applyKioskMode(window) {
   window.setAlwaysOnTop(true, 'screen-saver');
   window.setFullScreen(true);
   window.setKiosk(true);
+  startExternalMouseMonitoring(window);
 }
 
 function applyOnboardingMode(window) {
   if (!window || window.isDestroyed()) return;
+  stopExternalMouseMonitoring(window);
   window.setKiosk(false);
   window.setFullScreen(false);
   window.setAlwaysOnTop(false);
@@ -222,6 +313,15 @@ function createWindow() {
   // Never expose Chromium's native context menu in the kiosk application.
   mainWindow.webContents.on('context-menu', (event) => {
     event.preventDefault();
+  });
+
+  mainWindow.webContents.on('did-finish-load', async () => {
+    if (cursorCssKey) {
+      const previousKey = cursorCssKey;
+      cursorCssKey = undefined;
+      await mainWindow?.webContents.removeInsertedCSS(previousKey).catch(() => {});
+    }
+    if (mainWindow?.isKiosk()) void refreshExternalMouseState(mainWindow);
   });
 
   mainWindow.once('ready-to-show', () => mainWindow?.show());
